@@ -1,0 +1,33 @@
+{
+  "modes": [
+    {
+      "id": "easy_multiple_choice",
+      "title": "Junior Dispatcher",
+      "description": "Kid-friendly multiple choice emergencies inspired by dispatch games.",
+      "input_style": "multiple_choice",
+      "unlocked_by_default": true,
+      "required_certification": "",
+      "scenario_source": "guided_dispatch",
+      "hints_enabled": true,
+      "locale_support": ["en", "tl", "taglish"]
+    },
+    {
+      "id": "professional_nlp_dispatch",
+      "title": "Professional Dispatcher",
+      "description": "Free-response emergency handling powered by NLP evaluation.",
+      "input_style": "typed_nlp",
+      "unlocked_by_default": false,
+      "required_certification": "bfp_dispatch_nlp_certificate",
+      "scenario_source": "nlp_dispatch",
+      "hints_enabled": false,
+      "locale_support": ["en", "tl", "taglish"]
+    }
+  ],
+  "certifications": [
+    {
+      "id": "bfp_dispatch_nlp_certificate",
+      "title": "BFP Sta. Cruz Dispatch Certification",
+      "description": "Required before typed NLP emergency response mode can be unlocked."
+    }
+  ]
+}

@@ -1,0 +1,3010 @@
+{
+  "version": "1.0.0",
+  "scenarios": [
+    {
+      "id": "medical_drowning_021",
+      "category": "medical",
+      "type": "near_drowning",
+      "title": "Child Pulled from Pool Unconscious",
+      "location": "Laguna Sports Complex, Brgy. Bubukal",
+      "severity": "extreme",
+      "recommended_vehicle": "ambulance",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, what is your emergency?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Tulong! May batang nalunod dito sa pool sa Sports Complex! Nakuha na namin siya pero hindi humihinga!"
+        },
+        {
+          "speaker": "911",
+          "text": "Is the child on a flat, firm surface?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Opo, andito sa tabi ng pool. Ano pong gagawin namin? Bubugahan ba namin ng hangin?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Check for a pulse and start chest compressions immediately.",
+          "label": "safe",
+          "explanation": "Immediate CPR is vital for drowning victims to circulate oxygen."
+        },
+        {
+          "text": "Give rescue breaths if you are trained to do so.",
+          "label": "safe",
+          "explanation": "Drowning is a respiratory event; oxygenation is key."
+        },
+        {
+          "text": "Tilt the head back and lift the chin to open the airway.",
+          "label": "safe",
+          "explanation": "Ensures the airway is clear for any spontaneous breathing."
+        },
+        {
+          "text": "Hold the child upside down to drain the water from the lungs.",
+          "label": "unsafe",
+          "explanation": "This is dangerous and delays life-saving CPR."
+        },
+        {
+          "text": "Perform the Heimlich maneuver to get the water out.",
+          "label": "unsafe",
+          "explanation": "Abdominal thrusts are for choking, not drowning, and can cause vomiting."
+        },
+        {
+          "text": "Wait for the ambulance before touching the victim.",
+          "label": "unsafe",
+          "explanation": "Every second without oxygen increases the risk of brain damage."
+        }
+      ],
+      "safe_keywords": [
+        "CPR",
+        "compressions",
+        "breathe",
+        "ambulance",
+        "flat surface"
+      ],
+      "unsafe_keywords": [
+        "upside down",
+        "baligtad",
+        "drain",
+        "wait",
+        "antay",
+        "heimlich"
+      ]
+    },
+    {
+      "id": "fire_forest_022",
+      "category": "fire",
+      "type": "brush_fire",
+      "title": "Grass fire near a Gas Station",
+      "location": "Sambat, Sta. Cruz (Near the junction)",
+      "severity": "extreme",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, specify the location of the fire."
+        },
+        {
+          "speaker": "Caller",
+          "text": "Dito sa Sambat! May sunog sa bakanteng lote, malapit na sa gasolinahan!"
+        },
+        {
+          "speaker": "911",
+          "text": "Is the fire moving toward the fuel tanks?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Opo, mahangin kasi! Baka sumabog yung station!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Dispatch multiple fire engines and notify the gas station manager.",
+          "label": "safe",
+          "explanation": "Large-scale response is needed for high-risk targets."
+        },
+        {
+          "text": "Instruct the gas station to activate their emergency shut-off valves.",
+          "label": "safe",
+          "explanation": "Cutting off fuel flow prevents a massive explosion."
+        },
+        {
+          "text": "Evacuate everyone within a 500-foot radius.",
+          "label": "safe",
+          "explanation": "Safety perimeters protect against potential blast zones."
+        },
+        {
+          "text": "Tell the caller to use a fire extinguisher on the grass fire.",
+          "label": "unsafe",
+          "explanation": "A portable extinguisher is insufficient for a spreading brush fire."
+        },
+        {
+          "text": "Instruct the caller to drive their car closer to block the fire.",
+          "label": "unsafe",
+          "explanation": "Vehicles are flammable and should be moved away, not closer."
+        },
+        {
+          "text": "Advise the station to continue serving customers until the fire is closer.",
+          "label": "unsafe",
+          "explanation": "Any spark during refueling could lead to disaster."
+        }
+      ],
+      "safe_keywords": [
+        "shut off",
+        "evacuate",
+        "manager",
+        "radius",
+        "layo",
+        "bumbero"
+      ],
+      "unsafe_keywords": [
+        "block",
+        "harang",
+        "extinguisher",
+        "continue",
+        "serve",
+        "customer"
+      ]
+    },
+    {
+      "id": "police_hostage_023",
+      "category": "police",
+      "type": "hostage",
+      "title": "Aggressive Individual in a Government Office",
+      "location": "Municipal Hall, Sta. Cruz",
+      "severity": "extreme",
+      "recommended_vehicle": "police_mobile",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, keep your voice low. What is happening?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "(Whispering) May lalaki po dito sa loob, may hawak na kutsilyo. Ayaw niyang palabasin yung mga staff!"
+        },
+        {
+          "speaker": "911",
+          "text": "How many people are with him? Where are you hiding?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Nasa ilalim ako ng desk. Tatlo po silang hostage niya!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Advise the caller to stay silent and turn their phone to vibrate.",
+          "label": "safe",
+          "explanation": "Noise can alert the suspect to the caller's location."
+        },
+        {
+          "text": "Dispatch a SWAT team and hostage negotiators immediately.",
+          "label": "safe",
+          "explanation": "Specialized units are required for hostage situations."
+        },
+        {
+          "text": "Tell the caller to look for an exit only if it is completely safe.",
+          "label": "safe",
+          "explanation": "Escape is the priority, but only if it doesn't risk discovery."
+        },
+        {
+          "text": "Instruct the caller to jump the suspect and take the knife.",
+          "label": "unsafe",
+          "explanation": "Untrained civilians should never attempt to disarm an attacker."
+        },
+        {
+          "text": "Ask the caller to start negotiating with the suspect.",
+          "label": "unsafe",
+          "explanation": "Amateur negotiation can provoke the suspect into violence."
+        },
+        {
+          "text": "Tell the caller to stand up and shout for help.",
+          "label": "unsafe",
+          "explanation": "Shouting reveals the hiding spot and escalates the situation."
+        }
+      ],
+      "safe_keywords": [
+        "silent",
+        "vibrate",
+        "hide",
+        "tago",
+        "SWAT",
+        "negotiator",
+        "escape"
+      ],
+      "unsafe_keywords": [
+        "jump",
+        "fight",
+        "shout",
+        "sigaw",
+        "negotiate",
+        "agaw",
+        "knife"
+      ]
+    },
+    {
+      "id": "medical_fall_024",
+      "category": "medical",
+      "type": "fall",
+      "title": "Worker Falls from a Billboard Scaffold",
+      "location": "National Highway, Brgy. Pagsawitan",
+      "severity": "high",
+      "recommended_vehicle": "ambulance",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, is the patient conscious?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Sir, nahulog yung kasama ko habang nagkakabit ng tarp! Mga sampung talampakan ang taas!"
+        },
+        {
+          "speaker": "911",
+          "text": "Is he bleeding? Is he moving his legs?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Umaaray siya, masakit daw likod niya. Bubuhatin ba namin siya para dalhin sa clinic?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Keep the patient exactly where he is and do not move him.",
+          "label": "safe",
+          "explanation": "Moving a victim with a back injury can cause permanent paralysis."
+        },
+        {
+          "text": "Monitor his breathing and keep him warm.",
+          "label": "safe",
+          "explanation": "Shock is common after a major fall."
+        },
+        {
+          "text": "Tell him not to move his head or neck.",
+          "label": "safe",
+          "explanation": "Spinal stability is the priority."
+        },
+        {
+          "text": "Help him stand up to see if he can walk.",
+          "label": "unsafe",
+          "explanation": "Walking with a spinal fracture can lead to total paralysis."
+        },
+        {
+          "text": "Massage his back to relieve the pain.",
+          "label": "unsafe",
+          "explanation": "Massaging can worsen internal injuries or fractures."
+        },
+        {
+          "text": "Give him water to drink while he is lying down.",
+          "label": "unsafe",
+          "explanation": "If he goes into surgery or loses consciousness, water can cause choking."
+        }
+      ],
+      "safe_keywords": [
+        "don't move",
+        "still",
+        "neck",
+        "spinal",
+        "warm",
+        "ambulance"
+      ],
+      "unsafe_keywords": [
+        "stand up",
+        "walk",
+        "lakad",
+        "massage",
+        "water",
+        "tubig",
+        "lift"
+      ]
+    },
+    {
+      "id": "fire_factory_025",
+      "category": "fire",
+      "type": "industrial_fire",
+      "title": "Smoke Coming from a Rice Mill",
+      "location": "Barangay Patimbao",
+      "severity": "high",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, what is the color of the smoke?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Sobrang itim po ng usok dito sa kiskisan ng palay! May amoy sunog na goma rin!"
+        },
+        {
+          "speaker": "911",
+          "text": "Are there any chemical drums nearby?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Meron po kaming mga fuel tank para sa makina sa likod!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Dispatch a hazardous materials (HAZMAT) unit alongside fire trucks.",
+          "label": "safe",
+          "explanation": "Industrial fires often involve chemicals or heavy fuels."
+        },
+        {
+          "text": "Instruct all workers to evacuate through the designated exits.",
+          "label": "safe",
+          "explanation": "Evacuation is the priority for large industrial structures."
+        },
+        {
+          "text": "Advise the caller to shut off the main fuel supply if reachable.",
+          "label": "safe",
+          "explanation": "Stopping the fuel source prevents the fire from becoming uncontrollable."
+        },
+        {
+          "text": "Tell the caller to enter the smoke to find the fire source.",
+          "label": "unsafe",
+          "explanation": "Black smoke is toxic and causes immediate disorientation."
+        },
+        {
+          "text": "Suggest using a handheld fire extinguisher on the fuel tanks.",
+          "label": "unsafe",
+          "explanation": "Portable extinguishers cannot cool large fuel tanks effectively."
+        },
+        {
+          "text": "Tell the workers to stay inside and save the rice stocks.",
+          "label": "unsafe",
+          "explanation": "Property is never worth the risk of life in a fire."
+        }
+      ],
+      "safe_keywords": [
+        "HAZMAT",
+        "evacuate",
+        "shut off",
+        "exit",
+        "bumbero",
+        "outside"
+      ],
+      "unsafe_keywords": [
+        "inside",
+        "loob",
+        "save",
+        "rice",
+        "stocks",
+        "enter",
+        "pasok"
+      ]
+    },
+    {
+      "id": "police_noise_026",
+      "category": "police",
+      "type": "disturbance",
+      "title": "Group of Drunk Men Fighting in the Street",
+      "location": "Barangay Sto. Angel Sur",
+      "severity": "medium",
+      "recommended_vehicle": "police_mobile",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, what is the number of participants?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Mga lima silang nag-aaway dito sa labas! May hawak silang mga bote at kahoy!"
+        },
+        {
+          "speaker": "911",
+          "text": "Are you in a safe place away from the window?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Opo, pero baka madamay yung mga nakaparadang motor dito. Lalabas ba ako para awatin?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Stay inside and do not intervene in the fight.",
+          "label": "safe",
+          "explanation": "Drunk individuals with weapons are unpredictable and dangerous."
+        },
+        {
+          "text": "Record details like clothing and physical descriptions from safety.",
+          "label": "safe",
+          "explanation": "Observation helps police identify suspects later."
+        },
+        {
+          "text": "Lock your doors and keep your house lights on.",
+          "label": "safe",
+          "explanation": "Visibility can deter suspects from approaching your property."
+        },
+        {
+          "text": "Go out and try to talk the men into stopping.",
+          "label": "unsafe",
+          "explanation": "You are likely to become a target of the violence."
+        },
+        {
+          "text": "Throw a bucket of water at them from your balcony.",
+          "label": "unsafe",
+          "explanation": "This will likely provoke the group to attack your home."
+        },
+        {
+          "text": "Fire a warning shot if you have a legal firearm.",
+          "label": "unsafe",
+          "explanation": "Warning shots are illegal and can hit innocent bystanders."
+        }
+      ],
+      "safe_keywords": [
+        "stay inside",
+        "description",
+        "lock",
+        "police",
+        "pulis",
+        "monitor"
+      ],
+      "unsafe_keywords": [
+        "intervene",
+        "awat",
+        "talk",
+        "throw",
+        "water",
+        "shot",
+        "baril",
+        "labas"
+      ]
+    },
+    {
+      "id": "medical_allergy_027",
+      "category": "medical",
+      "type": "anaphylaxis",
+      "title": "Allergic Reaction to a Bee Sting",
+      "location": "Barangay Bagumbayan",
+      "severity": "high",
+      "recommended_vehicle": "ambulance",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, is the patient having trouble breathing?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Opo, nakagat po siya ng bubuyog sa leeg! Namamaga na yung mukha niya at hirap na siya huminga!"
+        },
+        {
+          "speaker": "911",
+          "text": "Does he have an Epi-Pen or allergy medication?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Wala po! Ano pong pwedeng gawin habang wala pa yung ambulance?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Loosen any clothing around the patient's neck.",
+          "label": "safe",
+          "explanation": "Assists with breathing effort as the throat swells."
+        },
+        {
+          "text": "Help the patient lie flat and elevate their legs.",
+          "label": "safe",
+          "explanation": "Helps maintain blood pressure if they go into shock."
+        },
+        {
+          "text": "Keep the patient calm and stay with them.",
+          "label": "safe",
+          "explanation": "Anxiety can worsen respiratory distress."
+        },
+        {
+          "text": "Give the patient food or water to wash out the sting.",
+          "label": "unsafe",
+          "explanation": "Choking risk is high if the airway is closing."
+        },
+        {
+          "text": "Apply a hot compress to the sting area.",
+          "label": "unsafe",
+          "explanation": "Heat increases blood flow, spreading the allergen faster."
+        },
+        {
+          "text": "Tell the patient to go for a run to sweat out the poison.",
+          "label": "unsafe",
+          "explanation": "Physical exertion accelerates the allergic reaction and heart rate."
+        }
+      ],
+      "safe_keywords": [
+        "loosen",
+        "flat",
+        "legs",
+        "elevate",
+        "calm",
+        "ambulance"
+      ],
+      "unsafe_keywords": [
+        "food",
+        "water",
+        "hot compress",
+        "run",
+        "takbo",
+        "drink"
+      ]
+    },
+    {
+      "id": "fire_candle_028",
+      "category": "fire",
+      "type": "candle_fire",
+      "title": "Candle set fire to a curtain during brownout",
+      "location": "Barangay Gatid",
+      "severity": "medium",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, is the fire still small enough to handle?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Sir, yung kandila kanina natumba! Nasunog yung kurtina, umabot na sa kisame!"
+        },
+        {
+          "speaker": "911",
+          "text": "Get everyone out. Is there an extinguisher in the house?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Wala po! Magbubuhos na lang po kami ng tubig!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Use a fire extinguisher if available and the fire is small.",
+          "label": "safe",
+          "explanation": "Proper equipment is the safest way to fight small fires."
+        },
+        {
+          "text": "If the fire is on the curtain, pull the rod down if safe and stomp it.",
+          "label": "safe",
+          "explanation": "Removing the fuel from the wall prevents vertical spread."
+        },
+        {
+          "text": "Get everyone out and stay outside once you leave.",
+          "label": "safe",
+          "explanation": "Smoke and heat can overcome you in seconds."
+        },
+        {
+          "text": "Try to blow the fire out with your mouth.",
+          "label": "unsafe",
+          "explanation": "Blowing on a fire provides more oxygen and causes it to flare up."
+        },
+        {
+          "text": "Hide in the bathroom and wait for the firemen.",
+          "label": "unsafe",
+          "explanation": "Bathrooms offer no protection from smoke and can become traps."
+        },
+        {
+          "text": "Throw a heavy plastic sheet over the fire.",
+          "label": "unsafe",
+          "explanation": "Plastic melts and feeds the fire; only use a designated fire blanket."
+        }
+      ],
+      "safe_keywords": [
+        "extinguisher",
+        "outside",
+        "evacuate",
+        "stomp",
+        "bumbero"
+      ],
+      "unsafe_keywords": [
+        "blow",
+        "hihip",
+        "bathroom",
+        "banyo",
+        "plastic",
+        "hide",
+        "tago"
+      ]
+    },
+    {
+      "id": "police_vandalism_029",
+      "category": "police",
+      "type": "vandalism",
+      "title": "Group Destroying Public Benches",
+      "location": "Sta. Cruz Town Plaza",
+      "severity": "low",
+      "recommended_vehicle": "police_mobile",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, can you provide a description of the suspects?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "May mga kabataan dito sa plaza, pinagsisira yung mga bagong upuan! May mga dalang martilyo!"
+        },
+        {
+          "speaker": "911",
+          "text": "How many are they? Where are they heading?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Tatlo sila, papunta silang simbahan. Haharangin ko ba sila?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Stay back and observe their direction of travel.",
+          "label": "safe",
+          "explanation": "Tracking movement helps police intercept them safely."
+        },
+        {
+          "text": "Note any distinguishing marks like tattoos or hair color.",
+          "label": "safe",
+          "explanation": "Specific details are crucial for suspect identification."
+        },
+        {
+          "text": "Wait for the police unit to arrive before taking any action.",
+          "label": "safe",
+          "explanation": "Professional intervention minimizes the risk of injury."
+        },
+        {
+          "text": "Block their path with your car or body.",
+          "label": "unsafe",
+          "explanation": "Blocking suspects with tools/weapons is dangerous."
+        },
+        {
+          "text": "Shout insults at them to make them angry.",
+          "label": "unsafe",
+          "explanation": "Aggravating suspects may lead them to attack you or bystanders."
+        },
+        {
+          "text": "Attempt to grab their tools from their hands.",
+          "label": "unsafe",
+          "explanation": "Disarming someone is a high-risk activity that often leads to injury."
+        }
+      ],
+      "safe_keywords": [
+        "observe",
+        "pulis",
+        "direction",
+        "description",
+        "wait"
+      ],
+      "unsafe_keywords": [
+        "block",
+        "harang",
+        "insult",
+        "shout",
+        "grab",
+        "agaw",
+        "fight"
+      ]
+    },
+    {
+      "id": "medical_stroke_030",
+      "category": "medical",
+      "type": "stroke",
+      "title": "Patient having sudden numbness and slurred speech",
+      "location": "Barangay Labuin",
+      "severity": "high",
+      "recommended_vehicle": "ambulance",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, ask the patient to smile for you."
+        },
+        {
+          "speaker": "Caller",
+          "text": "Sir, yung lolo ko po biglang tabingi yung mukha! Hindi rin po siya makapagsalita nang maayos!"
+        },
+        {
+          "speaker": "911",
+          "text": "Can he raise both of his arms?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Hindi po yung kaliwa! Ano pong gagawin namin?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Note the exact time the symptoms started.",
+          "label": "safe",
+          "explanation": "Stroke treatments are time-dependent; the 'last known well' time is critical."
+        },
+        {
+          "text": "Keep the patient calm and in a comfortable position.",
+          "label": "safe",
+          "explanation": "Reduces stress on the cardiovascular system."
+        },
+        {
+          "text": "Prepare a list of the patient's current medications.",
+          "label": "safe",
+          "explanation": "Helps EMTs and doctors provide safe treatment."
+        },
+        {
+          "text": "Give the patient aspirin or other medicine.",
+          "label": "unsafe",
+          "explanation": "If the stroke is a bleed (hemorrhagic), aspirin will make it worse."
+        },
+        {
+          "text": "Give the patient something to eat or drink.",
+          "label": "unsafe",
+          "explanation": "Strokes often affect swallowing; giving food/drink can cause aspiration."
+        },
+        {
+          "text": "Have the patient try to exercise to 'wake up' the numb limb.",
+          "label": "unsafe",
+          "explanation": "Exertion increases blood pressure and can worsen a brain bleed."
+        }
+      ],
+      "safe_keywords": [
+        "time",
+        "calm",
+        "medications",
+        "smile",
+        "FAST",
+        "ambulance"
+      ],
+      "unsafe_keywords": [
+        "aspirin",
+        "food",
+        "drink",
+        "exercise",
+        "walk",
+        "medicine"
+      ]
+    },
+    {
+      "id": "fire_explosion_031",
+      "category": "fire",
+      "type": "gas_explosion",
+      "title": "Kitchen explosion in a neighborhood",
+      "location": "Barangay Oogong",
+      "severity": "extreme",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, was there a loud bang?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Opo! Sumabog po yung kusina ng kapitbahay! May apoy at gumuhit yung dingding nila!"
+        },
+        {
+          "speaker": "911",
+          "text": "Is the gas still leaking? Are people hurt?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "May naririnig po akong 'hissing' sound! Papasukin ko ba para ilabas yung mga tao?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Dispatch fire, ambulance, and search and rescue teams.",
+          "label": "safe",
+          "explanation": "Explosions cause structural damage and multiple injury types."
+        },
+        {
+          "text": "Instruct neighbors to stay away from the building due to collapse risk.",
+          "label": "safe",
+          "explanation": "Damaged buildings are unstable and can fall unexpectedly."
+        },
+        {
+          "text": "Advise against using any open flames or electronics nearby.",
+          "label": "safe",
+          "explanation": "Gas still in the air can cause a secondary explosion."
+        },
+        {
+          "text": "Enter the building immediately to look for survivors.",
+          "label": "unsafe",
+          "explanation": "Structural instability and gas leaks make entry lethal for civilians."
+        },
+        {
+          "text": "Tell the caller to try and plug the gas leak with a cloth.",
+          "label": "unsafe",
+          "explanation": "Approaching an active high-pressure leak is extremely dangerous."
+        },
+        {
+          "text": "Instruct the caller to turn on the street lights to see better.",
+          "label": "unsafe",
+          "explanation": "Flipping a light switch can trigger another explosion."
+        }
+      ],
+      "safe_keywords": [
+        "stay away",
+        "collapse",
+        "secondary",
+        "gas",
+        "search and rescue"
+      ],
+      "unsafe_keywords": [
+        "enter",
+        "pasok",
+        "plug",
+        "light",
+        "switch",
+        "open flame"
+      ]
+    },
+    {
+      "id": "police_theft_032",
+      "category": "police",
+      "type": "burglary",
+      "title": "Thief Caught in a Local Sari-Sari Store",
+      "location": "Barangay Santisima Cruz",
+      "severity": "medium",
+      "recommended_vehicle": "police_mobile",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, is the suspect still at the scene?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Opo, nahuli namin sa loob ng tindahan! Pinagtutulungan na po ng mga tao dito!"
+        },
+        {
+          "speaker": "911",
+          "text": "Tell everyone to stop. Are there weapons involved?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Wala po siyang baril, pero galit na galit na yung mga tao!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Instruct the caller to tell the crowd to stop the physical assault.",
+          "label": "safe",
+          "explanation": "Vigilante justice is illegal and can lead to serious legal consequences."
+        },
+        {
+          "text": "Advise everyone to wait for the police to take custody.",
+          "label": "safe",
+          "explanation": "Official arrest ensures due process and safety."
+        },
+        {
+          "text": "Separate the suspect from the crowd if safe to do so.",
+          "label": "safe",
+          "explanation": "Prevents further escalation and injury."
+        },
+        {
+          "text": "Encourage the crowd to teach the thief a lesson.",
+          "label": "unsafe",
+          "explanation": "Inciting violence is illegal and creates a liability for the dispatcher."
+        },
+        {
+          "text": "Tell the caller to tie the suspect to a pole in the sun.",
+          "label": "unsafe",
+          "explanation": "This constitutes torture/illegal detention."
+        },
+        {
+          "text": "Instruct the caller to let the thief go to avoid trouble.",
+          "label": "unsafe",
+          "explanation": "Letting a suspect go prevents justice and a proper investigation."
+        }
+      ],
+      "safe_keywords": [
+        "stop",
+        "pulis",
+        "wait",
+        "custody",
+        "separate",
+        "safety"
+      ],
+      "unsafe_keywords": [
+        "beat",
+        "bugbog",
+        "lesson",
+        "tie",
+        "tali",
+        "let go",
+        "pakawalan"
+      ]
+    },
+    {
+      "id": "medical_burn_033",
+      "category": "medical",
+      "type": "chemical_burn",
+      "title": "Bleach Splashed into a Cleaner's Eyes",
+      "location": "Barangay San Angel Central",
+      "severity": "high",
+      "recommended_vehicle": "ambulance",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, keep the patient's eyes open. Do not let them rub."
+        },
+        {
+          "speaker": "Caller",
+          "text": "Tulong! Nalsikan ng Zonrox yung mata ng kasama ko! Sobrang hapdi daw, hindi niya maidilat!"
+        },
+        {
+          "speaker": "911",
+          "text": "Is there a clean water source nearby?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Opo, andito kami sa gripo. Bubuhusan ba namin agad?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Flush the eye with clean, lukewarm water for at least 20 minutes.",
+          "label": "safe",
+          "explanation": "Continuous irrigation is the only way to dilute the chemical."
+        },
+        {
+          "text": "Ensure the water flows from the inner corner to the outer corner.",
+          "label": "safe",
+          "explanation": "Prevents the chemical from washing into the unaffected eye."
+        },
+        {
+          "text": "Remove contact lenses if the patient is wearing them.",
+          "label": "safe",
+          "explanation": "Contacts can trap the chemical against the eye."
+        },
+        {
+          "text": "Apply eye drops or ointment immediately.",
+          "label": "unsafe",
+          "explanation": "Ointments can trap chemicals; use only water until medical help arrives."
+        },
+        {
+          "text": "Rub the eye with a clean cloth to wipe the bleach out.",
+          "label": "unsafe",
+          "explanation": "Rubbing causes mechanical damage to the cornea."
+        },
+        {
+          "text": "Use a vinegar solution to neutralize the alkaline bleach.",
+          "label": "unsafe",
+          "explanation": "Never put other chemicals (even vinegar) in the eye; it causes a worse reaction."
+        }
+      ],
+      "safe_keywords": [
+        "flush",
+        "water",
+        "20 minutes",
+        "rinse",
+        "ambulance",
+        "open"
+      ],
+      "unsafe_keywords": [
+        "rub",
+        "punas",
+        "drops",
+        "ointment",
+        "vinegar",
+        "suka",
+        "neutralize"
+      ]
+    },
+    {
+      "id": "fire_electrical_034",
+      "category": "fire",
+      "type": "electrical_fire",
+      "title": "Christmas Lights Sparking in the Living Room",
+      "location": "Barangay Patimbao",
+      "severity": "medium",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, is there an active flame?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Yung Christmas lights namin sa bintana, nag-spark tapos nasunog yung plastic! May apoy na!"
+        },
+        {
+          "speaker": "911",
+          "text": "Is the plug still in the wall?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Opo, hindi ko mahawakan kasi may sparks! Bubuhusan ko ba ng tubig?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Turn off the main power breaker for the whole house.",
+          "label": "safe",
+          "explanation": "Safely cuts power without the risk of touching the live socket."
+        },
+        {
+          "text": "Use a Class C fire extinguisher if the power is still on.",
+          "label": "safe",
+          "explanation": "Class C extinguishers are non-conductive and safe for electrical fires."
+        },
+        {
+          "text": "Evacuate the house if the fire spreads to the furniture.",
+          "label": "safe",
+          "explanation": "Life safety is more important than property."
+        },
+        {
+          "text": "Pour water on the sparking lights to douse the flames.",
+          "label": "unsafe",
+          "explanation": "Water conducts electricity; you will get electrocuted."
+        },
+        {
+          "text": "Pull the burning wires with your bare hands.",
+          "label": "unsafe",
+          "explanation": "Touching live, burning wires leads to severe shock and burns."
+        },
+        {
+          "text": "Throw a wet towel over the sparking electrical wires.",
+          "label": "unsafe",
+          "explanation": "Wet towels conduct electricity and are dangerous for live wires."
+        }
+      ],
+      "safe_keywords": [
+        "breaker",
+        "extinguisher",
+        "evacuate",
+        "outside",
+        "patayin"
+      ],
+      "unsafe_keywords": [
+        "water",
+        "tubig",
+        "hands",
+        "kamay",
+        "wet towel",
+        "basang tuwalya"
+      ]
+    },
+    {
+      "id": "police_accident_035",
+      "category": "police",
+      "type": "hit_and_run",
+      "title": "Jeepney Hit a Pedestrian and Fled",
+      "location": "Regidor Street, Sta. Cruz",
+      "severity": "high",
+      "recommended_vehicle": "police_mobile",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, what is the description of the vehicle?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "May nasagasaan pong matanda dito sa Regidor! Karatula ng jeep ay 'Sta. Cruz - Siniloan', hindi huminto!"
+        },
+        {
+          "speaker": "911",
+          "text": "Did you see the plate number? How is the victim?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Plate number is TUV-456! Yung matanda, duguan sa kalsada! Hahabulin ko ba yung jeep?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Stay with the victim and provide basic first aid if trained.",
+          "label": "safe",
+          "explanation": "The victim's life is the immediate priority."
+        },
+        {
+          "text": "Provide the plate number and direction of travel to the dispatcher.",
+          "label": "safe",
+          "explanation": "Helps other units intercept the fleeing vehicle."
+        },
+        {
+          "text": "Keep the scene clear for the ambulance and police.",
+          "label": "safe",
+          "explanation": "Orderly scenes allow faster medical intervention."
+        },
+        {
+          "text": "Chase the jeepney at high speed to stop it yourself.",
+          "label": "unsafe",
+          "explanation": "Chasing suspects causes more accidents and endangers your life."
+        },
+        {
+          "text": "Move the victim to the sidewalk immediately.",
+          "label": "unsafe",
+          "explanation": "Moving trauma victims without a backboard can cause spinal injury."
+        },
+        {
+          "text": "Leave the victim to look for the driver in the neighborhood.",
+          "label": "unsafe",
+          "explanation": "Never leave a trauma victim alone until professional help arrives."
+        }
+      ],
+      "safe_keywords": [
+        "stay",
+        "plate",
+        "pulis",
+        "first aid",
+        "direction",
+        "ambulance"
+      ],
+      "unsafe_keywords": [
+        "chase",
+        "habol",
+        "move",
+        "galawin",
+        "leave",
+        "iwan"
+      ]
+    },
+    {
+      "id": "medical_seizure_036",
+      "category": "medical",
+      "type": "seizure",
+      "title": "Man having a seizure in the Public Market",
+      "location": "Sta. Cruz Public Market",
+      "severity": "medium",
+      "recommended_vehicle": "ambulance",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, protect the patient's head from the floor."
+        },
+        {
+          "speaker": "Caller",
+          "text": "Dito sa palengke! May mamimili na biglang natumba at nanginginig! Bula na yung bibig niya!"
+        },
+        {
+          "speaker": "911",
+          "text": "Is the area clear of sharp objects?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Opo, pero baka malunok niya yung dila niya! Maglalagay ba kami ng kahoy sa bibig?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Place something soft, like a folded jacket, under his head.",
+          "label": "safe",
+          "explanation": "Prevents head trauma during the seizure movements."
+        },
+        {
+          "text": "Turn the patient onto their side once the shaking stops.",
+          "label": "safe",
+          "explanation": "The 'recovery position' keeps the airway clear of saliva or vomit."
+        },
+        {
+          "text": "Loosen any tight clothing, especially around the neck.",
+          "label": "safe",
+          "explanation": "Assists with breathing during and after the event."
+        },
+        {
+          "text": "Force an object into the mouth to protect the tongue.",
+          "label": "unsafe",
+          "explanation": "This can break teeth or cause choking; people cannot swallow their tongues."
+        },
+        {
+          "text": "Hold the person down to stop the shaking.",
+          "label": "unsafe",
+          "explanation": "Restraining someone during a seizure can lead to bone fractures."
+        },
+        {
+          "text": "Crowd around the person to see what is happening.",
+          "label": "unsafe",
+          "explanation": "Patients need air and space when they wake up; crowds cause panic."
+        }
+      ],
+      "safe_keywords": [
+        "soft",
+        "jacket",
+        "side",
+        "loosen",
+        "space",
+        "ambulance"
+      ],
+      "unsafe_keywords": [
+        "mouth",
+        "bibig",
+        "kahoy",
+        "hold down",
+        "pigilan",
+        "crowd",
+        "usi"
+      ]
+    },
+    {
+      "id": "fire_grass_037",
+      "category": "fire",
+      "type": "grass_fire",
+      "title": "Grass fire moving toward the Laguna Provincial Jail",
+      "location": "Brgy. Bubukal (Near Provincial Jail)",
+      "severity": "high",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, how close is the fire to the facility wall?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Nasa likod na po ng jail! Malaki na yung usok, kawawa yung mga nasa loob!"
+        },
+        {
+          "speaker": "911",
+          "text": "Is the jail staff aware? What is the wind direction?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Opo, nagkakagulo na sila! Papunta sa amin yung usok!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Dispatch maximum fire units and notify the jail warden.",
+          "label": "safe",
+          "explanation": "Institutional fires require coordinated security and safety plans."
+        },
+        {
+          "text": "Advise the jail to prepare for internal relocation of inmates.",
+          "label": "safe",
+          "explanation": "Moving inmates away from smoke is a priority without breaching security."
+        },
+        {
+          "text": "Tell neighbors to close all windows to keep smoke out.",
+          "label": "safe",
+          "explanation": "Smoke inhalation is the primary danger for nearby residents."
+        },
+        {
+          "text": "Suggest the caller go help the guards with the fire.",
+          "label": "unsafe",
+          "explanation": "Civilians should stay away from prison grounds during emergencies for security."
+        },
+        {
+          "text": "Open the jail gates to let the inmates out to escape the smoke.",
+          "label": "unsafe",
+          "explanation": "This creates a massive security breach and public safety risk."
+        },
+        {
+          "text": "Advise the jail to turn off all water to save it for firemen.",
+          "label": "unsafe",
+          "explanation": "The jail needs water for its own internal fire systems and inmate hygiene."
+        }
+      ],
+      "safe_keywords": [
+        "warden",
+        "relocate",
+        "smoke",
+        "bumbero",
+        "close windows"
+      ],
+      "unsafe_keywords": [
+        "help guards",
+        "open gates",
+        "inmates",
+        "turn off water"
+      ]
+    },
+    {
+      "id": "police_suspicious_038",
+      "category": "police",
+      "type": "suspicious_package",
+      "title": "Abandoned Bag at a Busy Bus Terminal",
+      "location": "Sambat Bus Terminal, Sta. Cruz",
+      "severity": "high",
+      "recommended_vehicle": "police_mobile",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, do not touch the bag. Describe it."
+        },
+        {
+          "speaker": "Caller",
+          "text": "May itim na backpack dito sa ilalim ng upuan. Kanina pa po walang kumukuha, mahigit isang oras na!"
+        },
+        {
+          "speaker": "911",
+          "text": "Are there wires or any ticking sounds?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Hindi ko po makita, bubuksan ko ba para tignan yung ID?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Do NOT touch, move, or open the bag under any circumstances.",
+          "label": "safe",
+          "explanation": "Suspicious packages should only be handled by bomb squads (EOD)."
+        },
+        {
+          "text": "Evacuate the immediate area and set a perimeter.",
+          "label": "safe",
+          "explanation": "Distance is the best protection against explosive devices."
+        },
+        {
+          "text": "Advise terminal security to monitor CCTV for the bag's owner.",
+          "label": "safe",
+          "explanation": "Helps identify if the bag was truly abandoned or left with intent."
+        },
+        {
+          "text": "Open the bag to check for an address or contact info.",
+          "label": "unsafe",
+          "explanation": "Opening a potential bomb can trigger the device."
+        },
+        {
+          "text": "Carry the bag to the police station yourself.",
+          "label": "unsafe",
+          "explanation": "Moving a device can trigger it; never transport suspicious items."
+        },
+        {
+          "text": "Throw the bag into a trash can or out the window.",
+          "label": "unsafe",
+          "explanation": "Impact can trigger explosives and trash cans focus blast energy."
+        }
+      ],
+      "safe_keywords": [
+        "don't touch",
+        "EOD",
+        "evacuate",
+        "perimeter",
+        "pulis",
+        "security"
+      ],
+      "unsafe_keywords": [
+        "open",
+        "bukas",
+        "move",
+        "galaw",
+        "carry",
+        "buhat",
+        "trash",
+        "basura"
+      ]
+    },
+    {
+      "id": "medical_hypoglycemia_039",
+      "category": "medical",
+      "type": "diabetic_emergency",
+      "title": "Diabetic Patient Acting Confused and Shaky",
+      "location": "Brgy. Bagumbayan",
+      "severity": "medium",
+      "recommended_vehicle": "ambulance",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, is the patient conscious and able to swallow?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Yung nanay ko po, diabetic siya. Ngayon po parang tuliro siya at sobrang pawis na pawis!"
+        },
+        {
+          "speaker": "911",
+          "text": "Is she pale? Does she have her glucose kit?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Opo, namumutla siya. Ano pong pwedeng ibigay na gamot?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Give her a small glass of fruit juice or soda if she is awake.",
+          "label": "safe",
+          "explanation": "Sugar helps resolve low blood sugar (hypoglycemia) quickly."
+        },
+        {
+          "text": "Check her blood sugar level if a monitor is available.",
+          "label": "safe",
+          "explanation": "Confirms the medical status for responders."
+        },
+        {
+          "text": "Keep her sitting down and monitor for any changes.",
+          "label": "safe",
+          "explanation": "Prevents falls if she loses consciousness."
+        },
+        {
+          "text": "Inject her with insulin immediately.",
+          "label": "unsafe",
+          "explanation": "If her sugar is already low, more insulin will kill her."
+        },
+        {
+          "text": "Force her to eat a large meal while she is confused.",
+          "label": "unsafe",
+          "explanation": "Choking risk is high when a patient is altered; use liquids/gels instead."
+        },
+        {
+          "text": "Slap her face to keep her awake.",
+          "label": "unsafe",
+          "explanation": "Physical assault does not fix a metabolic emergency and causes trauma."
+        }
+      ],
+      "safe_keywords": [
+        "juice",
+        "sugar",
+        "monitor",
+        "awake",
+        "ambulance",
+        "sitting"
+      ],
+      "unsafe_keywords": [
+        "insulin",
+        "food",
+        "slap",
+        "sampal",
+        "force"
+      ]
+    },
+    {
+      "id": "fire_vehicle_040",
+      "category": "fire",
+      "type": "bus_fire",
+      "title": "Bus Engine Fire with Many Passengers",
+      "location": "National Highway, Brgy. Gatid",
+      "severity": "extreme",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, is the bus fully evacuated?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "May apoy sa makina ng bus dito sa Gatid! Marami pong pasahero, nagkakagulo silang lumabas!"
+        },
+        {
+          "speaker": "911",
+          "text": "Tell the driver to open all emergency exits."
+        },
+        {
+          "speaker": "Caller",
+          "text": "Opo, pero may mga naiwan pang gamot sa loob! Babalikan ba nila?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Prioritize the evacuation of all passengers to a safe distance.",
+          "label": "safe",
+          "explanation": "Buses have large fuel tanks and toxic interior materials."
+        },
+        {
+          "text": "Direct traffic away from the burning bus to prevent collisions.",
+          "label": "safe",
+          "explanation": "Keeps the area clear for fire engines and prevents further injury."
+        },
+        {
+          "text": "Check if any passengers have mobility issues and need help.",
+          "label": "safe",
+          "explanation": "Elderly or disabled passengers may be trapped in the panic."
+        },
+        {
+          "text": "Allow passengers to go back inside for their luggage.",
+          "label": "unsafe",
+          "explanation": "Bus fires spread rapidly; smoke inhalation is lethal within minutes."
+        },
+        {
+          "text": "Tell the driver to keep the engine running to move the bus.",
+          "label": "unsafe",
+          "explanation": "Running a burning engine can rupture fuel lines and cause an explosion."
+        },
+        {
+          "text": "Instruct the caller to use a handheld water bottle on the fire.",
+          "label": "unsafe",
+          "explanation": "Water is useless against engine fires and puts the caller in the blast zone."
+        }
+      ],
+      "safe_keywords": [
+        "evacuate",
+        "distance",
+        "traffic",
+        "exits",
+        "bumbero",
+        "ambulance"
+      ],
+      "unsafe_keywords": [
+        "luggage",
+        "gamit",
+        "back inside",
+        "balikan",
+        "run engine",
+        "water bottle"
+      ]
+    },
+    {
+      "id": "medical_electrocution_041",
+      "category": "medical",
+      "type": "electrocution",
+      "title": "Child touched an exposed wire during a flood",
+      "location": "Barangay San Pablo Sur",
+      "severity": "extreme",
+      "recommended_vehicle": "ambulance",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, what is the situation?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Tulong! Yung anak ko nahawakan yung wire sa baha, nakuryente siya! Nakadikit pa rin siya sa wire!"
+        },
+        {
+          "speaker": "911",
+          "text": "Do not touch the child. Is the main power switch accessible?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Hindi ko po alam! Susubukan ko siyang hilahin palayo!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Do NOT touch the victim or the water they are in.",
+          "label": "safe",
+          "explanation": "Electricity travels through water and the human body; you will also be shocked."
+        },
+        {
+          "text": "Turn off the main power breaker immediately.",
+          "label": "safe",
+          "explanation": "Cutting the power is the only way to safely stop the current."
+        },
+        {
+          "text": "Use a dry, non-conductive object like a wooden broom to push the wire away.",
+          "label": "safe",
+          "explanation": "Non-conductive materials can safely break the contact."
+        },
+        {
+          "text": "Pull the child away with your bare hands.",
+          "label": "unsafe",
+          "explanation": "The current will pass through the child into you, causing double the casualties."
+        },
+        {
+          "text": "Splash water on the wire to make it spark and stop.",
+          "label": "unsafe",
+          "explanation": "Water increases conductivity and will worsen the situation."
+        },
+        {
+          "text": "Use a metal pole to hook the wire away.",
+          "label": "unsafe",
+          "explanation": "Metal is a high conductor of electricity and will electrocute the rescuer."
+        }
+      ],
+      "safe_keywords": [
+        "breaker",
+        "wooden",
+        "don't touch",
+        "kahoy",
+        "walis",
+        "ambulance"
+      ],
+      "unsafe_keywords": [
+        "pull",
+        "hilahin",
+        "hands",
+        "kamay",
+        "metal",
+        "water",
+        "tubig"
+      ]
+    },
+    {
+      "id": "fire_tanker_042",
+      "category": "fire",
+      "type": "gas_leak",
+      "title": "Overturned Fuel Tanker Leaking on the Road",
+      "location": "National Highway, Brgy. Bubukal",
+      "severity": "extreme",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, stay away from the vehicle. Is there smoke?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "May tumagilid na truck ng gasolinahan dito sa Bubukal! Umaagos yung gasolina sa kalsada!"
+        },
+        {
+          "speaker": "911",
+          "text": "Are there people smoking or using cellphones nearby?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Maraming nanonood po! May mga nakamotor din na dumadaan sa tabi!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Evacuate the area and set a 300-meter safety perimeter.",
+          "label": "safe",
+          "explanation": "Fuel vapors can ignite from a distance; a wide perimeter is vital."
+        },
+        {
+          "text": "Instruct all nearby motorists to turn off their engines.",
+          "label": "safe",
+          "explanation": "Engine heat or sparks from exhaust can ignite the fuel."
+        },
+        {
+          "text": "Dispatch a foam-equipped fire truck and HAZMAT team.",
+          "label": "safe",
+          "explanation": "Standard water isn't enough; foam is needed to suppress fuel vapors."
+        },
+        {
+          "text": "Tell the caller to try and plug the leak with a cloth.",
+          "label": "unsafe",
+          "explanation": "Direct contact with massive fuel leaks is lethal and highly flammable."
+        },
+        {
+          "text": "Instruct the crowd to use their phones to record for evidence.",
+          "label": "unsafe",
+          "explanation": "Electronic devices can produce tiny sparks that ignite vapor clouds."
+        },
+        {
+          "text": "Advise the driver to try and restart the truck to move it.",
+          "label": "unsafe",
+          "explanation": "Starting the engine will almost certainly ignite the leaking fuel."
+        }
+      ],
+      "safe_keywords": [
+        "perimeter",
+        "evacuate",
+        "foam",
+        "HAZMAT",
+        "engines off",
+        "layo"
+      ],
+      "unsafe_keywords": [
+        "plug",
+        "phone",
+        "record",
+        "restart",
+        "move",
+        "lapit"
+      ]
+    },
+    {
+      "id": "police_scam_043",
+      "category": "police",
+      "type": "fraud",
+      "title": "Elderly Woman being scammed at an ATM",
+      "location": "A. Regidor Street (Near Banko Sentral)",
+      "severity": "medium",
+      "recommended_vehicle": "police_mobile",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, what suspicious activity do you see?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "May dalawang lalaki po dito sa ATM, pilit nilang kinukuha yung card ng matanda at kinakausap siya!"
+        },
+        {
+          "speaker": "911",
+          "text": "Are the suspects still there? Do they have weapons?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Andito pa po, parang tinatakot nila yung lola! Haharangin ko ba sila?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Observe from a distance and take note of suspect descriptions.",
+          "label": "safe",
+          "explanation": "Observation provides police with descriptions without risking your life."
+        },
+        {
+          "text": "Notify bank security or the branch manager immediately.",
+          "label": "safe",
+          "explanation": "Bank staff can freeze accounts or lock the lobby."
+        },
+        {
+          "text": "Stay on the line and update the direction if they leave.",
+          "label": "safe",
+          "explanation": "Real-time tracking is essential for a mobile unit to catch them."
+        },
+        {
+          "text": "Shout 'Pulis!' to scare them away.",
+          "label": "unsafe",
+          "explanation": "This may cause them to hurt the victim or flee before police arrive."
+        },
+        {
+          "text": "Attempt to grab the elderly woman and run away.",
+          "label": "unsafe",
+          "explanation": "This could cause the suspects to attack you or the victim."
+        },
+        {
+          "text": "Physically tackle the suspects to the ground.",
+          "label": "unsafe",
+          "explanation": "You don't know if they are armed; civilians should not use force."
+        }
+      ],
+      "safe_keywords": [
+        "observe",
+        "security",
+        "manager",
+        "descriptions",
+        "wait",
+        "pulis"
+      ],
+      "unsafe_keywords": [
+        "shout",
+        "sigaw",
+        "tackle",
+        "fight",
+        "grab",
+        "agaw"
+      ]
+    },
+    {
+      "id": "medical_bleeding_044",
+      "category": "medical",
+      "type": "internal_bleeding",
+      "title": "Victim Vomiting Blood after a Punch to the Gut",
+      "location": "Sta. Cruz Town Plaza",
+      "severity": "high",
+      "recommended_vehicle": "ambulance",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, is the victim still conscious?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "May nag-away po dito, sinuntok sa tiyan yung lalaki tapos ngayon nagsusuka na siya ng dugo!"
+        },
+        {
+          "speaker": "911",
+          "text": "Is he pale or clammy? Lay him on his side."
+        },
+        {
+          "speaker": "Caller",
+          "text": "Opo, sobrang putla niya! Papainumin ko ba ng gatas para kumalma yung tiyan?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Lay the victim on their side (recovery position).",
+          "label": "safe",
+          "explanation": "Prevents the victim from choking on their own blood."
+        },
+        {
+          "text": "Monitor breathing and pulse until EMTs arrive.",
+          "label": "safe",
+          "explanation": "Vital signs help responders assess the level of internal trauma."
+        },
+        {
+          "text": "Keep the victim warm with a blanket.",
+          "label": "safe",
+          "explanation": "Prevents shock, which is common with internal bleeding."
+        },
+        {
+          "text": "Give the victim water or milk to drink.",
+          "label": "unsafe",
+          "explanation": "Nothing should be given by mouth as it can cause choking or complicate surgery."
+        },
+        {
+          "text": "Press hard on the victim's stomach to stop the bleeding.",
+          "label": "unsafe",
+          "explanation": "Applying pressure to internal bleeding can cause more organ damage."
+        },
+        {
+          "text": "Ask the victim to sit up and cough out the blood.",
+          "label": "unsafe",
+          "explanation": "Coughing and sitting up increases internal pressure and can worsen the bleed."
+        }
+      ],
+      "safe_keywords": [
+        "recovery",
+        "side",
+        "warm",
+        "blanket",
+        "ambulance",
+        "monitor"
+      ],
+      "unsafe_keywords": [
+        "drink",
+        "water",
+        "milk",
+        "press",
+        "stomach",
+        "sit up"
+      ]
+    },
+    {
+      "id": "fire_roof_045",
+      "category": "fire",
+      "type": "structure_fire",
+      "title": "Solar Panel Fire on a Residential Roof",
+      "location": "Barangay Sto. Angel Sur",
+      "severity": "medium",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, do you see flames or just smoke?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Yung solar panel namin sa bubong, may apoy na! Ma'am, baka matupok yung buong bahay!"
+        },
+        {
+          "speaker": "911",
+          "text": "Do not climb the roof. Is the system connected to a battery?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Opo! Bubuhusan ko ba ng tubig mula sa bintana?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Evacuate the house immediately.",
+          "label": "safe",
+          "explanation": "Solar panel fires can spread into the attic/roof structure quickly."
+        },
+        {
+          "text": "Switch off the solar isolation switch and the main breaker.",
+          "label": "safe",
+          "explanation": "Isolating the power helps, though panels still generate power if there is sun."
+        },
+        {
+          "text": "Inform firefighters that solar panels are involved.",
+          "label": "safe",
+          "explanation": "Solar panels remain 'live' even when switched off, posing a shock risk to firemen."
+        },
+        {
+          "text": "Spray water directly on the panels from a hose.",
+          "label": "unsafe",
+          "explanation": "Solar panels are high-voltage; water creates a bridge for electricity to shock you."
+        },
+        {
+          "text": "Climb a ladder to try and smother the fire with a wet blanket.",
+          "label": "unsafe",
+          "explanation": "Risk of falling and electrocution is extremely high."
+        },
+        {
+          "text": "Use a metal rake to pull the burning panels off the roof.",
+          "label": "unsafe",
+          "explanation": "Metal conducts the electricity from the solar array directly to the user."
+        }
+      ],
+      "safe_keywords": [
+        "isolation",
+        "breaker",
+        "inform",
+        "fire truck",
+        "evacuate",
+        "outside"
+      ],
+      "unsafe_keywords": [
+        "water",
+        "hose",
+        "ladder",
+        "blanket",
+        "rake",
+        "climb"
+      ]
+    },
+    {
+      "id": "police_threat_046",
+      "category": "police",
+      "type": "bomb_threat",
+      "title": "Threatening Call received by a School Secretary",
+      "location": "Pedro Guevara Memorial National High School",
+      "severity": "extreme",
+      "recommended_vehicle": "police_mobile",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, stay calm. Did the caller give a specific time?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "May tumawag po sa office! Sabi may sasabog daw sa loob ng campus sa loob ng isang oras!"
+        },
+        {
+          "speaker": "911",
+          "text": "Did you recognize the voice? Do not use your school radio."
+        },
+        {
+          "speaker": "Caller",
+          "text": "Hindi po! I-anunsyo ko ba sa megaphone para lumabas lahat ng estudyante?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Initiate an orderly evacuation according to the school's fire drill plan.",
+          "label": "safe",
+          "explanation": "Orderly evacuation prevents stampedes during a high-stress threat."
+        },
+        {
+          "text": "Do NOT use two-way radios or cellphones near any suspicious objects.",
+          "label": "safe",
+          "explanation": "Radio waves can inadvertently trigger certain explosive detonators."
+        },
+        {
+          "text": "Instruct staff to leave doors and windows open during evacuation.",
+          "label": "safe",
+          "explanation": "Open windows can help dissipate the pressure wave if an explosion occurs."
+        },
+        {
+          "text": "Announce 'Bomba!' over the loud speaker to make everyone run.",
+          "label": "unsafe",
+          "explanation": "Causing a panic or 'crowd crush' often results in more injuries than the threat itself."
+        },
+        {
+          "text": "Have the janitors go around and open all lockers to find the bomb.",
+          "label": "unsafe",
+          "explanation": "Janitors are not trained for bomb disposal; suspicious items should not be disturbed."
+        },
+        {
+          "text": "Ignore the call as it is likely a prank for exam week.",
+          "label": "unsafe",
+          "explanation": "All threats must be treated as real until cleared by the EOD (Bomb Squad)."
+        }
+      ],
+      "safe_keywords": [
+        "orderly",
+        "EOD",
+        "open windows",
+        "evacuate",
+        "drill",
+        "police"
+      ],
+      "unsafe_keywords": [
+        "shout",
+        "bomba",
+        "megaphone",
+        "janitor",
+        "ignore",
+        "radio"
+      ]
+    },
+    {
+      "id": "medical_amputation_047",
+      "category": "medical",
+      "type": "traumatic_amputation",
+      "title": "Finger Severed by a Machine",
+      "location": "Barangay Patimbao (Workshop)",
+      "severity": "high",
+      "recommended_vehicle": "ambulance",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, apply pressure to the hand. Where is the severed part?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Tulong! Naputol yung daliri ng mekaniko sa makina! Maraming dugo!"
+        },
+        {
+          "speaker": "911",
+          "text": "Is the bleeding controlled? Do not put the finger directly on ice."
+        },
+        {
+          "speaker": "Caller",
+          "text": "Nasa sahig po yung daliri! Ilalagay ko ba sa baso ng yelo?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Apply firm, direct pressure to the stump with a clean cloth.",
+          "label": "safe",
+          "explanation": "Stopping blood loss is the number one priority."
+        },
+        {
+          "text": "Wrap the severed finger in a damp, clean gauze or cloth.",
+          "label": "safe",
+          "explanation": "Protects the tissue from drying out without damaging it."
+        },
+        {
+          "text": "Place the wrapped finger in a plastic bag, then put that bag on ice.",
+          "label": "safe",
+          "explanation": "Keeps the part cool but prevents 'frostbite' or water damage to the tissue."
+        },
+        {
+          "text": "Put the severed finger directly into a bucket of ice water.",
+          "label": "unsafe",
+          "explanation": "Direct contact with water/ice damages the cells, making reattachment impossible."
+        },
+        {
+          "text": "Apply a tourniquet around the person's neck to stop bleeding.",
+          "label": "unsafe",
+          "explanation": "Tourniquets are for limbs only; a neck tourniquet is lethal."
+        },
+        {
+          "text": "Use superglue to try and stick the finger back on.",
+          "label": "unsafe",
+          "explanation": "Glue introduces toxins and prevents surgeons from properly reattaching vessels."
+        }
+      ],
+      "safe_keywords": [
+        "pressure",
+        "wrap",
+        "plastic bag",
+        "ice",
+        "ambulance",
+        "stump"
+      ],
+      "unsafe_keywords": [
+        "direct ice",
+        "water",
+        "bucket",
+        "glue",
+        "neck",
+        "neck tourniquet"
+      ]
+    },
+    {
+      "id": "fire_bush_048",
+      "category": "fire",
+      "type": "smoke_hazard",
+      "title": "Zero Visibility on Highway due to Rice Husk Burning",
+      "location": "National Highway, Brgy. Labuin",
+      "severity": "medium",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, are there any accidents already?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Hindi na po kami makakita sa highway! May nagsisindi ng 'ipa' (rice husk) sa gilid, sobrang kapal ng usok!"
+        },
+        {
+          "speaker": "911",
+          "text": "Turn on your hazard lights. Are you in a safe spot?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Nakatigil po kami sa gitna ng kalsada, baka mabangga kami!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Dispatch a fire truck to extinguish the burning husks.",
+          "label": "safe",
+          "explanation": "Stopping the smoke source is necessary for public safety."
+        },
+        {
+          "text": "Advise drivers to pull over to the far right and turn on hazard lights.",
+          "label": "safe",
+          "explanation": "Getting off the main lane prevents rear-end collisions."
+        },
+        {
+          "text": "Coordinate with traffic enforcers to close that section of the highway.",
+          "label": "safe",
+          "explanation": "Preventing more cars from entering a zero-visibility zone is crucial."
+        },
+        {
+          "text": "Tell the caller to speed up to get through the smoke faster.",
+          "label": "unsafe",
+          "explanation": "Speeding in zero visibility leads to pile-ups and fatal crashes."
+        },
+        {
+          "text": "Instruct the caller to walk into the smoke to find the person responsible.",
+          "label": "unsafe",
+          "explanation": "Walking onto a highway in thick smoke is a recipe for being hit by a car."
+        },
+        {
+          "text": "Advise motorists to use high-beam lights to see through smoke.",
+          "label": "unsafe",
+          "explanation": "High beams reflect off smoke/fog, causing more glare and less visibility."
+        }
+      ],
+      "safe_keywords": [
+        "extinguish",
+        "hazard lights",
+        "pull over",
+        "close road",
+        "enforcers",
+        "bumbero"
+      ],
+      "unsafe_keywords": [
+        "speed up",
+        "high beam",
+        "walk",
+        "gitna",
+        "lakad",
+        "bilis"
+      ]
+    },
+    {
+      "id": "police_stalker_049",
+      "category": "police",
+      "type": "harassment",
+      "title": "Woman being followed by a motorcycle",
+      "location": "Barangay Gatid (Residential area)",
+      "severity": "medium",
+      "recommended_vehicle": "police_mobile",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, do not go to your house. Is there a store nearby?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "(Panicked) Ma'am, kanina pa may sumusunod sa akin na motor. Kanina pa siya paikot-ikot!"
+        },
+        {
+          "speaker": "911",
+          "text": "Stay on the line. What is the color of the motorcycle?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Itim po, wala siyang plate number! Papunta na ako sa madilim na eskinita para magtago!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Go to a well-lit, crowded area like a 24/7 convenience store.",
+          "label": "safe",
+          "explanation": "Witnesses and lights deter attackers."
+        },
+        {
+          "text": "Note the rider's helmet, clothing, and any bike details.",
+          "label": "safe",
+          "explanation": "Helps police identify the suspect even without a plate number."
+        },
+        {
+          "text": "Stay on the phone with 911 until you reach a safe person/place.",
+          "label": "safe",
+          "explanation": "Continuous contact ensures immediate dispatch if things escalate."
+        },
+        {
+          "text": "Run into a dark alley to hide.",
+          "label": "unsafe",
+          "explanation": "Dark, isolated areas make you more vulnerable to assault."
+        },
+        {
+          "text": "Go directly to your home and unlock the door.",
+          "label": "unsafe",
+          "explanation": "This shows the stalker where you live and makes entry easier for them."
+        },
+        {
+          "text": "Stop and confront the rider to ask why he is following you.",
+          "label": "unsafe",
+          "explanation": "Confrontation can trigger a violent attack; never engage."
+        }
+      ],
+      "safe_keywords": [
+        "crowded",
+        "convenience store",
+        "lights",
+        "police",
+        "stay on line"
+      ],
+      "unsafe_keywords": [
+        "dark alley",
+        "eskinita",
+        "home",
+        "bahay",
+        "confront",
+        "harap",
+        "stop"
+      ]
+    },
+    {
+      "id": "medical_snake_050",
+      "category": "medical",
+      "type": "snake_bite",
+      "title": "Farmer bitten by a Cobra in a rice field",
+      "location": "Barangay Bagumbayan",
+      "severity": "extreme",
+      "recommended_vehicle": "ambulance",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, keep the limb still. Can you see the snake?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Nagtatrabaho po kami sa bukid, tinuklaw yung kasama ko! Nakita ko kulay brown na ahas, parang kobra!"
+        },
+        {
+          "speaker": "911",
+          "text": "Keep the bite area below the heart level. Is he dizzy?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Opo! Susubukan ko po sipsipin yung lason sa sugat!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Keep the bitten limb still and below the level of the heart.",
+          "label": "safe",
+          "explanation": "Movement and elevation accelerate the spread of venom through the bloodstream."
+        },
+        {
+          "text": "Remove any rings or tight clothing near the bite.",
+          "label": "safe",
+          "explanation": "Bites swell rapidly; jewelry can cut off circulation."
+        },
+        {
+          "text": "Keep the victim calm and still.",
+          "label": "safe",
+          "explanation": "Lowering the heart rate slows the spread of venom."
+        },
+        {
+          "text": "Suck the venom out with your mouth.",
+          "label": "unsafe",
+          "explanation": "Venom enters the bloodstream via mouth sores and does not remove the poison from the victim."
+        },
+        {
+          "text": "Apply a tight tourniquet above the bite.",
+          "label": "unsafe",
+          "explanation": "Tourniquets trap venom in one area, often leading to amputation of that limb."
+        },
+        {
+          "text": "Cut the wound with a knife to let the 'bad blood' out.",
+          "label": "unsafe",
+          "explanation": "Cutting causes severe bleeding and infection without removing venom."
+        }
+      ],
+      "safe_keywords": [
+        "still",
+        "below heart",
+        "remove jewelry",
+        "ambulance",
+        "calm"
+      ],
+      "unsafe_keywords": [
+        "suck",
+        "sipsip",
+        "tourniquet",
+        "tali",
+        "cut",
+        "hiwa",
+        "knife"
+      ]
+    },
+    {
+      "id": "fire_highrise_051",
+      "category": "fire",
+      "type": "trapped_victims",
+      "title": "Fire in a Multi-Story Commercial Building",
+      "location": "P. Guevara Street (Downtown)",
+      "severity": "extreme",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, what floor is the fire on?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Nasa 3rd floor po kami! Usok na po yung hallway, hindi kami makababa sa hagdan!"
+        },
+        {
+          "speaker": "911",
+          "text": "Do not use the elevator. Go to a room with a window."
+        },
+        {
+          "speaker": "Caller",
+          "text": "Gagamit po kami ng elevator para mabilis makababa!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Instruct the caller to stay in a room and seal the door with wet cloths.",
+          "label": "safe",
+          "explanation": "Sealing the door prevents smoke (the main killer) from entering the room."
+        },
+        {
+          "text": "Tell them to stay low to the floor where the air is cleaner.",
+          "label": "safe",
+          "explanation": "Heat and smoke rise; breathing is easier near the ground."
+        },
+        {
+          "text": "Advise them to signal their location using a bright cloth at the window.",
+          "label": "safe",
+          "explanation": "Helps firefighters with ladders locate trapped victims quickly."
+        },
+        {
+          "text": "Use the elevator to escape quickly.",
+          "label": "unsafe",
+          "explanation": "Elevators often fail or trap people during fires; they act as smoke chimneys."
+        },
+        {
+          "text": "Break the window immediately to let the smoke out.",
+          "label": "unsafe",
+          "explanation": "Breaking windows can create a 'backdraft' or draw the fire toward the room."
+        },
+        {
+          "text": "Jump from the 3rd floor to the street.",
+          "label": "unsafe",
+          "explanation": "A 3rd-story jump often results in death or critical injury; wait for a ladder."
+        }
+      ],
+      "safe_keywords": [
+        "seal door",
+        "wet cloth",
+        "stay low",
+        "signal",
+        "window",
+        "bumbero"
+      ],
+      "unsafe_keywords": [
+        "elevator",
+        "jump",
+        "talon",
+        "break window",
+        "basag",
+        "stairs"
+      ]
+    },
+    {
+      "id": "police_drugs_052",
+      "category": "police",
+      "type": "illegal_activity",
+      "title": "Illegal drug use in a public restroom",
+      "location": "Sta. Cruz Public Market",
+      "severity": "medium",
+      "recommended_vehicle": "police_mobile",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, are they still inside the restroom?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "May mga lalaki po dito sa banyo ng palengke, parang may hinihithit na kung ano at may mga syringe!"
+        },
+        {
+          "speaker": "911",
+          "text": "Do not confront them. How many individuals are there?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Tatlo sila! Bubuksan ko ba yung pinto para videohan sila?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Stay away from the restroom and wait for officers in a safe spot.",
+          "label": "safe",
+          "explanation": "Drug users may be paranoid and become violent if they feel watched."
+        },
+        {
+          "text": "Note any clothing or physical characteristics of the individuals.",
+          "label": "safe",
+          "explanation": "Helps police identify the specific group in a crowded market."
+        },
+        {
+          "text": "Point out the location to the police discreetly once they arrive.",
+          "label": "safe",
+          "explanation": "Provides direct guidance to officers while maintaining your safety."
+        },
+        {
+          "text": "Open the door and take a video for evidence.",
+          "label": "unsafe",
+          "explanation": "Confronting suspects in an enclosed space is extremely dangerous."
+        },
+        {
+          "text": "Try to grab the drugs and flush them down the toilet.",
+          "label": "unsafe",
+          "explanation": "You may be pricked by needles or attacked by the suspects."
+        },
+        {
+          "text": "Lock them inside the restroom by blocking the door.",
+          "label": "unsafe",
+          "explanation": "Trapping suspects can lead to them breaking out violently or harming others inside."
+        }
+      ],
+      "safe_keywords": [
+        "discreet",
+        "descriptions",
+        "wait",
+        "pulis",
+        "distance"
+      ],
+      "unsafe_keywords": [
+        "video",
+        "open door",
+        "bukas",
+        "flush",
+        "grab",
+        "lock",
+        "harang"
+      ]
+    },
+    {
+      "id": "medical_birth_053",
+      "category": "medical",
+      "type": "childbirth",
+      "title": "Active Labor - Baby is crowning",
+      "location": "Barangay Oogong",
+      "severity": "extreme",
+      "recommended_vehicle": "ambulance",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, stay calm. Is this her first baby?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Manganganak na po yung asawa ko! Nakikita ko na yung ulo ng baby!"
+        },
+        {
+          "speaker": "911",
+          "text": "Get clean towels and a blanket. Do not pull the baby."
+        },
+        {
+          "speaker": "Caller",
+          "text": "Dadalhin ko po siya sa ospital gamit ang tricycle!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Support the baby's head gently as it emerges.",
+          "label": "safe",
+          "explanation": "Prevents the baby from falling or snapping the neck during delivery."
+        },
+        {
+          "text": "Keep the mother lying on her back with knees apart.",
+          "label": "safe",
+          "explanation": "Standard position for assisted delivery at home."
+        },
+        {
+          "text": "Wrap the baby in a clean, warm blanket immediately after birth.",
+          "label": "safe",
+          "explanation": "Newborns lose body heat very rapidly."
+        },
+        {
+          "text": "Pull the baby out by the head to speed it up.",
+          "label": "unsafe",
+          "explanation": "Pulling causes severe nerve damage or spinal injury to the newborn."
+        },
+        {
+          "text": "Transport her in a tricycle while the baby is crowning.",
+          "label": "unsafe",
+          "explanation": "Delivery in a moving, bumpy vehicle is extremely dangerous for both."
+        },
+        {
+          "text": "Tie the umbilical cord with a dirty shoelace.",
+          "label": "unsafe",
+          "explanation": "Dirty materials cause life-threatening infections like neonatal tetanus."
+        }
+      ],
+      "safe_keywords": [
+        "support head",
+        "blanket",
+        "warm",
+        "ambulance",
+        "towels",
+        "panganak"
+      ],
+      "unsafe_keywords": [
+        "pull",
+        "hila",
+        "tricycle",
+        "shoelace",
+        "hila",
+        "ospisital"
+      ]
+    },
+    {
+      "id": "fire_grease_054",
+      "category": "fire",
+      "type": "kitchen_fire",
+      "title": "Grease Fire in a Samgyupsal grill",
+      "location": "A. Mabini Street",
+      "severity": "high",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, do not use water. Is there a metal lid?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Nasusunog yung mantika sa grill namin! Lumalaki na yung apoy sa lamesa!"
+        },
+        {
+          "speaker": "911",
+          "text": "Is the gas tank nearby? Turn it off if safe."
+        },
+        {
+          "speaker": "Caller",
+          "text": "Opo, malapit lang! Bubuhusan ko na po ng tubig!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Slide a metal lid or cookie sheet over the pan/grill.",
+          "label": "safe",
+          "explanation": "Smothering the fire cuts off the oxygen supply."
+        },
+        {
+          "text": "Turn off the gas supply if it can be done safely.",
+          "label": "safe",
+          "explanation": "Cuts off the fuel source for the heat."
+        },
+        {
+          "text": "Use a Class B fire extinguisher or baking soda.",
+          "label": "safe",
+          "explanation": "These are designed to chemically extinguish grease/oil fires."
+        },
+        {
+          "text": "Pour water on the grease fire.",
+          "label": "unsafe",
+          "explanation": "Water sinks in oil and boils instantly, causing a massive fireball."
+        },
+        {
+          "text": "Try to carry the burning grill outside.",
+          "label": "unsafe",
+          "explanation": "Spilling burning oil on yourself or the floor will spread the fire and cause burns."
+        },
+        {
+          "text": "Use flour or sugar to put out the fire.",
+          "label": "unsafe",
+          "explanation": "Flour and sugar are combustible in powder form and can cause an explosion."
+        }
+      ],
+      "safe_keywords": [
+        "lid",
+        "cover",
+        "smother",
+        "baking soda",
+        "extinguisher",
+        "gas off"
+      ],
+      "unsafe_keywords": [
+        "water",
+        "tubig",
+        "carry",
+        "labas",
+        "flour",
+        "sugar",
+        "asukal"
+      ]
+    },
+    {
+      "id": "police_robbery_055",
+      "category": "police",
+      "type": "armed_robbery",
+      "title": "Pawnshop Robbery in Progress",
+      "location": "Downtown Sta. Cruz (Near Plaza)",
+      "severity": "extreme",
+      "recommended_vehicle": "police_mobile",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, do not let them see you. Are they armed?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "(Whispering) Ma'am, may mga lalaki sa loob ng pawnshop, may mga baril! Pinapadapa nila yung mga tao!"
+        },
+        {
+          "speaker": "911",
+          "text": "How many suspects? What are they wearing?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Dalawa po, naka-motorcycle helmet! Lalapitan ko ba yung pinto para i-lock?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Stay hidden and keep the line open.",
+          "label": "safe",
+          "explanation": "Your life is the priority; the dispatcher needs constant updates."
+        },
+        {
+          "text": "Describe the getaway vehicle and direction of travel if they leave.",
+          "label": "safe",
+          "explanation": "Vital for police to intercept them during the escape."
+        },
+        {
+          "text": "Keep others away from the pawnshop entrance.",
+          "label": "safe",
+          "explanation": "Prevents innocent bystanders from walking into a crossfire or hostage situation."
+        },
+        {
+          "text": "Approach the door to lock the suspects inside.",
+          "label": "unsafe",
+          "explanation": "This puts you in direct sight of armed men and creates a hostage situation."
+        },
+        {
+          "text": "Shout at the suspects to stop.",
+          "label": "unsafe",
+          "explanation": "Armed robbers are likely to shoot anyone drawing attention or resisting."
+        },
+        {
+          "text": "Try to follow them on your own motorcycle when they flee.",
+          "label": "unsafe",
+          "explanation": "Armed suspects often shoot at people following them; let the police handle the chase."
+        }
+      ],
+      "safe_keywords": [
+        "hidden",
+        "keep away",
+        "describe",
+        "wait",
+        "pulis",
+        "helmet"
+      ],
+      "unsafe_keywords": [
+        "lock",
+        "shout",
+        "sigaw",
+        "follow",
+        "habol",
+        "approach",
+        "lapit"
+      ]
+    },
+    {
+      "id": "medical_hypothermia_056",
+      "category": "medical",
+      "type": "hypothermia",
+      "title": "Elderly person found wet and shivering after a storm",
+      "location": "Barangay San Sebastian",
+      "severity": "medium",
+      "recommended_vehicle": "ambulance",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, is the person awake? Move them to a dry place."
+        },
+        {
+          "speaker": "Caller",
+          "text": "Nakita po namin si Lolo sa labas, basang-basa po siya sa ulan. Nanginginig po siya at hindi makapagsalita!"
+        },
+        {
+          "speaker": "911",
+          "text": "Remove the wet clothes. Do not use hot water."
+        },
+        {
+          "speaker": "Caller",
+          "text": "Opo! Isasawsaw ko po siya sa mainit na tubig para uminit agad!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Remove wet clothing and wrap the person in dry blankets.",
+          "label": "safe",
+          "explanation": "Stopping the heat loss is the first step in treating hypothermia."
+        },
+        {
+          "text": "Apply warm (not hot) compresses to the neck, chest, and groin.",
+          "label": "safe",
+          "explanation": "Warming the core first is safer than warming the limbs."
+        },
+        {
+          "text": "Give the person a warm, non-caffeinated sweet drink if they can swallow.",
+          "label": "safe",
+          "explanation": "Provides energy to help the body generate heat."
+        },
+        {
+          "text": "Submerge the person in a hot bath.",
+          "label": "unsafe",
+          "explanation": "Rapid warming can cause 'after-drop' or heart failure."
+        },
+        {
+          "text": "Give the person alcohol (liquor) to 'warm them up'.",
+          "label": "unsafe",
+          "explanation": "Alcohol dilates blood vessels, causing the body to lose heat even faster."
+        },
+        {
+          "text": "Rub the person's arms and legs vigorously.",
+          "label": "unsafe",
+          "explanation": "Rubbing cold limbs can force cold blood back to the heart, causing it to stop."
+        }
+      ],
+      "safe_keywords": [
+        "dry",
+        "blankets",
+        "warm",
+        "core",
+        "ambulance",
+        "sweet drink"
+      ],
+      "unsafe_keywords": [
+        "hot water",
+        "hot bath",
+        "alcohol",
+        "alak",
+        "rub",
+        "masahe"
+      ]
+    },
+    {
+      "id": "fire_gas_057",
+      "category": "fire",
+      "type": "gas_leak",
+      "title": "Methane smell coming from a Septic Tank",
+      "location": "Barangay Bagumbayan",
+      "severity": "medium",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, is the smell inside the house?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Ma'am, sobrang baho po dito sa tapat ng bahay namin! Parang amoy bulok na itlog galing sa septic tank!"
+        },
+        {
+          "speaker": "911",
+          "text": "Do not light any matches. Keep people away."
+        },
+        {
+          "speaker": "Caller",
+          "text": "Gagamit po ako ng lighter para tignan kung may singaw talaga!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Keep people and pets away from the tank area.",
+          "label": "safe",
+          "explanation": "Methane and Hydrogen Sulfide are both explosive and toxic."
+        },
+        {
+          "text": "Extinguish all smoking materials or open flames nearby.",
+          "label": "safe",
+          "explanation": "Sewer gases are highly flammable."
+        },
+        {
+          "text": "Ventilate the area if possible by opening outdoor gates.",
+          "label": "safe",
+          "explanation": "Helps dissipate the gas concentration."
+        },
+        {
+          "text": "Use a lighter or match to find the leak.",
+          "label": "unsafe",
+          "explanation": "This will cause an immediate and powerful explosion."
+        },
+        {
+          "text": "Stick your head into the tank to see the source.",
+          "label": "unsafe",
+          "explanation": "Concentrated sewer gas can cause immediate loss of consciousness and death."
+        },
+        {
+          "text": "Pour bleach into the septic tank to kill the smell.",
+          "label": "unsafe",
+          "explanation": "Mixing bleach with septic waste can create deadly chlorine gas."
+        }
+      ],
+      "safe_keywords": [
+        "keep away",
+        "extinguish",
+        "ventilate",
+        "bumbero",
+        "toxic"
+      ],
+      "unsafe_keywords": [
+        "lighter",
+        "match",
+        "sindi",
+        "bleach",
+        "zonrox",
+        "stick head"
+      ]
+    },
+    {
+      "id": "police_accident_058",
+      "category": "police",
+      "type": "traffic_accident",
+      "title": "Car vs Tricycle at a busy intersection",
+      "location": "Sambat (Junction)",
+      "severity": "high",
+      "recommended_vehicle": "police_mobile",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, are there injuries in the tricycle?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "May banggaan po dito sa junction! Yung tricycle tumagilid, may mga pasaherong naipit!"
+        },
+        {
+          "speaker": "911",
+          "text": "Do not move the injured. Is there a fuel leak?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "May amoy gasolina po! Tutulungan ko po silang lumabas!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Only move victims if there is an immediate threat of fire or explosion.",
+          "label": "safe",
+          "explanation": "Spinal safety is key unless they are about to burn."
+        },
+        {
+          "text": "Direct other cars away from the crash site.",
+          "label": "safe",
+          "explanation": "Prevents secondary accidents in a high-traffic junction."
+        },
+        {
+          "text": "Note the vehicle details and driver status.",
+          "label": "safe",
+          "explanation": "Essential for the police report and insurance."
+        },
+        {
+          "text": "Flip the tricycle back up while people are still inside.",
+          "label": "unsafe",
+          "explanation": "This can cause further crushing injuries to the passengers."
+        },
+        {
+          "text": "Give the passengers water or cigarettes to calm them down.",
+          "label": "unsafe",
+          "explanation": "Cigarettes near a gas leak are explosive; water can complicate surgery."
+        },
+        {
+          "text": "Let the car driver leave if they say they are 'okay'.",
+          "label": "unsafe",
+          "explanation": "Leaving the scene of an accident is illegal; all parties must wait for police."
+        }
+      ],
+      "safe_keywords": [
+        "fire threat",
+        "direct traffic",
+        "vehicle details",
+        "ambulance",
+        "pulis"
+      ],
+      "unsafe_keywords": [
+        "flip",
+        "taob",
+        "water",
+        "tubig",
+        "smoke",
+        "yosi",
+        "leave",
+        "alis"
+      ]
+    },
+    {
+      "id": "medical_asthma_059",
+      "category": "medical",
+      "type": "respiratory_distress",
+      "title": "Child with severe asthma struggling to breathe",
+      "location": "Barangay Gatid",
+      "severity": "high",
+      "recommended_vehicle": "ambulance",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, does the child have an inhaler?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Yung anak ko po hindi makahinga! Ma'am, namumula na po yung mukha niya at hirap na hirap siya!"
+        },
+        {
+          "speaker": "911",
+          "text": "Sit the child up. Do not let them lie down."
+        },
+        {
+          "speaker": "Caller",
+          "text": "Wala po kaming inhaler! Papainumin ko ba ng kape?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Sit the child upright and leaning slightly forward.",
+          "label": "safe",
+          "explanation": "This 'tripod' position makes it easiest to use the chest muscles to breathe."
+        },
+        {
+          "text": "Keep the child calm; panic constricts the airways further.",
+          "label": "safe",
+          "explanation": "Lowering stress helps reduce the severity of the attack."
+        },
+        {
+          "text": "Loosen any tight clothing around the neck or chest.",
+          "label": "safe",
+          "explanation": "Assists with maximum lung expansion."
+        },
+        {
+          "text": "Have the child lie down flat on the floor.",
+          "label": "unsafe",
+          "explanation": "Lying flat makes it significantly harder to breathe during an asthma attack."
+        },
+        {
+          "text": "Give the child coffee or hot chocolate as a home remedy.",
+          "label": "unsafe",
+          "explanation": "Caffeine is not a fast-acting rescue and causes dehydration/choking."
+        },
+        {
+          "text": "Allow the child to run around to 'open up' the lungs.",
+          "label": "unsafe",
+          "explanation": "Physical exertion increases oxygen demand, which the child cannot meet."
+        }
+      ],
+      "safe_keywords": [
+        "sit up",
+        "calm",
+        "loosen",
+        "hinga",
+        "ambulance",
+        "upo"
+      ],
+      "unsafe_keywords": [
+        "lie down",
+        "higa",
+        "coffee",
+        "kape",
+        "run",
+        "takbo"
+      ]
+    },
+    {
+      "id": "fire_hospital_060",
+      "category": "fire",
+      "type": "trapped_victims",
+      "title": "Fire in a small local clinic",
+      "location": "A. Regidor Street (Downtown)",
+      "severity": "extreme",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "911",
+          "text": "911, are there patients who cannot walk?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "May sunog po dito sa clinic! May mga matatandang pasyente na hindi makalakad!"
+        },
+        {
+          "speaker": "911",
+          "text": "Help them into wheelchairs. Do not use the elevator."
+        },
+        {
+          "speaker": "Caller",
+          "text": "Umuusok na po! Iiwan ko na ba sila para iligtas sarili ko?"
+        }
+      ],
+      "options": [
+        {
+          "text": "Prioritize the evacuation of patients using wheelchairs or stretchers.",
+          "label": "safe",
+          "explanation": "Non-ambulatory patients are the most vulnerable in a fire."
+        },
+        {
+          "text": "Close all doors behind you as you evacuate each room.",
+          "label": "safe",
+          "explanation": "Closing doors cuts off the flow of oxygen and slows the fire's spread."
+        },
+        {
+          "text": "Inform fire dispatch about the number of non-ambulatory patients.",
+          "label": "safe",
+          "explanation": "Firefighters need to know if they need to perform heavy rescues."
+        },
+        {
+          "text": "Leave the patients and save yourself immediately.",
+          "label": "unsafe",
+          "explanation": "As a first responder/clinic staff, you have a duty to assist the vulnerable if safe."
+        },
+        {
+          "text": "Turn off the oxygen tanks in the clinic if you pass them.",
+          "label": "safe",
+          "explanation": "Oxygen is a powerful accelerant that can turn a small fire into an explosion."
+        },
+        {
+          "text": "Use the medical elevator to get the patients down faster.",
+          "label": "unsafe",
+          "explanation": "Elevators are death traps in fires due to power failure and smoke."
+        }
+      ],
+      "safe_keywords": [
+        "evacuation",
+        "close doors",
+        "oxygen off",
+        "bumbero",
+        "wheelchair"
+      ],
+      "unsafe_keywords": [
+        "leave",
+        "iwan",
+        "elevator",
+        "stairs",
+        "run"
+      ]
+    }
+  ]
+}

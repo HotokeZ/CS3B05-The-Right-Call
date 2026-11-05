@@ -1,0 +1,48 @@
+{
+  "title": "Emergency Dispatch Academy",
+  "subtitle": "Learn how to stay calm, call 911 first, and guide people safely.",
+  "steps": [
+    {
+      "id": "call_911_first",
+      "title": "Call 911 First",
+      "body": "When a real emergency starts, the first priority is calling 911 or the local emergency hotline. Dispatchers can send help while you keep the caller calm.",
+      "coach_tip": "Teach players that asking for help early is a strength, not a mistake."
+    },
+    {
+      "id": "stay_calm_and_identify",
+      "title": "Stay Calm and Identify the Problem",
+      "body": "Players should learn to identify what kind of emergency is happening: fire, smoke, electrical danger, gas leak, or trapped people. Clear answers help responders move faster.",
+      "coach_tip": "Start with simple scenarios and clear choices for younger learners."
+    },
+    {
+      "id": "protect_people_first",
+      "title": "Protect People Before Property",
+      "body": "The safest answer is usually the one that protects lives first. Evacuate when needed, avoid dangerous actions, and never take risks just to save belongings.",
+      "coach_tip": "Reward answers that prioritize safety, distance, and calling trained responders."
+    },
+    {
+      "id": "use_hints",
+      "title": "Look for Hints! 💡",
+      "body": "Before you pick an answer, look for the 💡 hint button! Hints will explain why some choices might be dangerous — without giving away the answer. Use them to learn!",
+      "coach_tip": "Hints teach critical thinking by explaining consequences rather than just telling the answer."
+    },
+    {
+      "id": "language_support",
+      "title": "Answer in English, Tagalog, or Taglish!",
+      "body": "You can answer in English, Tagalog, or Taglish — the game understands all three! Kahit Tagalog o Taglish ang sagot mo, naiintindihan ng game! 🇵🇭",
+      "coach_tip": "Filipino language support makes the game more accessible to Philippine students."
+    },
+    {
+      "id": "easy_mode_intro",
+      "title": "Easy Mode Uses Choices",
+      "body": "Easy difficulty uses guided multiple choice responses so children can focus on recognizing the safest action. This mode should always stay open by default.",
+      "coach_tip": "Use this as the default onboarding mode for first-time players."
+    },
+    {
+      "id": "professional_mode_intro",
+      "title": "Professional Mode Uses Typed Answers",
+      "body": "The typed NLP mode is for professional learners inside the e-learning flow. Players must complete the required certification before they can unlock free-response dispatching.",
+      "coach_tip": "This keeps advanced assessment gated behind training readiness."
+    }
+  ]
+}

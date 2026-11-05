@@ -1,0 +1,169 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6j2y0h3u8n5k"]
+
+[ext_resource type="Script" path="res://scripts/ui/main_menu.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/maps/map_high.png" id="2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_info"]
+bg_color = Color(0.1, 0.1, 0.1, 0.8)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.8, 0.8, 0.8, 1)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="BackgroundTexture" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 6
+modulate = Color(0.4, 0.4, 0.4, 1)
+
+[node name="Margin" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 80
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = 80
+theme_override_constants/margin_bottom = 80
+
+[node name="Layout" type="Control" parent="CanvasLayer/Margin"]
+layout_mode = 2
+
+[node name="TitleBox" type="VBoxContainer" parent="CanvasLayer/Margin/Layout"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 120.0
+grow_horizontal = 2
+theme_override_constants/separation = 4
+
+[node name="TitleLabel" type="Label" parent="CanvasLayer/Margin/Layout/TitleBox"]
+layout_mode = 2
+text = "The Right Call"
+theme_override_font_sizes/font_size = 48
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+
+[node name="SubtitleLabel" type="Label" parent="CanvasLayer/Margin/Layout/TitleBox"]
+layout_mode = 2
+text = "Emergency Dispatch Academy"
+theme_override_font_sizes/font_size = 22
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+
+[node name="LeftPanel" type="MarginContainer" parent="CanvasLayer/Margin/Layout"]
+layout_mode = 1
+anchors_preset = 9
+anchor_top = 0.15
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_vertical = 2
+theme_override_constants/margin_left = 64
+theme_override_constants/margin_right = 64
+
+[node name="Actions" type="VBoxContainer" parent="CanvasLayer/Margin/Layout/LeftPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="TutorialButton" type="Button" parent="CanvasLayer/Margin/Layout/LeftPanel/Actions"]
+layout_mode = 2
+text = "Play Tutorial"
+
+[node name="PreAssessButton" type="Button" parent="CanvasLayer/Margin/Layout/LeftPanel/Actions"]
+layout_mode = 2
+text = "BFP Assessments"
+
+[node name="EasyButton" type="Button" parent="CanvasLayer/Margin/Layout/LeftPanel/Actions"]
+layout_mode = 2
+text = "Play Easy Mode"
+
+[node name="ProfessionalButton" type="Button" parent="CanvasLayer/Margin/Layout/LeftPanel/Actions"]
+layout_mode = 2
+text = "Professional Dispatcher"
+
+[node name="SettingsButton" type="Button" parent="CanvasLayer/Margin/Layout/LeftPanel/Actions"]
+layout_mode = 2
+text = "Settings & Data"
+
+[node name="RightPanel" type="MarginContainer" parent="CanvasLayer/Margin/Layout"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 0.5
+anchor_top = 0.15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/margin_left = 64
+theme_override_constants/margin_right = 64
+
+[node name="InfoCard" type="PanelContainer" parent="CanvasLayer/Margin/Layout/RightPanel"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_info")
+
+[node name="Margin" type="MarginContainer" parent="CanvasLayer/Margin/Layout/RightPanel/InfoCard"]
+layout_mode = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="VBox" type="VBoxContainer" parent="CanvasLayer/Margin/Layout/RightPanel/InfoCard/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="InfoTitle" type="Label" parent="CanvasLayer/Margin/Layout/RightPanel/InfoCard/Margin/VBox"]
+layout_mode = 2
+text = "Welcome!"
+theme_override_font_sizes/font_size = 36
+theme_override_colors/font_color = Color(1, 0.8, 0.4, 1)
+autowrap_mode = 3
+
+[node name="InfoDescription" type="Label" parent="CanvasLayer/Margin/Layout/RightPanel/InfoCard/Margin/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Hover over a menu option to see more details."
+autowrap_mode = 3
+theme_override_font_sizes/font_size = 22
+theme_override_colors/font_color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="CertificationLabel" type="Label" parent="CanvasLayer/Margin/Layout/RightPanel/InfoCard/Margin/VBox"]
+layout_mode = 2
+autowrap_mode = 3
+text = "Certification status will appear here."
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.6, 0.8, 1, 1)
+
+[node name="StatusLabel" type="Label" parent="CanvasLayer/Margin/Layout/RightPanel/InfoCard/Margin/VBox"]
+layout_mode = 2
+autowrap_mode = 3
+text = "Loading game state..."
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)

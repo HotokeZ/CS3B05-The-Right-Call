@@ -1,0 +1,21 @@
+backend/examples.json
+
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Python virtual environment & cache
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+cache/
+temp/
+
+# Environment / Secret variables
+.env
+.env.*
+*.local

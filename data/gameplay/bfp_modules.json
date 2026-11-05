@@ -1,0 +1,2072 @@
+{
+    "1": {
+        "title": {
+            "en": "Module 1: Fire Safety for Children",
+            "tl": "Modyul 1: Kaligtasan sa Sunog para sa mga Bata",
+            "taglish": "Module 1: Fire Safety for Children"
+        },
+        "summary": {
+            "en": "EDITH exit plans, crawl low in smoke, and stop-drop-roll instructions.",
+            "tl": "Mga plano sa pagtakas ng EDITH, paggapang nang mababa sa usok, at mga tagubilin sa stop-drop-roll.",
+            "taglish": "EDITH exit plans, crawl low sa smoke, and stop-drop-roll instructions."
+        },
+        "study_text": {
+            "en": "[center][b]Module 1: Fire Safety for Children[/b][/center]\n\n[b]1. EDITH (Exit Drills In The Home)[/b]\n- Teach every family to plan and practice two different escape routes from every room in the home.\n\n[b]2. Crawl Low in Smoke[/b]\n- During a fire, toxic smoke and hot air rise to the ceiling.\n- The cleanest and coolest air is always near the floor (about 12 to 24 inches off the floor).\n- Instruct callers to cover their nose and mouth (preferably with a wet cloth) and crawl to safety.\n\n[b]3. Stop, Drop, and Roll[/b]\n- When a person's clothing catches fire:\n  - [b]STOP[/b]: Do not run! Running feeds oxygen to the fire and makes it grow.\n  - [b]DROP[/b]: Lie down immediately and cover your face with your hands to protect your eyes and mouth.\n  - [b]ROLL[/b]: Roll back and forth until the flames are smothered.",
+            "tl": "[center][b]Modyul 1: Kaligtasan sa Sunog para sa mga Bata[/b][/center]\n\n[b]1. EDITH (Exit Drills In The Home)[/b]\n- Turuan ang bawat pamilya na magplano at magsanay ng dalawang magkaibang ruta ng pagtakas mula sa bawat silid sa bahay.\n\n[b]2. Gumapang nang Mababa sa Usok[/b]\n- Sa panahon ng sunog, ang nakalalasong usok at mainit na hangin ay umaakyat sa kisame.\n- Ang pinakamalinis at pinakamalamig na hangin ay palaging malapit sa sahig (mga 12 hanggang 24 pulgada mula sa sahig).\n- Sabihan ang mga tumatawag na takpan ang kanilang ilong at bibig (mas mabuti kung may basang tela) at gumapang palabas.\n\n[b]3. Stop, Drop, and Roll[/b]\n- Kapag ang damit ng isang tao ay nasunog:\n  - [b]STOP[/b]: Huwag tumakbo! Ang pagtakbo ay nagbibigay ng oxygen sa apoy at lalo itong palalakihin.\n  - [b]DROP[/b]: Humiga agad sa sahig at takpan ang mukha gamit ang mga kamay para maprotektahan ang mga mata at bibig.\n  - [b]ROLL[/b]: Magpagulong-gulong pabalik-balik hanggang sa mamatay ang apoy.",
+            "taglish": "[center][b]Module 1: Fire Safety for Children[/b][/center]\n\n[b]1. EDITH (Exit Drills In The Home)[/b]\n- Turuan ang bawat pamilya na mag-plan at mag-practice ng dalawang magkaibang escape routes mula sa bawat room sa bahay.\n\n[b]2. Crawl Low sa Smoke[/b]\n- Sa panahon ng sunog, ang toxic smoke at mainit na hangin ay umaakyat patungo sa kisame.\n- Ang pinakamalinis at pinakamalamig na hangin ay palaging malapit sa floor (mga 12 hanggang 24 inches mula sa floor).\n- Sabihan ang callers na magtakip ng nose at mouth (mas ok kung gamit ang basang tela) at gumapang palabas.\n\n[b]3. Stop, Drop, and Roll[/b]\n- Kapag ang damit ng isang tao ay nasunog:\n  - [b]STOP[/b]: Huwag tumakbo! Ang pagtakbo ay nagpapakain ng oxygen sa apoy at lalo itong palalakihin.\n  - [b]DROP[/b]: Humiga agad sa sahig at takpan ang mukha gamit ang mga kamay para maprotektahan ang eyes at mouth.\n  - [b]ROLL[/b]: Magpagulong-gulong pabalik-balik hanggang sa mamatay ang apoy."
+        },
+        "questions": {
+            "en": [
+                {
+                    "q": "If a room is filling with thick smoke during a fire, how should you escape?",
+                    "options": [
+                        "Run out as fast as possible standing upright",
+                        "Crawl low on hands and knees under the smoke",
+                        "Hide in a closet or bathroom"
+                    ],
+                    "answer": 1,
+                    "hint": "Toxic smoke rises to the ceiling; the air is cleanest and coolest near the floor."
+                },
+                {
+                    "q": "What is the very first thing you should do if your clothes catch on fire?",
+                    "options": [
+                        "Run as fast as you can to cool off",
+                        "Throw water on yourself immediately",
+                        "Stop immediately, drop to the ground, cover your face, and roll"
+                    ],
+                    "answer": 2,
+                    "hint": "Never run! Running feeds oxygen to the fire. Use Stop, Drop, and Roll to smother the flames."
+                },
+                {
+                    "q": "What does the official BFP acronym \"EDITH\" stand for?",
+                    "options": [
+                        "Emergency Department In The Hospital",
+                        "Exit Drills In The Home",
+                        "Every Day Is To Help"
+                    ],
+                    "answer": 1,
+                    "hint": "EDITH stands for Exit Drills In The Home, which teaches families to practice escaping safely."
+                },
+                {
+                    "q": "When planning a family fire escape plan, where should your meeting place be located?",
+                    "options": [
+                        "Inside the garage",
+                        "Outside the home at a safe, designated spot like a big tree or lamppost",
+                        "In the backyard near the house walls"
+                    ],
+                    "answer": 1,
+                    "hint": "The meeting place must be outside and far enough from the house to be safe from collapse and heat."
+                },
+                {
+                    "q": "What should you do immediately if you hear a smoke alarm sounding in your house?",
+                    "options": [
+                        "Ignore it and wait for your parents",
+                        "Get out immediately using your escape plan",
+                        "Search for your favorite toys to take with you"
+                    ],
+                    "answer": 1,
+                    "hint": "Get out first! Never waste time saving toys or belongings during a fire emergency."
+                },
+                {
+                    "q": "Before opening a closed door during a fire escape, how should you test if it is safe?",
+                    "options": [
+                        "Touch the door handle or door with the back of your hand to check for heat",
+                        "Open it slightly to look for flames",
+                        "Kick the door to see if it is sturdy"
+                    ],
+                    "answer": 0,
+                    "hint": "Use the back of your hand. If the door or handle is hot, fire is on the other side; use your second exit."
+                },
+                {
+                    "q": "How often should smoke alarm batteries be tested to ensure they work?",
+                    "options": [
+                        "Once every five years",
+                        "At least once a month",
+                        "Only when you smell smoke"
+                    ],
+                    "answer": 1,
+                    "hint": "Test smoke alarms monthly to ensure they are functional in case of a real emergency."
+                },
+                {
+                    "q": "Why is running highly dangerous if your clothes are on fire?",
+                    "options": [
+                        "It tires you out too quickly",
+                        "It feeds oxygen to the fire, making it burn much faster",
+                        "It makes it harder for others to hear you scream"
+                    ],
+                    "answer": 1,
+                    "hint": "Running feeds oxygen to the flames, making them spread rapidly. Always stop, drop, and roll."
+                },
+                {
+                    "q": "When is the correct time to call the BFP emergency hotline during a house fire?",
+                    "options": [
+                        "Before trying to escape the house",
+                        "Once you have safely escaped outside the house",
+                        "While searching for the fire source inside"
+                    ],
+                    "answer": 1,
+                    "hint": "Escape first! Get to a safe place outside before calling emergency hotlines."
+                },
+                {
+                    "q": "According to EDITH guidelines, how many escape routes should every room ideally have?",
+                    "options": [
+                        "Only one main door",
+                        "At least two different ways out, such as a door and a window",
+                        "Three doors"
+                    ],
+                    "answer": 1,
+                    "hint": "Always have two ways out in case one route is blocked by fire or smoke."
+                }
+            ],
+            "tl": [
+                {
+                    "q": "Saan matatagpuan ang pinakamalinis na hangin kapag puno ng usok ang silid?",
+                    "options": [
+                        "Malapit sa kisame ng silid",
+                        "Sa gitna ng silid habang nakatayo",
+                        "Malapit sa sahig (gumapang nang mababa)",
+                        "Sa tabi ng mga bintana na sarado"
+                    ],
+                    "answer": 2,
+                    "hint": "Ang usok at nakalalasong gas ay tumataas dahil sa init, kaya ang hangin sa sahig ay mas ligtas hingahan."
+                },
+                {
+                    "q": "Ano ang unang dapat gawin kung masunog ang iyong damit?",
+                    "options": [
+                        "Tumakbo nang mabilis upang humihip ang hangin",
+                        "Tumigil (Stop), Humiga (Drop), at Magpagulong-gulong (Roll)",
+                        "Maghanap agad ng fire extinguisher",
+                        "Buhusan ng mainit na grasa"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang pagtakbo ay nagpapakain ng oxygen sa apoy. Ang Stop, Drop, at Roll ay nagpapapatay dito nang ligtas."
+                },
+                {
+                    "q": "Ano ang ibig sabihin ng EDITH sa pagpaplano ng kaligtasan?",
+                    "options": [
+                        "Emergency Disaster In The Home",
+                        "Exit Drills In The Home",
+                        "Every Day Is Training Hour",
+                        "Escape Directions In The Hallway"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang EDITH ay nangangahulugang Exit Drills In The Home upang magsanay ng mga ruta ng pagtakas kasama ang pamilya."
+                },
+                {
+                    "q": "Sa pagpaplano ng EDITH, saan dapat matagpuan ang inyong meeting place sa labas?",
+                    "options": [
+                        "Sa loob ng garahe",
+                        "Sa isang ligtas na lugar tulad ng malaking puno o poste ng ilaw",
+                        "Katabi mismo ng dingding ng bahay",
+                        "Sa loob ng kuwarto ng kapitbahay"
+                    ],
+                    "answer": 1,
+                    "hint": "Dapat malayo ang meeting place sa bahay upang hindi maapektuhan ng init o pagguho ng kagamitan."
+                },
+                {
+                    "q": "Ano ang dapat mong gawin agad kapag narinig mo ang smoke alarm sa inyong bahay?",
+                    "options": [
+                        "Ipagwalang-bahala at hintayin ang mga magulang",
+                        "Lumabas agad gamit ang inyong escape plan",
+                        "Hanapin ang mga paboritong laruan bago lumabas",
+                        "Magtago sa ilalim ng kama"
+                    ],
+                    "answer": 1,
+                    "hint": "Lumabas muna nang ligtas! Huwag mag-aksaya ng oras sa pagkuha ng mga gamit o laruan sa sunog."
+                },
+                {
+                    "q": "Bago buksan ang isang saradong pinto habang tumatakas sa sunog, paano ito itetest?",
+                    "options": [
+                        "Gamitin ang likod ng iyong kamay upang maramdaman kung mainit ang pinto o hawakan",
+                        "Buksan ito nang mabilis upang tingnan ang apoy",
+                        "Sipain ang pinto kung ito ay matibay",
+                        "Amuyin ang hawakan"
+                    ],
+                    "answer": 0,
+                    "hint": "Gamitin ang likod ng kamay. Kung mainit ito, may apoy sa kabilang panig; gamitin ang pangalawang ruta."
+                },
+                {
+                    "q": "Gaano kadalas dapat i-test ang mga baterya ng inyong smoke alarm?",
+                    "options": [
+                        "Minsan kada limang taon",
+                        "Kahit isang beses buwan-buwan",
+                        "Kapag nakakaamoy lamang ng usok",
+                        "Huwag na itong i-test"
+                    ],
+                    "answer": 1,
+                    "hint": "I-test buwan-buwan ang mga smoke alarm upang matiyak na gagana ito sa oras ng totoong sunog."
+                },
+                {
+                    "q": "Bakit lubhang mapanganib ang pagtakbo kapag nasusunog ang iyong damit?",
+                    "options": [
+                        "Madali kang mapapagod",
+                        "Nagbibigay ito ng oxygen sa apoy na nagpapabilis sa paglaki nito",
+                        "Hindi ka maririnig ng ibang tao",
+                        "Masisira ang iyong sapatos"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang hangin mula sa pagtakbo ay nagpapakain ng oxygen sa apoy. Palaging tumigil, humiga, at magpagulong-gulong."
+                },
+                {
+                    "q": "Kailan ang tamang oras upang tumawag sa hotline ng BFP kapag may sunog sa inyong bahay?",
+                    "options": [
+                        "Bago subukang lumikas sa loob ng bahay",
+                        "Kapag nakalabas na nang ligtas sa labas ng bahay",
+                        "Habang hinahanap ang pinagmulan ng apoy",
+                        "Pagkatapos ng ilang oras"
+                    ],
+                    "answer": 1,
+                    "hint": "Kaligtasan muna! Lumabas sa ligtas na lugar bago tumawag sa mga emergency hotline."
+                },
+                {
+                    "q": "Ayon sa patnubay ng EDITH, ilang daanan ng pagtakas ang dapat mayroon ang bawat silid?",
+                    "options": [
+                        "Isang pinto lamang",
+                        "Kahit dalawang magkaibang daan tulad ng pinto at bintana",
+                        "Tatlong pinto",
+                        "Walang daanan"
+                    ],
+                    "answer": 1,
+                    "hint": "Dapat mayroong dalawang daan palabas kung sakaling ang pangunahing pinto ay harangan ng usok o apoy."
+                }
+            ],
+            "taglish": [
+                {
+                    "q": "Saan matatagpuan ang pinakamalinis na hangin kapag puno ng usok ang silid?",
+                    "options": [
+                        "Malapit sa kisame ng silid",
+                        "Sa gitna ng silid habang nakatayo",
+                        "Malapit sa floor (gumapang nang mababa)",
+                        "Sa tabi ng mga saradong bintana"
+                    ],
+                    "answer": 2,
+                    "hint": "Ang usok at toxic gases ay umaakyat dahil sa init, kaya ang hangin sa floor ay mas safe hingahan."
+                },
+                {
+                    "q": "Ano ang unang dapat gawin kung masunog ang iyong damit?",
+                    "options": [
+                        "Tumakbo nang mabilis para humihip ang hangin",
+                        "Tumigil (Stop), Humiga (Drop), at Magpagulong-gulong (Roll)",
+                        "Maghanap agad ng fire extinguisher",
+                        "Buhusan ng mainit na grasa"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang pagtakbo ay nagpapakain ng oxygen sa apoy. Ang Stop, Drop, and Roll ay pumapatay dito nang ligtas."
+                },
+                {
+                    "q": "Ano ang ibig sabihin ng EDITH sa pagpaplano ng kaligtasan?",
+                    "options": [
+                        "Emergency Disaster In The Home",
+                        "Exit Drills In The Home",
+                        "Every Day Is Training Hour",
+                        "Escape Directions In The Hallway"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang EDITH ay nangangahulugang Exit Drills In The Home upang mag-practice ng escape routes kasama ang pamilya."
+                },
+                {
+                    "q": "Sa pag-plan ng EDITH, saan dapat ilagay ang inyong meeting place sa labas?",
+                    "options": [
+                        "Sa loob ng garahe",
+                        "Sa ligtas na spot sa labas tulad ng malaking puno o lamppost",
+                        "Katabi ng pader ng bahay",
+                        "Sa roof ng kapitbahay"
+                    ],
+                    "answer": 1,
+                    "hint": "Dapat itong maging safe at malayo sa bahay para iwas sa init o collapsing structures."
+                },
+                {
+                    "q": "Ano ang gagawin mo agad kapag narinig mo ang smoke alarm sa inyong bahay?",
+                    "options": [
+                        "Dedmahin lang at mag-antay ng parents",
+                        "Lumabas agad gamit ang inyong escape plan",
+                        "Hanapin ang paboritong toys bago lumabas",
+                        "Mag-hide sa closet"
+                    ],
+                    "answer": 1,
+                    "hint": "Get out immediately! Huwag mag-save ng gamit or laruan kapag may fire emergency."
+                },
+                {
+                    "q": "Bago mag-open ng closed door habang tumatakas sa sunog, paano ito itetest?",
+                    "options": [
+                        "Gamitin ang back ng iyong hand para maramdaman kung hot ang door o knob",
+                        "Buksan ito nang mabilis para makita ang apoy",
+                        "Sipain ang pinto para i-check kung matibay",
+                        "Amuyin ang handle"
+                    ],
+                    "answer": 0,
+                    "hint": "Gamitin ang likod ng kamay. Kung mainit ito, may apoy sa kabila at dapat gamitin ang second exit."
+                },
+                {
+                    "q": "Gaano kadalas dapat i-test ang batteries ng inyong smoke alarm?",
+                    "options": [
+                        "Once every five years",
+                        "At least once a month",
+                        "Kapag may naamoy na usok",
+                        "Huwag na i-test"
+                    ],
+                    "answer": 1,
+                    "hint": "Maging ready! I-test ang smoke alarms monthly para sigurado kang gagana ito kapag may sunog."
+                },
+                {
+                    "q": "Bakit super dangerous ang tumakbo kapag nasusunog ang iyong damit?",
+                    "options": [
+                        "Mapapagod ka agad",
+                        "Nagpapakain ito ng oxygen sa apoy kaya lalo itong bibilis lumaki",
+                        "Hindi ka maririnig ng rescue",
+                        "Masisira ang damit mo"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang hangin habang tumatakas ay magpapasiklab sa apoy. Always stop, drop, and roll."
+                },
+                {
+                    "q": "Kailan ang tamang time para tumawag sa BFP hotline kapag may fire?",
+                    "options": [
+                        "Bago ka lumikas sa loob ng bahay",
+                        "Kapag safe ka nang nakalabas ng bahay",
+                        "Habang tinitingnan mo kung saan galing ang apoy",
+                        "Pagkalipas ng ilang oras"
+                    ],
+                    "answer": 1,
+                    "hint": "Safety first! Siguraduhing safe ka na sa labas bago ka tumawag ng emergency assistance."
+                },
+                {
+                    "q": "Ayon sa EDITH guidelines, ilang escape routes ang dapat mayroon ang bawat room?",
+                    "options": [
+                        "Isang pinto lang",
+                        "At least two magkaibang ways out tulad ng door at window",
+                        "Tatlong pinto",
+                        "Kahit wala"
+                    ],
+                    "answer": 1,
+                    "hint": "Mag-ready ng alternative route para kung sakaling blocked ng smoke or fire ang main door."
+                }
+            ]
+        }
+    },
+    "2": {
+        "title": {
+            "en": "Module 2: Fire Safety for Teenagers",
+            "tl": "Modyul 2: Kaligtasan sa Sunog para sa mga Teenager",
+            "taglish": "Module 2: Fire Safety for Teenagers"
+        },
+        "summary": {
+            "en": "Kitchen grease fire safety and preventing electrical overloading.",
+            "tl": "Kaligtasan sa sunog ng grasa sa kusina at pag-iwas sa electrical overloading.",
+            "taglish": "Kitchen grease fire safety at pag-iwas sa overloading ng electrical outlets."
+        },
+        "study_text": {
+            "en": "[center][b]Module 2: Fire Safety for Teenagers[/b][/center]\n\n[b]1. Grease Fire Safety[/b]\n- Grease and oil fires commonly occur in the kitchen.\n- [b]NEVER USE WATER![/b] Throwing water on hot grease creates instant steam that explodes the oil, throwing fireballs everywhere.\n- [b]How to Extinguish[/b]: Smother the fire with a metal lid or pour baking soda over it.\n\n[b]2. Overload Prevention[/b]\n- Avoid overloading sockets or extension cords with too many high-wattage appliances.\n- Discard frayed cords or appliances with exposed wires.",
+            "tl": "[center][b]Modyul 2: Kaligtasan sa Sunog para sa mga Teenager[/b][/center]\n\n[b]1. Kaligtasan sa Sunog ng Grasa (Grease Fire)[/b]\n- Karaniwang nangyayari ang grease/oil fires habang nagluluto sa kusina.\n- [b]HUWAG GAGAMIT NG TUBIG![/b] Ang pagbuhos ng tubig sa mainit na grasa ay lilikha ng singaw na magpapasabog sa nag-aapoy na mantika.\n- [b]Paano Patayin[/b]: Takpan ang kawali gamit ang metal na takip o buhusan ito ng maraming baking soda upang ma-smother ang apoy.\n\n[b]2. Pag-iwas sa Overload (Electrical Hazards)[/b]\n- Iwasang mag-overload ng saksakan o extension cords sa pamamagitan ng pagsasaksak ng maraming kagamitang mataas ang wattage.\n- Huwag gumamit ng mga kurdon ng kuryente na kupas, sirang insulation, o may gupit.",
+            "taglish": "[center][b]Module 2: Fire Safety for Teenagers[/b][/center]\n\n[b]1. Grease Fire Safety[/b]\n- Ang grease/oil fires ay karaniwang nangyayari habang nagluluto sa kitchen.\n- [b]NEVER GUMAMIT NG TUBIG![/b] Ang pagbuhos ng tubig sa mainit na grease ay magdudulot ng instant steam na magpapasabog sa nasusunog na oil, creating a massive fireball.\n- [b]How to Extinguish[/b]: Takpan ang kawali ng metal lid o cookie sheet para ma-smother ang apoy, o buhusan ito ng maraming baking soda.\n\n[b]2. Overload Prevention (Electrical Hazards)[/b]\n- Iwasang mag-overload ng outlets o extension cords sa pamamagitan ng pagsasaksak ng napakaraming high-wattage appliances.\n- Huwag gumamit ng cords na may damaged insulation o may gupit."
+        },
+        "questions": {
+            "en": [
+                {
+                    "q": "How should you safely extinguish a cooking oil/grease fire in a pan on the stove?",
+                    "options": [
+                        "Pour a bucket of water on it",
+                        "Turn off the heat and smother it with a metal lid or damp cloth",
+                        "Carry the burning pan outside quickly"
+                    ],
+                    "answer": 1,
+                    "hint": "Water causes burning oil to explode. Always turn off the stove heat and smother the pan."
+                },
+                {
+                    "q": "What is a major cause of domestic electrical fires in teenagers' bedrooms?",
+                    "options": [
+                        "Using modern LED light fixtures",
+                        "Overloading extension cords and wall outlets with multiple chargers and appliances",
+                        "Charging your cell phone on a wooden table"
+                    ],
+                    "answer": 1,
+                    "hint": "Overloading outlets causes wires to overheat, melt, and ignite electrical fires."
+                },
+                {
+                    "q": "Which of the following is unsafe to do with electrical appliances?",
+                    "options": [
+                        "Plugging one laptop charger into a surge protector",
+                        "Plugging high-wattage hair irons and space heaters into the same outlet using multi-adapters",
+                        "Unplugging chargers when they are not being used"
+                    ],
+                    "answer": 1,
+                    "hint": "High-wattage appliances draw too much electrical current and should never share multi-adapters."
+                },
+                {
+                    "q": "Why is baking soda effective at smothering small grease fires?",
+                    "options": [
+                        "It cools the oil down to freezing point",
+                        "It releases carbon dioxide when heated, cutting off the fire's oxygen supply",
+                        "It dissolves the oil completely"
+                    ],
+                    "answer": 1,
+                    "hint": "Baking soda releases carbon dioxide to smother flames. Never use flour, as it can explode!"
+                },
+                {
+                    "q": "What should you do if you notice an electrical cord is frayed or has exposed wires?",
+                    "options": [
+                        "Wrap it in plastic tape and keep using it",
+                        "Unplug it immediately and replace the cord or appliance",
+                        "Ignore it unless sparks appear"
+                    ],
+                    "answer": 1,
+                    "hint": "Frayed cords are immediate fire and shock hazards. Discontinue use and replace them."
+                },
+                {
+                    "q": "What is the primary rule to prevent cooking fires in the kitchen?",
+                    "options": [
+                        "Never leave the stove unattended while cooking oil or food",
+                        "Keep the kitchen windows tightly shut",
+                        "Cook at maximum heat to speed up the process"
+                    ],
+                    "answer": 0,
+                    "hint": "Unattended cooking is the leading cause of home fires. Always stay in the kitchen when frying or boiling."
+                },
+                {
+                    "q": "How much space should you keep clear around space heaters or high-wattage electrical appliances?",
+                    "options": [
+                        "At least 3 feet (1 meter) from anything that can burn",
+                        "Just a few inches to save room",
+                        "You can place clothes directly on them to dry"
+                    ],
+                    "answer": 0,
+                    "hint": "Keep heaters 3 feet away from curtains, bedding, paper, and furniture to prevent ignition."
+                },
+                {
+                    "q": "Why should you never throw water on an active electrical fire?",
+                    "options": [
+                        "It makes the room too humid",
+                        "Water conducts electricity and can shock you, while spreading the electrical current",
+                        "Water will fuel the electrical sparks"
+                    ],
+                    "answer": 1,
+                    "hint": "Water is a conductor of electricity. Throwing it on an electrical fire risks severe electrocution."
+                },
+                {
+                    "q": "Is it safe to plug one power strip/extension cord into another (daisy-chaining)?",
+                    "options": [
+                        "Yes, it is a great way to extend reach",
+                        "No, it causes severe electrical overload and is a major fire hazard",
+                        "Only if both cords are of different brands"
+                    ],
+                    "answer": 1,
+                    "hint": "Daisy-chaining extension cords exceeds their rated electrical capacity, leading to melted wires and fire."
+                },
+                {
+                    "q": "Why should you NEVER throw flour or baking powder onto a cooking grease fire?",
+                    "options": [
+                        "It ruins the taste of the oil",
+                        "Flour is highly combustible in the air and can cause a dust explosion",
+                        "It makes the pan too sticky to clean"
+                    ],
+                    "answer": 1,
+                    "hint": "Flour acts as a fuel when dispersed in air. Use only baking soda, a metal lid, or a damp cloth."
+                }
+            ],
+            "tl": [
+                {
+                    "q": "Paano mo dapat patayin ang sunog ng grasa (grease fire) sa isang kawali?",
+                    "options": [
+                        "Buhusan agad ng malamig na tubig",
+                        "Takpan ng metal na takip o baking soda upang mamatay ang apoy",
+                        "Paypayan ito gamit ang basang tuwalya",
+                        "Buhusan ng harina o pulbos"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang tubig ay nagpapasabog sa grease fire. Ang pagtakip dito gamit ang metal na takip o baking soda ay nag-aalis ng oxygen ng apoy."
+                },
+                {
+                    "q": "Alin sa mga sumusunod ang sanhi ng panganib sa kuryente sa tahanan?",
+                    "options": [
+                        "Pagsasaksak ng isang appliance sa saksakan",
+                        "Paggamit ng mga appliances na may sertipikadong kalidad",
+                        "Pag-overload ng saksakan gamit ang mga multi-plug adapter",
+                        "Pagtanggal ng saksakan kapag hindi ginagamit"
+                    ],
+                    "answer": 2,
+                    "hint": "Ang pag-overload ng mga saksakan ay lumilikha ng labis na init na maaaring magdulot ng sunog sa loob ng dingding."
+                },
+                {
+                    "q": "Bakit mapanganib ang pagbuhos ng tubig sa nasusunog na grasa/langis?",
+                    "options": [
+                        "Dahil lumalamig ang mantika nang mabilis",
+                        "Lumilikha ito ng singaw na nagpapasabog at nagpapakalat ng nag-aapoy na langis",
+                        "Nasisira nito ang kalidad ng kawali",
+                        "Walang mangyayaring masama"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang tubig ay mas mabigat sa langis at kumukulo agad sa ilalim nito, na nagdudulot ng sumasabog na fireball."
+                },
+                {
+                    "q": "Bakit mainam gamitin ang baking soda sa maliliit na grease fire?",
+                    "options": [
+                        "Pinapalamig nito ang mantika",
+                        "Naglalabas ito ng carbon dioxide kapag uminit na pumapatay sa apoy",
+                        "Tinutunaw nito ang kawali",
+                        "Pinapalakas nito ang apoy"
+                    ],
+                    "answer": 1,
+                    "hint": "Naglalabas ng carbon dioxide ang baking soda para patayin ang apoy. Huwag gumamit ng harina dahil ito ay sumasabog!"
+                },
+                {
+                    "q": "Ano ang dapat gawin kung may nakitang kupas, punit, o sirang kurdon ng kuryente?",
+                    "options": [
+                        "Balutin ng tape at patuloy na gamitin",
+                        "Tanggalin sa saksakan at palitan agad ang kurdon o appliance",
+                        "Hayaan lang hanggang sa may lumabas na spark",
+                        "Buhusan ng tubig"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang sirang kurdon ay sanhi ng sunog at kuryente. Palitan agad ito upang manatiling ligtas."
+                },
+                {
+                    "q": "Ano ang pinakamahalagang panuntunan upang maiwasan ang sunog sa kusina?",
+                    "options": [
+                        "Huwag iwanan ang niluluto kapag gumagamit ng mantika",
+                        "Panatilihing nakasara ang mga bintana habang nagluluto",
+                        "Lakasan ang apoy sa maximum para mabilis matapos",
+                        "Magluto nang nakapikit"
+                    ],
+                    "answer": 0,
+                    "hint": "Ang pag-iwan sa niluluto ang pangunahing sanhi ng sunog sa bahay. Palaging bantayan ang kalan."
+                },
+                {
+                    "q": "Gaano kalayong espasyo ang dapat iwanang malinis sa paligid ng mga space heater?",
+                    "options": [
+                        "Kahit 3 talampakan (1 metro) mula sa mga bagay na madaling masunog",
+                        "Ilang sentimetro lamang upang makatipid sa espasyo",
+                        "Maaari mong isampay ang mga basang damit dito",
+                        "Kahit nakadikit sa kama"
+                    ],
+                    "answer": 0,
+                    "hint": "Ilayo ang mga heater sa kurtina, papel, at kama upang hindi ito mag-apoy."
+                },
+                {
+                    "q": "Bakit hindi dapat buhusan ng tubig ang isang nasusunog na saksakan o kagamitang de-kuryente?",
+                    "options": [
+                        "Dahil masisira ang appliance",
+                        "Ang tubig ay conductor ng kuryente at maaari kang makuryente",
+                        "Dahil lalong lalakas ang apoy dahil sa tubig",
+                        "Wala sa mga nabanggit"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang tubig ay nagdadala ng kuryente. Ang pagbuhos nito sa electrical fire ay maaaring magdulot ng matinding electrocution."
+                },
+                {
+                    "q": "Ligtas ba na isaksak ang isang extension cord sa isa pang extension cord (daisy-chaining)?",
+                    "options": [
+                        "Oo, upang humaba ang abot nito",
+                        "Hindi, dahil maaari itong mag-overheat at magdulot ng sunog",
+                        "Oo, kung pareho ang kulay ng mga wire",
+                        "Depende sa haba nito"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang pagsasabit-sabit ng extension cords ay lumalampas sa kapasidad ng kuryente nito, na nagiging sanhi ng sunog."
+                },
+                {
+                    "q": "Bakit HUWAG gagamit ng harina o baking powder sa sunog ng grasa?",
+                    "options": [
+                        "Masisira nito ang panlasa ng pagkain",
+                        "Ang harina ay madaling masunog sa hangin at maaaring sumabog",
+                        "Dahil malalagkit ang kawali",
+                        "Hindi ito makakatulong"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang harina ay combustible at maaaring sumabog kapag ikinalat sa apoy. Gamitin lamang ang baking soda o takip ng kawali."
+                }
+            ],
+            "taglish": [
+                {
+                    "q": "Paano mo dapat patayin ang grease fire sa isang kawali?",
+                    "options": [
+                        "Buhusan agad ng malamig na tubig",
+                        "Takpan ng metal lid o baking soda para ma-smother ang apoy",
+                        "Paypayan ito gamit ang basang tuwalya",
+                        "Buhusan ng harina o pulbos"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang tubig ay nagpapasabog sa grease fire. Ang pagtakip gamit ang metal lid o baking soda ay nag-aalis ng oxygen ng apoy."
+                },
+                {
+                    "q": "Alin sa mga sumusunong ang sanhi ng electrical hazard sa tahanan?",
+                    "options": [
+                        "Pagsasaksak ng isang appliance sa saksakan",
+                        "Paggamit ng mga appliances na may professional quality",
+                        "Pag-overload ng saksakan gamit ang mga multi-plug adapter",
+                        "Pagtanggal ng saksakan kapag hindi ginagamit"
+                    ],
+                    "answer": 2,
+                    "hint": "Ang pag-overload ng outlets ay lumilikha ng sobrang init na pwedeng magdulot ng fire sa loob ng pader."
+                },
+                {
+                    "q": "Bakit mapanganib ang pagbuhos ng tubig sa nasusunog na grease/oil?",
+                    "options": [
+                        "Dahil lumalamig ang mantika nang mabilis",
+                        "Lumilikha ito ng singaw na nagpapasabog at nagpapakalat ng nag-aapoy na langis",
+                        "Nasisira nito ang kalidad ng kawali",
+                        "Walang mangyayaring masama"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang tubig ay mas mabigat sa langis at kumukulo agad sa ilalim nito, na nagdudulot ng sumasabog na fireball."
+                },
+                {
+                    "q": "Bakit effective gamitin ang baking soda sa maliliit na grease fire?",
+                    "options": [
+                        "Pinapalamig nito ang oil",
+                        "Naglalabas ito ng carbon dioxide kapag uminit na pumapatay sa apoy",
+                        "Tinutunaw nito ang pan",
+                        "Pinapalakas nito ang apoy"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang baking soda ay nagre-release ng carbon dioxide para patayin ang apoy. Huwag gumamit ng harina dahil sasabog ito!"
+                },
+                {
+                    "q": "Ano ang gagawin mo kapag may napansin kang frayed o sirang electrical cord?",
+                    "options": [
+                        "Balutin ng tape at gamitin pa rin",
+                        "I-unplug agad at palitan ang cord o appliance",
+                        "Hayaan lang hanggang sa may lumabas na sparks",
+                        "Hugasan ng sabon"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang frayed cord ay may risk ng shock at fire. Palitan agad ito para sa inyong safety."
+                },
+                {
+                    "q": "Ano ang primary rule para maiwasan ang fire sa kitchen?",
+                    "options": [
+                        "Huwag iwanan ang stove habang nagluluto gamit ang oil o cooking food",
+                        "I-lock nang mahigpit ang kitchen windows habang nagluluto",
+                        "Lakasan ang stove heat para mabilis maluto",
+                        "Magluto nang walang tulog"
+                    ],
+                    "answer": 0,
+                    "hint": "Unattended cooking ang top cause ng house fires. Always stay sa kitchen kapag nagluluto."
+                },
+                {
+                    "q": "Gaano kalayo ang dapat na clear space sa paligid ng space heaters?",
+                    "options": [
+                        "At least 3 feet (1 meter) mula sa kahit anong pwedeng masunog",
+                        "Ilang inches lang para makatipid sa space",
+                        "Pwede kang magpatuyo ng basang clothes dito",
+                        "Kahit nakadikit sa kurtina"
+                    ],
+                    "answer": 0,
+                    "hint": "Ilayo ang heaters sa curtains, bedding, or papers para maiwasan ang pagmulan ng apoy."
+                },
+                {
+                    "q": "Bakit never dapat buhusan ng tubig ang isang active electrical fire?",
+                    "options": [
+                        "Dahil magiging humid ang room",
+                        "Ang tubig ay conductor ng electricity at pwede kang makuryente",
+                        "Dahil masisira ang extension cord",
+                        "Walang epekto"
+                    ],
+                    "answer": 1,
+                    "hint": "Water conducts electricity. Ang pagbuhos nito sa live electrical fire ay napaka-dangerous dahil sa electrocution."
+                },
+                {
+                    "q": "Ligtas ba mag-plug ng extension cord sa isa pang extension cord (daisy-chaining)?",
+                    "options": [
+                        "Oo, para humaba ang abot",
+                        "Hindi, dahil nagdudulot ito ng overload at high fire risk",
+                        "Oo, basta parehong brand",
+                        "Pwede naman"
+                    ],
+                    "answer": 1,
+                    "hint": "Daisy-chaining exceeds power limits. Pwede itong mag-melt ng wires at mag-ignite ng fire."
+                },
+                {
+                    "q": "Bakit never dapat magtapon ng harina o baking powder sa grease fire?",
+                    "options": [
+                        "Masisira ang lasa ng pagkain",
+                        "Ang harina ay flammable at pwedeng mag-cause ng dust explosion",
+                        "Dahil malalagkit ang pan",
+                        "Hindi ito gagana"
+                    ],
+                    "answer": 1,
+                    "hint": "Flour dispersed in air acts as fuel and explodes. Use baking soda, a metal lid, or wet cloth instead."
+                }
+            ]
+        }
+    },
+    "3": {
+        "title": {
+            "en": "Module 3: Fire Safety for Young Adults",
+            "tl": "Modyul 3: Kaligtasan sa Sunog para sa mga Young Adult",
+            "taglish": "Module 3: Fire Safety for Young Adults"
+        },
+        "summary": {
+            "en": "Fire extinguisher PASS method and spinal stabilization basics.",
+            "tl": "Paraan ng PASS sa paggamit ng fire extinguisher at pangunahing pag-stabilize ng gulugod (spinal stabilization).",
+            "taglish": "Paggamit ng fire extinguisher gamit ang PASS, at spinal stabilization basics."
+        },
+        "study_text": {
+            "en": "[center][b]Module 3: Fire Safety for Young Adults[/b][/center]\n\n[b]1. Extinguisher Usage (PASS Method)[/b]\n- [b]P (Pull)[/b]: Pull the safety pin at the top of the extinguisher.\n- [b]A (Aim)[/b]: Aim the nozzle at the base of the fire (the bottom), not at the flames.\n- [b]S (Squeeze)[/b]: Squeeze the lever to discharge the agent.\n- [b]S (Sweep)[/b]: Sweep the hose side-to-side at the base of the fire until extinguished.\n\n[b]2. Spinal Stabilization in Emergency[/b]\n- If a victim falls from a height or experiences severe trauma:\n  - [b]NEVER MOVE THE VICTIM[/b] unless there is an immediate threat of fire or explosion.\n  - Keep their neck and back straight and stabilized to prevent permanent paralysis.",
+            "tl": "[center][b]Modyul 3: Kaligtasan sa Sunog para sa mga Young Adult[/b][/center]\n\n[b]1. Paggamit ng Fire Extinguisher (PASS Method)[/b]\n- [b]P (Pull)[/b]: Hilahin ang safety pin sa itaas ng extinguisher.\n- [b]A (Aim)[/b]: Itutok ang nozzle o hose sa base ng apoy (sa pinakailalim), huwag sa itaas ng ningas.\n- [b]S (Squeeze)[/b]: Pisilin ang lever o hawakan para ma-discharge ang pamatay-sunog.\n- [b]S (Sweep)[/b]: I-sweep ang hose pabalik-balik (side-to-side) sa base ng apoy hanggang sa maapula ito.\n\n[b]2. Spinal Stabilization sa Emergency[/b]\n- Kung ang isang biktima ay nahulog mula sa mataas na lugar o nakaranas ng matinding trauma:\n  - [b]HUWAG NA HUWAG GALAWIN ANG BIKTIMA[/b] maliban na lamang kung may agarang banta ng sunog o pagsabog.\n  - Panatilihing tuwid ang leeg at likod upang maiwasan ang permanenteng paralysis.",
+            "taglish": "[center][b]Module 3: Fire Safety for Young Adults[/b][/center]\n\n[b]1. Extinguisher Usage (PASS Method)[/b]\n- [b]P (Pull)[/b]: Hilahin ang safety pin sa itaas ng extinguisher.\n- [b]A (Aim)[/b]: Itutok ang nozzle o hose sa base ng apoy (sa pinakailalim), huwag sa itaas ng ningas.\n- [b]S (Squeeze)[/b]: Pisilin ang lever o hawakan para ma-discharge ang agent.\n- [b]S (Sweep)[/b]: I-sweep ang hose side-to-side sa base ng apoy hanggang sa maapula ito.\n\n[b]2. Spinal Stabilization sa Emergency[/b]\n- Kung ang isang victim ay nahulog mula sa mataas na lugar o nakaranas ng severe trauma:\n  - [b]NEVER GALAWIN ANG VICTIM[/b] unless may immediate threat ng sunog o pagsabog.\n  - Panatilihing tuwid ang neck at back upang maiwasan ang permanent paralysis."
+        },
+        "questions": {
+            "en": [
+                {
+                    "q": "What does the official fire extinguisher acronym \"PASS\" stand for?",
+                    "options": [
+                        "Push, Aim, Spray, Stop",
+                        "Pull the pin, Aim low at the base, Squeeze the lever, Sweep side-to-side",
+                        "Point, Activate, Squeeze, Splash"
+                    ],
+                    "answer": 1,
+                    "hint": "PASS is Pull the pin, Aim at the base, Squeeze the handle, and Sweep side-to-side."
+                },
+                {
+                    "q": "If a coworker falls from a scaffold and is unconscious, what is the best first aid step?",
+                    "options": [
+                        "Quickly pull them up to see if they can stand",
+                        "Keep them flat and still, do NOT move them, and wait for professional medical responders",
+                        "Sit them up and rub their neck to improve circulation"
+                    ],
+                    "answer": 1,
+                    "hint": "To prevent permanent spinal injury, never move a severe fall/trauma victim unless in immediate danger."
+                },
+                {
+                    "q": "Why is it critical that workplace fire doors remain closed?",
+                    "options": [
+                        "To keep air conditioning from escaping",
+                        "To compartmentalize fire and block toxic smoke from spreading to escape paths",
+                        "To prevent employees from wandering into other offices"
+                    ],
+                    "answer": 1,
+                    "hint": "Fire doors are rated to block smoke and heat, keeping exit hallways clear for evacuation."
+                },
+                {
+                    "q": "In the PASS method, where should you aim the nozzle of the fire extinguisher?",
+                    "options": [
+                        "At the top of the flames",
+                        "At the base or bottom of the fire",
+                        "Into the thickest part of the smoke"
+                    ],
+                    "answer": 1,
+                    "hint": "Aiming at the base targets the fuel source, which is necessary to extinguish the fire."
+                },
+                {
+                    "q": "When is it acceptable to move an injured person who might have a spinal injury?",
+                    "options": [
+                        "Only when there is an immediate, life-threatening danger, such as an active fire or explosion hazard",
+                        "When they say they are uncomfortable lying on the floor",
+                        "To transport them to the hospital in your personal car"
+                    ],
+                    "answer": 0,
+                    "hint": "Moving a spinal injury victim can cause permanent paralysis. Only do so if staying leads to certain death."
+                },
+                {
+                    "q": "What is the primary purpose of conducting regular fire drills in offices and dormitories?",
+                    "options": [
+                        "To check employee attendance rates",
+                        "To practice evacuation routes so occupants know how to exit quickly without panic",
+                        "To test the durability of the building's emergency lights"
+                    ],
+                    "answer": 1,
+                    "hint": "Drills build muscle memory and clear paths, minimizing confusion during a real evacuation."
+                },
+                {
+                    "q": "Why is propping a fire door open with a wooden wedge a dangerous violation?",
+                    "options": [
+                        "It damages the door frame",
+                        "It allows toxic smoke and heat to travel freely into stairwells and corridors, blocking escape paths",
+                        "It makes the door close too loudly"
+                    ],
+                    "answer": 1,
+                    "hint": "Open fire doors defeat compartmentalization, allowing deadly smoke to spread and trap occupants."
+                },
+                {
+                    "q": "In the PASS method, how should you sweep the extinguisher nozzle?",
+                    "options": [
+                        "In circles above the fire",
+                        "Side-to-side at the base of the fire",
+                        "Up and down along the flames"
+                    ],
+                    "answer": 1,
+                    "hint": "Sweep side-to-side at the base to evenly distribute the extinguishing agent over the fuel."
+                },
+                {
+                    "q": "What should you do if you notice boxes or supplies blocking an emergency exit door in your office?",
+                    "options": [
+                        "Ignore it unless there is an inspection",
+                        "Report it immediately and ensure the boxes are removed to keep the exit clear",
+                        "Move them only during a real fire"
+                    ],
+                    "answer": 1,
+                    "hint": "Exits must be kept 100% clear at all times. A blocked door during a fire is a major hazard."
+                },
+                {
+                    "q": "How do you know if a fire extinguisher is charged and ready to use?",
+                    "options": [
+                        "Shake it to see if it sounds full",
+                        "Check the pressure gauge; the needle should be in the green zone",
+                        "Spray a small amount to test it"
+                    ],
+                    "answer": 1,
+                    "hint": "The pressure gauge needle must point to the green zone. If it's in the red, it needs maintenance."
+                }
+            ],
+            "tl": [
+                {
+                    "q": "Ano ang ibig sabihin ng PASS para sa paggamit ng fire extinguisher?",
+                    "options": [
+                        "Push, Aim, Squeeze, Sweep",
+                        "Pull, Aim, Squeeze, Sweep",
+                        "Pull, Aim, Spray, Shake",
+                        "Point, Aim, Squeeze, Sweep"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang PASS ay Pull the pin, Aim at base, Squeeze the lever, at Sweep side-to-side."
+                },
+                {
+                    "q": "Kailan mo lamang dapat galawin ang isang biktima na may hinalang pinsala sa spine o leeg?",
+                    "options": [
+                        "Kapag gusto nilang umupo",
+                        "Kapag may agarang banta sa buhay tulad ng sunog o pagsabog",
+                        "Upang dalhin sila sa isang mas kumportableng higaan",
+                        "Agad-agad nang walang dahilan"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang hindi kinakailangang paggalaw ay maaaring magdulot ng permanenteng pinsala sa spinal cord."
+                },
+                {
+                    "q": "Saan mo dapat itutok ang fire extinguisher nozzle kapag nagpapapatay ng apoy?",
+                    "options": [
+                        "Sa itaas na bahagi ng apoy kung saan naroon ang usok",
+                        "Direkta sa gitna ng apoy",
+                        "Sa pinakailalim o base ng apoy",
+                        "Kahit saan"
+                    ],
+                    "answer": 2,
+                    "hint": "Dapat mong patayin ang pinagmumulan ng apoy sa base nito upang tuluyang maapula ito."
+                },
+                {
+                    "q": "Sa patnubay ng PASS, ano ang ibig sabihin ng titik 'A'?",
+                    "options": [
+                        "Aim - itutok ang nozzle sa base ng apoy",
+                        "Activate - simulan ang pagpindot",
+                        "Action - tumawag ng tulong",
+                        "Avoid - lumayo sa apoy"
+                    ],
+                    "answer": 0,
+                    "hint": "Itutok (Aim) ang nozzle sa pinaka-base ng apoy upang maapula ang pinagmumulan nito."
+                },
+                {
+                    "q": "Bakit mapanganib na galawin ang isang taong nahulog mula sa mataas na lugar?",
+                    "options": [
+                        "Baka magalit ang biktima",
+                        "Maaari itong magdulot ng permanenteng paralysis o pinsala sa spinal cord",
+                        "Dahil masisira ang kanilang damit",
+                        "Walang partikular na panganib"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang pinsala sa gulugod (spine) ay maaaring lumala kapag ginalaw ang biktima nang walang sapat na kagamitan."
+                },
+                {
+                    "q": "Ano ang pangunahing layunin ng regular na fire drill sa mga dormitoryo at opisina?",
+                    "options": [
+                        "Upang masuri ang bilis ng pagtakbo ng mga empleyado",
+                        "Masanay ang mga tao sa mga ligtas na ruta ng paglikas upang maiwasan ang panic",
+                        "Upang linisin ang mga daanan",
+                        "Wala sa mga nabanggit"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang fire drill ay nagbibigay ng muscle memory para sa mabilis at organisadong paglikas."
+                },
+                {
+                    "q": "Bakit hindi dapat i-wedge o harangan ang mga fire door sa mga pasilyo?",
+                    "options": [
+                        "Dahil masisira ang bisagra ng pinto",
+                        "Dahil hahayaan nitong kumalat ang usok at apoy sa mga daanan ng pagtakas",
+                        "Upang makapasok ang sariwang hangin",
+                        "Para makadaan ang lahat"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang mga fire door ay idinisenyo upang pigilin ang apoy at usok; dapat itong laging nakasara."
+                },
+                {
+                    "q": "Sa PASS method, paano mo dapat i-sweep ang nozzle ng fire extinguisher?",
+                    "options": [
+                        "Pabilog sa ibabaw ng apoy",
+                        "Pabalik-balik o side-to-side sa base ng apoy",
+                        "Pataas at pababa sa usok",
+                        "Huwag itong igalaw"
+                    ],
+                    "answer": 1,
+                    "hint": "I-sweep side-to-side sa base upang pantay na maikalat ang pamatay-sunog sa pinagmumulan ng apoy."
+                },
+                {
+                    "q": "Ano ang dapat mong gawin kapag nakita mong may mga kahon na nakaharang sa emergency exit?",
+                    "options": [
+                        "Hayaan lang ito hanggang may inspeksyon",
+                        "Iulat agad at ipatanggal ang mga kahon upang manatiling malinis ang exit",
+                        "Iurong lamang kapag may sunog na",
+                        "Huwag pansinin"
+                    ],
+                    "answer": 1,
+                    "hint": "Dapat laging 100% malinis ang emergency exits upang maiwasan ang pagkakaantala sa paglikas."
+                },
+                {
+                    "q": "Paano mo malalaman kung ang fire extinguisher ay puno at handa nang gamitin?",
+                    "options": [
+                        "Alugin ito kung may tunog",
+                        "Tingnan ang gauge; dapat ang needle ay nasa green zone",
+                        "Subukang i-spray nang bahagya",
+                        "Amuyin ang nozzle"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang gauge needle sa green zone ay nangangahulugang sapat ang pressure nito para gumana nang maayos."
+                }
+            ],
+            "taglish": [
+                {
+                    "q": "Ano ang ibig sabihin ng PASS sa paggamit ng fire extinguisher?",
+                    "options": [
+                        "Push, Aim, Squeeze, Sweep",
+                        "Pull the pin, Aim at base, Squeeze the lever, Sweep side-to-side",
+                        "Point, Aim, Spray, Shake",
+                        "Point, Activate, Squeeze, Splash"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang PASS ay Pull the pin, Aim at base, Squeeze the lever, at Sweep side-to-side."
+                },
+                {
+                    "q": "Kailan mo lamang dapat galawin ang isang victim na may suspected spinal injury?",
+                    "options": [
+                        "Kapag gusto nilang umupo",
+                        "Kapag may immediate threat sa buhay tulad ng sunog o explosion hazard",
+                        "Upang ilipat sila sa mas comfortable na bed",
+                        "Agad-agad kahit walang emergency"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang maling paggalaw sa may spinal injury ay pwedeng mag-cause ng permanent paralysis."
+                },
+                {
+                    "q": "Saan mo dapat itutok ang fire extinguisher nozzle habang nagpapatay ng apoy?",
+                    "options": [
+                        "Sa itaas ng apoy kung saan naroon ang usok",
+                        "Direkta sa gitna ng flames",
+                        "Sa base o pinakailalim ng apoy",
+                        "Kahit saan"
+                    ],
+                    "answer": 2,
+                    "hint": "Itutok sa base para maapula ang source ng apoy at hindi lang ang usok."
+                },
+                {
+                    "q": "Sa PASS method, ano ang ibig sabihin ng 'A'?",
+                    "options": [
+                        "Aim - itutok ang nozzle sa base ng apoy",
+                        "Activate - i-press ang lever",
+                        "Action - tumawag ng rescue",
+                        "Avoid - lumayo sa fire"
+                    ],
+                    "answer": 0,
+                    "hint": "Aim means itutok ang nozzle sa pinakailalim o base ng fire."
+                },
+                {
+                    "q": "Bakit dangerous galawin ang isang tao na nahulog mula sa mataas na scaffold?",
+                    "options": [
+                        "Baka magalit ang biktima",
+                        "Maaaring magdulot ng permanent paralysis o spinal damage",
+                        "Dahil masisira ang damit nila",
+                        "Walang hazard"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang trauma sa spine ay pwedeng lumala at mag-cause ng paralysis kapag ginalaw nang walang medical equipment."
+                },
+                {
+                    "q": "Ano ang primary goal ng regular fire drills sa dorms at offices?",
+                    "options": [
+                        "I-test kung gaano kabilis tumakbo ang staff",
+                        "I-practice ang escape routes para iwas sa panic kapag may totoong fire",
+                        "Para linisin ang hallways",
+                        "Wala sa mga nabanggit"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang drills ay nagpapalakas ng muscle memory para sa mabilis at safe na evacuation."
+                },
+                {
+                    "q": "Bakit dangerous i-wedge o i-prop open ang fire doors gamit ang kahoy?",
+                    "options": [
+                        "Masisira ang pinto",
+                        "Papayagan nito ang toxic smoke at fire na kumalat sa hallways at stairwells",
+                        "Para makadaan ang hangin",
+                        "Para madaling lumabas ang tao"
+                    ],
+                    "answer": 1,
+                    "hint": "Fire doors block smoke and flame; dapat palaging closed ang mga ito para compartmentalized ang fire."
+                },
+                {
+                    "q": "Sa PASS method, paano mo dapat i-sweep ang nozzle ng fire extinguisher?",
+                    "options": [
+                        "Pabilog sa ibabaw ng flames",
+                        "Side-to-side sa base ng apoy",
+                        "Pataas at pababa sa usok",
+                        "I-hold lang nang steady"
+                    ],
+                    "answer": 1,
+                    "hint": "Sweep side-to-side sa base para ma-cover ng extinguishing agent ang buong pinanggalingan ng apoy."
+                },
+                {
+                    "q": "Ano ang gagawin mo kapag may nakita kang boxes na nakaharang sa emergency exit door?",
+                    "options": [
+                        "Hayaan lang hanggang may inspection",
+                        "I-report agad at ipatanggal ang boxes para manatiling clear ang exit",
+                        "Iurong lang kapag may fire na",
+                        "Huwag pansinin"
+                    ],
+                    "answer": 1,
+                    "hint": "Dapat laging 100% clear ang emergency exits para walang obstruction sa evacuation."
+                },
+                {
+                    "q": "Paano mo malalaman kung ready gamitin ang isang fire extinguisher?",
+                    "options": [
+                        "Alugin para marinig kung may laman",
+                        "Tingnan ang gauge; dapat ang needle ay nasa green zone",
+                        "Subukang i-spray nang kaunti",
+                        "Amuyin ang nozzle"
+                    ],
+                    "answer": 1,
+                    "hint": "Kapag ang gauge needle ay nasa green zone, ibig sabihin ay sapat ang pressure nito para gumana."
+                }
+            ]
+        }
+    },
+    "4": {
+        "title": {
+            "en": "Module 4: Fire Safety for General Public",
+            "tl": "Modyul 4: Kaligtasan sa Sunog para sa Publiko",
+            "taglish": "Module 4: Fire Safety for General Public"
+        },
+        "summary": {
+            "en": "LPG cylinder leak protocols, ventilation, and brush fire clearing.",
+            "tl": "Mga protocol sa singaw ng tangke ng LPG, bentilasyon, at paglilinis laban sa sunog ng damo.",
+            "taglish": "Gas leak and LPG cylinder safety, venting, at pag-iwas sa sparks."
+        },
+        "study_text": {
+            "en": "[center][b]Module 4: Fire Safety for General Public[/b][/center]\n\n[b]1. LPG and Gas Leak Safety[/b]\n- Liquefied Petroleum Gas (LPG) is heavy and highly flammable.\n- When you smell a gas leak (rotten eggs):\n  - [b]DO NOT FLICK LIGHT SWITCHES[/b] or plug/unplug appliances. Sparks from switches can instantly ignite the gas.\n  - Immediately shut off the regulator valve on top of the cylinder.\n  - Open all doors and windows to cross-ventilate.\n  - Go outside before calling the emergency hotline.\n\n[b]2. Defensible Space (Brush Fires)[/b]\n- Clear dry leaves, grass, and trash within 10 meters (30 feet) of your house walls to block spreading outdoor brush/forest fires.",
+            "tl": "[center][b]Modyul 4: Kaligtasan sa Sunog para sa Publiko[/b][/center]\n\n[b]1. Kaligtasan sa LPG at Gas Leak[/b]\n- Ang Liquefied Petroleum Gas (LPG) ay mabigat at madaling magliyab.\n- Kapag nakakaamoy ng singaw ng gas (amoy bulok na itlog):\n  - [b]HUWAG MAG-BUKAS/SARA NG SWITCH NG ILAW[/b] o mag-unplug ng kagamitan. Ang spark mula sa switch ay sapat na upang sumabog ang gas.\n  - Patayin agad ang regulator o main valve sa ibabaw ng tangke.\n  - Buksan ang mga pinto at bintana upang magkaroon ng cross-ventilation.\n  - Lumabas agad ng bahay bago tumawag sa hotline gamit ang cellphone.\n\n[b]2. Defensible Space (Sunog sa Damo/Gubat)[/b]\n- Linisin ang mga tuyong dahon, damo, at basura sa loob ng 10 metro (30 talampakan) mula sa dingding ng bahay upang mapigilan ang pagkalat ng apoy patungo sa inyong bahay.",
+            "taglish": "[center][b]Module 4: Fire Safety for General Public[/b][/center]\n\n[b]1. LPG at Gas Leak Safety[/b]\n- Ang Liquefied Petroleum Gas (LPG) ay mabigat at highly flammable.\n- Kapag nakakaamoy ng gas leak (amoy rotten eggs):\n  - [b]DO NOT MAG-FLICK NG LIGHT SWITCHES[/b] o mag-unplug ng electrical devices. Ang pag-on o off ng switch ay gumagawa ng maliit na spark na sapat upang sumabog ang gas.\n  - Patayin agad ang regulator o main valve.\n  - Buksan ang pinto at bintana para sa cross-ventilation.\n  - Lumabas agad ng bahay bago tumawag sa hotline gamit ang mobile phone."
+        },
+        "questions": {
+            "en": [
+                {
+                    "q": "If you smell a strong LPG gas leak in your kitchen, what is the most dangerous action?",
+                    "options": [
+                        "Opening the windows and doors to ventilate",
+                        "Flicking the kitchen light switch to see better",
+                        "Shutting off the gas cylinder valve"
+                    ],
+                    "answer": 1,
+                    "hint": "Flicking light switches creates a small electrical arc/spark that will instantly detonate the gas cloud."
+                },
+                {
+                    "q": "How can residents protect their wooden homes from outdoor brush and grass fires?",
+                    "options": [
+                        "Clear dry leaves, grass, and combustible vegetation within 10 meters of the house",
+                        "Stack dry firewood closely against the wooden exterior walls",
+                        "Keep windows open to welcome the smoke"
+                    ],
+                    "answer": 0,
+                    "hint": "Clearing defensible space deprives the spreading grass fire of fuel near your walls."
+                },
+                {
+                    "q": "A massive grass fire is spreading toward a nearby fuel station. What should you instruct the caller?",
+                    "options": [
+                        "Try to extinguish the fire using a garden hose",
+                        "Evacuate the area immediately and call BFP responders via hotline",
+                        "Run to the fuel tanks to cover them with canvas sheets"
+                    ],
+                    "answer": 1,
+                    "hint": "Safety first! Evacuate immediately due to high explosion risks and let BFP firefighters handle it."
+                },
+                {
+                    "q": "Why is plugging or unplugging appliances highly dangerous during a gas leak?",
+                    "options": [
+                        "It wastes electricity",
+                        "It can generate a tiny electrical spark that can ignite the gas and cause an explosion",
+                        "It breaks the appliance socket"
+                    ],
+                    "answer": 1,
+                    "hint": "Any electrical connection or disconnection can spark, detonating accumulated LPG gas."
+                },
+                {
+                    "q": "What is the correct way to position an LPG cylinder in your kitchen?",
+                    "options": [
+                        "Laying flat on its side to use all the gas",
+                        "Upright in a well-ventilated area away from direct heat",
+                        "Upside down inside a closed cabinet"
+                    ],
+                    "answer": 1,
+                    "hint": "Keep cylinders upright so the safety valve operates correctly and vapor is drawn, not liquid."
+                },
+                {
+                    "q": "What is the safest way to check for suspected leaks around LPG cylinder valves or hoses?",
+                    "options": [
+                        "Hold a lighted match near the connection to see if it sparks",
+                        "Brush soapy water on the connections and watch for growing bubbles",
+                        "Listen closely for a whistling sound"
+                    ],
+                    "answer": 1,
+                    "hint": "Soap bubbles indicate escaping gas. Never use a flame to test for gas leaks!"
+                },
+                {
+                    "q": "According to BFP community safety guidelines, how wide should the cleared 'defensible space' around homes be?",
+                    "options": [
+                        "At least 10 meters (30 feet)",
+                        "At least 1 meter (3 feet)",
+                        "Only 50 centimeters"
+                    ],
+                    "answer": 0,
+                    "hint": "A 10-meter cleared zone provides a solid barrier to stop spreading grass and forest fires."
+                },
+                {
+                    "q": "Why does leaked LPG gather near the floor rather than rising?",
+                    "options": [
+                        "It is lighter than air",
+                        "It is heavier than air and sinks to the lowest points",
+                        "The kitchen air conditioning pushes it down"
+                    ],
+                    "answer": 1,
+                    "hint": "LPG is heavier than air. It accumulates in low areas and drains like water, presenting a major floor-level ignition hazard."
+                },
+                {
+                    "q": "What is the main cause of brush fires spreading to residential areas during dry season?",
+                    "options": [
+                        "High humidity",
+                        "Accumulated dry leaves, grass, and trash close to homes",
+                        "Using electric stoves"
+                    ],
+                    "answer": 1,
+                    "hint": "Uncleaned dry vegetation acts as fuel, allowing grass fires to march straight to house walls."
+                },
+                {
+                    "q": "If you detect an LPG leak, what valve should you close first?",
+                    "options": [
+                        "The main water valve",
+                        "The regulator valve on top of the LPG cylinder",
+                        "The kitchen sink valve"
+                    ],
+                    "answer": 1,
+                    "hint": "Always close the LPG cylinder regulator valve first to cut off the fuel supply at the source."
+                }
+            ],
+            "tl": [
+                {
+                    "q": "Ano ang HINDI mo dapat gawin kapag nakakaramdam ka ng matinding amoy ng LPG o gas leak?",
+                    "options": [
+                        "Buksan ang mga pinto at bintana",
+                        "Patayin ang regulator valve ng tangke",
+                        "Mag-flick ng switch ng ilaw o kuryente",
+                        "Lumabas ng bahay bago tumawag sa telepono"
+                    ],
+                    "answer": 2,
+                    "hint": "Ang pag-flick ng switch ng kuryente ay lumilikha ng spark na maaaring mag-apoy agad sa gas leak at magdulot ng pagsabog."
+                },
+                {
+                    "q": "Bakit kailangang buksan ang mga pinto at bintana kapag may gas leak?",
+                    "options": [
+                        "Upang lumabas ang concentrated gas at mapalitan ng sariwang hangin",
+                        "Upang pumasok ang mga bumbero",
+                        "Upang mas kumalat ang amoy",
+                        "Walang dahilan"
+                    ],
+                    "answer": 0,
+                    "hint": "Ang bentilasyon ay nagpapababa ng konsentrasyon ng LPG sa hangin upang hindi ito sumabog."
+                },
+                {
+                    "q": "Saan karaniwang nag-aipon ang LPG kapag ito ay sumingaw sa saradong silid?",
+                    "options": [
+                        "Sa kisame dahil ito ay magaan",
+                        "Sa sahig dahil ito ay mas mabigat sa hangin",
+                        "Sa gitna ng silid",
+                        "Naglalaho ito nang kusa"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang LPG ay mas mabigat kaysa sa hangin, kaya nag-iipon ito sa mabababang bahagi at sulok ng sahig."
+                },
+                {
+                    "q": "Bakit mapanganib ang pagsasaksak o pagtatanggal ng saksakan kapag may gas leak?",
+                    "options": [
+                        "Dahil masisira ang appliance",
+                        "Maaari itong lumikha ng maliit na spark na magpapasabog sa naipong gas",
+                        "Dahil masasayang ang kuryente",
+                        "Walang panganib"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang anumang spark mula sa kuryente ay sapat na upang magliyab ang naipong LPG sa silid."
+                },
+                {
+                    "q": "Ano ang tamang posisyon ng tangke ng LPG sa loob ng kusina?",
+                    "options": [
+                        "Nakahiga upang maubos ang gas",
+                        "Nakatayo sa isang maaliwalas na lugar malayo sa init",
+                        "Nakalubog sa tubig",
+                        "Baligtad sa loob ng saradong cabinet"
+                    ],
+                    "answer": 1,
+                    "hint": "Dapat laging nakatayo ang tangke ng LPG upang gumana nang maayos ang safety valve nito."
+                },
+                {
+                    "q": "Paano ang pinakaligtas na paraan upang mag-check ng leak sa hose o valve ng LPG?",
+                    "options": [
+                        "Gumamit ng nakasinding posporo",
+                        "Maglagay ng tubig na may sabon at tingnan kung may bubula",
+                        "Pakinggan kung may sumisipol",
+                        "Amuyin nang malapitan gamit ang ilong"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang bumubulang sabon ay palatandaan ng singaw. Huwag kailanman gagamit ng apoy para mag-check ng leak!"
+                },
+                {
+                    "q": "Ayon sa patnubay ng BFP, gaano kalawak ang dapat na cleared 'defensible space' sa paligid ng bahay?",
+                    "options": [
+                        "Kahit 10 metro (30 talampakan)",
+                        "Kahit 1 metro lamang",
+                        "Kalahating metro",
+                        "Kahit gaano kalapit"
+                    ],
+                    "answer": 0,
+                    "hint": "Ang 10-metrong malinis na espasyo ay pumipigil sa apoy na umabot sa dingding ng bahay."
+                },
+                {
+                    "q": "Bakit nag-iipon ang sumingaw na LPG sa sahig sa halip na umakyat?",
+                    "options": [
+                        "Dahil mas magaan ito sa hangin",
+                        "Dahil mas mabigat ito sa hangin kaya bumababa ito sa pinakamababang lugar",
+                        "Dahil sa bentilador",
+                        "Hindi ito nag-iipon"
+                    ],
+                    "answer": 1,
+                    "hint": "Dahil mabigat ang LPG, gumagapang ito sa sahig at sulok na nagiging sanhi ng sunog sa mababang antas."
+                },
+                {
+                    "q": "Ano ang pangunahing sanhi ng mabilis na pagkalat ng sunog sa damo (brush fire) patungo sa mga bahay?",
+                    "options": [
+                        "Mataas na kahalumigmigan (humidity)",
+                        "Mga natipong tuyong dahon, damo, at basura malapit sa dingding ng bahay",
+                        "Paggamit ng kalan de-kuryente",
+                        "Wala sa mga nabanggit"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang mga tuyong dahon at damo ay nagiging gatong na nagdurugtong sa apoy mula sa parang patungo sa bahay."
+                },
+                {
+                    "q": "Kung nakakaamoy ka ng gas leak, anong valve ang dapat mong isara agad?",
+                    "options": [
+                        "Ang valve ng tubig",
+                        "Ang regulator valve sa ibabaw ng tangke ng LPG",
+                        "Ang valve ng lababo",
+                        "Huwag isara"
+                    ],
+                    "answer": 1,
+                    "hint": "Isara agad ang regulator valve upang maputol ang daloy ng gas mula sa tangke."
+                }
+            ],
+            "taglish": [
+                {
+                    "q": "Ano ang HINDI mo dapat gawin kapag nakakaramdam ka ng matinding amoy ng LPG o gas leak?",
+                    "options": [
+                        "Buksan ang mga pinto at bintana",
+                        "Patayin ang regulator valve ng tangke",
+                        "Mag-flick ng switch ng ilaw o kuryente",
+                        "Lumabas ng bahay bago tumawag sa telepono"
+                    ],
+                    "answer": 2,
+                    "hint": "Ang pag-flick ng switch ng kuryente ay lumilikha ng spark na maaaring mag-apoy agad sa gas leak at magdulot ng pagsabog."
+                },
+                {
+                    "q": "Bakit kailangang buksan ang mga pinto at bintana kapag may gas leak?",
+                    "options": [
+                        "Upang lumabas ang concentrated gas at mapalitan ng sariwang hangin",
+                        "Upang pumasok ang mga bumbero",
+                        "Upang mas kumalat ang amoy",
+                        "Walang dahilan"
+                    ],
+                    "answer": 0,
+                    "hint": "Ang bentilasyon ay nagpapababa ng konsentrasyon ng LPG sa hangin upang hindi ito sumabog."
+                },
+                {
+                    "q": "Saan karaniwang nag-aipon ang LPG kapag ito ay sumingaw sa saradong silid?",
+                    "options": [
+                        "Sa kisame dahil ito ay magaan",
+                        "Sa sahig dahil ito ay mas mabigat sa hangin",
+                        "Sa gitna ng silid",
+                        "Naglalaho ito nang kusa"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang LPG ay mas mabigat kaysa sa hangin, kaya nag-iipon ito sa mabababang bahagi at sulok ng sahig."
+                },
+                {
+                    "q": "Bakit super dangerous mag-plug o unplug ng appliances kapag may LPG leak?",
+                    "options": [
+                        "Masisira ang saksakan",
+                        "Pwedeng gumawa ng maliit na spark na magpapasabog sa naipong gas",
+                        "Dahil masisira ang appliance",
+                        "Walang hazard"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang sparks mula sa electrical switches or outlets ay kayang mag-ignite ng gas cloud agad."
+                },
+                {
+                    "q": "Ano ang tamang position ng LPG cylinder sa inyong kitchen?",
+                    "options": [
+                        "Nakahiga para maubos ang gas",
+                        "Nakatayo sa well-ventilated area malayo sa direct heat",
+                        "Baligtad sa loob ng cabinet",
+                        "Nakalubog sa tubig"
+                    ],
+                    "answer": 1,
+                    "hint": "Keep cylinders upright para gumana ang safety relief valve at iwas leak."
+                },
+                {
+                    "q": "Paano ang safest way mag-check ng leak sa inyong LPG cylinder valves o hose?",
+                    "options": [
+                        "Gumamit ng lighted match or lighter",
+                        "Mag-brush ng soapy water sa connections at tingnan kung may bubbles",
+                        "Makinig lang kung may sumisipol",
+                        "Amuyin nang malapitan"
+                    ],
+                    "answer": 1,
+                    "hint": "Bubbles in soapy water show where the leak is. Never use fire to test for gas leaks!"
+                },
+                {
+                    "q": "Ayon sa BFP community safety rules, gaano kalawak ang cleared 'defensible space' sa paligid ng homes?",
+                    "options": [
+                        "At least 10 meters (30 feet)",
+                        "At least 1 meter (3 feet)",
+                        "Kalahating metro lang",
+                        "Kahit gaano kalapit"
+                    ],
+                    "answer": 0,
+                    "hint": "Ang 10-meter cleared area ay gumagawa ng barrier para hindi umabot ang grass fires sa inyong walls."
+                },
+                {
+                    "q": "Bakit nag-iipon sa floor ang sumingaw na LPG sa halip na umakyat?",
+                    "options": [
+                        "Dahil lighter than air ito",
+                        "Dahil heavier than air ito kaya bumababa sa lowest points",
+                        "Dahil sa air conditioning",
+                        "Hindi ito nag-iipon"
+                    ],
+                    "answer": 1,
+                    "hint": "LPG is heavier than air. Nag-iipon ito sa low points at sulok ng sahig, creating a floor-level fire hazard."
+                },
+                {
+                    "q": "Ano ang main cause ng mabilis na pagkalat ng grass fires sa residential areas?",
+                    "options": [
+                        "Mataas na humidity",
+                        "Natipong tuyong dahon, damo, at trash malapit sa walls ng bahay",
+                        "Paggamit ng electric stove",
+                        "Wala sa mga nabanggit"
+                    ],
+                    "answer": 1,
+                    "hint": "Dry leaves and grass near walls act as fuel connection, bringing the forest fire straight to your house."
+                },
+                {
+                    "q": "Kung may gas leak, anong valve ang dapat mong i-shut off agad?",
+                    "options": [
+                        "Ang main water valve",
+                        "Ang regulator valve sa ibabaw ng LPG cylinder",
+                        "Ang kitchen sink valve",
+                        "Huwag galawin"
+                    ],
+                    "answer": 1,
+                    "hint": "Close the cylinder regulator valve immediately to stop the gas release at the source."
+                }
+            ]
+        }
+    },
+    "5": {
+        "title": {
+            "en": "Module 5: Workplace and Business Safety",
+            "tl": "Modyul 5: Kaligtasan sa Opisina at Negosyo",
+            "taglish": "Module 5: Workplace and Business Safety"
+        },
+        "summary": {
+            "en": "Clear emergency exits, compartmentalization, and fire doors.",
+            "tl": "Malinis na emergency exit, compartmentalization, at mga pinto laban sa sunog (fire doors).",
+            "taglish": "Malinis na emergency exits, at pagpapanatili ng fire doors na sarado."
+        },
+        "study_text": {
+            "en": "[center][b]Module 5: Workplace and Business Safety[/b][/center]\n\n[b]1. Fire Doors Maintenance[/b]\n- Fire doors are designed to compartmentalize or block fire and smoke.\n- [b]MUST REMAIN CLOSED[/b]: Never wedge or prop fire doors open. If open, smoke and fire will rapidly consume exit stairs and hallways.\n\n[b]2. Clear Emergency Exits[/b]\n- All exit pathways and fire doors must remain completely unobstructed by storage or garbage at all times.\n- Exit doors must be easily openable from the inside without keys or special effort during business hours.",
+            "tl": "[center][b]Modyul 5: Kaligtasan sa Opisina at Negosyo[/b][/center]\n\n[b]1. Pagpapanatili ng mga Fire Door[/b]\n- Ang mga fire door ay idinisenyo upang pigilin ang apoy at usok (compartmentalization).\n- [b]DAPAT LAGING NAKASARA[/b]: Huwag na huwag harangan o i-prop open ang fire doors gamit ang kahoy o anuman. Kung nakabukas ito, ang usok at apoy ay mabilis na aakyat sa mga hagdanan at corridors.\n\n[b]2. Malinis na mga Fire Exit[/b]\n- Lahat ng emergency paths at fire exits ay kailangang malinis at walang anumang nakaharang (tulad ng basura o karton) sa lahat ng oras.\n- Ang mga pinto sa takasan ay dapat madaling mabuksan mula sa loob nang walang susi sa oras ng trabaho.",
+            "taglish": "[center][b]Module 5: Workplace and Business Safety[/b][/center]\n\n[b]1. Fire Doors Maintenance[/b]\n- Ang fire doors ay designed para ma-compartmentalize o harangan ang fire at smoke.\n- [b]MUST REMAIN CLOSED[/b]: Huwag na huwag harangan o i-prop open ang fire doors gamit ang wooden wedges. Kung nakabukas ito, ang toxic smoke at apoy ay mabilis na aakyat sa stairwells at iba pang floors.\n\n[b]2. Clear Emergency Exits[/b]\n- Lahat ng pathways at fire exits ay kailangang malinis at walang tambak na karton o basura at all times."
+        },
+        "questions": {
+            "en": [
+                {
+                    "q": "What is the BFP law regarding emergency exit corridors in a business establishment?",
+                    "options": [
+                        "They can store stock boxes if they leave a narrow crawling space",
+                        "They must remain completely clear of any storage, trash, or obstructions at all times",
+                        "They must be kept locked to prevent shoplifting"
+                    ],
+                    "answer": 1,
+                    "hint": "Corridors must be fully clear so large groups of panicking occupants can exit without tripping."
+                },
+                {
+                    "q": "What is the primary goal of mandatory business fire drills?",
+                    "options": [
+                        "To check if the fire alarms are loud enough",
+                        "To ensure every worker knows exactly how to escape, locate exits, and assemble safely",
+                        "To inspect the building's emergency light batteries"
+                    ],
+                    "answer": 1,
+                    "hint": "Drills train muscle memory and prevent panic, ensuring a fast and organized evacuation."
+                },
+                {
+                    "q": "Why is it forbidden to prop open double-acting fire doors in business hallways?",
+                    "options": [
+                        "It increases the wear and tear on the door hinges",
+                        "Open fire doors allow fire, smoke, and deadly gases to spread instantly between fire zones",
+                        "It blocks employee traffic flow"
+                    ],
+                    "answer": 1,
+                    "hint": "Propping fire doors open defeats their purpose, allowing smoke and heat to escape and trap occupants."
+                },
+                {
+                    "q": "What is the main purpose of compartmentalization in commercial building design?",
+                    "options": [
+                        "To make offices look organized",
+                        "To contain fire and smoke within a specific zone to buy time for evacuation",
+                        "To reduce electricity bills for cooling"
+                    ],
+                    "answer": 1,
+                    "hint": "Compartmentalization uses fire-rated barriers to prevent fire from engulfing the entire building quickly."
+                },
+                {
+                    "q": "In a business establishment, what is the consequence of blocking a fire exit door?",
+                    "options": [
+                        "It is a minor issue that can wait for the next annual inspection",
+                        "It is a serious safety violation that can lead to heavy fines, closure, or loss of life during emergencies",
+                        "It is allowed if the boxes are labeled"
+                    ],
+                    "answer": 1,
+                    "hint": "Blocking fire exits is illegal under the Fire Code of the Philippines and carries heavy penalties."
+                },
+                {
+                    "q": "What is the requirement for emergency exit signs in business buildings?",
+                    "options": [
+                        "They must be clearly visible and illuminated at all times, including during power outages",
+                        "They should only be turned on during inspections",
+                        "They must be painted green without lights"
+                    ],
+                    "answer": 0,
+                    "hint": "Exit signs must remain illuminated (via backup batteries) so occupants can find escape routes in pitch darkness."
+                },
+                {
+                    "q": "What is the role of a designated Fire Safety Coordinator in an office?",
+                    "options": [
+                        "To fight large fires using fire hoses",
+                        "To coordinate fire safety inspections, drills, and lead evacuation teams during an emergency",
+                        "To repair electrical appliances"
+                    ],
+                    "answer": 1,
+                    "hint": "Coordinators organize emergency response teams and lead people to safe assembly areas."
+                },
+                {
+                    "q": "What is the rule regarding locking exit doors during business hours?",
+                    "options": [
+                        "They can be locked to prevent unauthorized entry or theft",
+                        "They must never be locked from the inside, allowing anyone to escape without keys or special effort",
+                        "They should be locked from the outside only"
+                    ],
+                    "answer": 1,
+                    "hint": "Emergency doors must open easily from the inside with a simple push (like panic hardware) to prevent trapping people."
+                },
+                {
+                    "q": "Where must employees gather after evacuating a commercial building during a fire drill?",
+                    "options": [
+                        "In the lobby of the building",
+                        "At the designated safe assembly area outside, away from the building",
+                        "Directly outside the main entrance doors"
+                    ],
+                    "answer": 1,
+                    "hint": "The assembly area must be clear of the building to prevent injuries from falling debris and glass."
+                },
+                {
+                    "q": "Where is it dangerous to store highly combustible materials in commercial spaces?",
+                    "options": [
+                        "In a designated ventilated storage room",
+                        "In electrical rooms, stairwells, and close to heating appliances",
+                        "In the outdoor recycling bin"
+                    ],
+                    "answer": 1,
+                    "hint": "Storing combustibles in utility rooms or exit stairs is a major hazard as it can easily ignite and block escapes."
+                }
+            ],
+            "tl": [
+                {
+                    "q": "Ano ang dapat na estado ng mga fire exit sa mga negosyo?",
+                    "options": [
+                        "Maaaring gamiting tambakan ng mga lumang karton",
+                        "Dapat laging malinis at walang anumang nakaharang sa lahat ng oras",
+                        "Dapat ay palaging naka-lock gamit ang kadena",
+                        "Binubuksan lamang kapag may inspeksyon"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang mga baradong exit ay nagdudulot ng panic at pagkaantala sa paglikas sa panahon ng sunog."
+                },
+                {
+                    "q": "Ano ang pangunahing layunin ng compartmentalization sa gusali?",
+                    "options": [
+                        "Upang maging maganda tingnan ang mga opisina",
+                        "Upang mapigilan ang mabilis na pagkalat ng sunog sa ibang bahagi ng gusali",
+                        "Upang makatipid sa kuryente",
+                        "Wala sa mga nabanggit"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang paglilimita sa apoy sa isang bahagi o compartment ay nagbibigay ng oras para sa ligtas na paglikas."
+                },
+                {
+                    "q": "Bakit ipinagbabawal ang pag-ganid o pag-prop open ng fire door sa isang opisina?",
+                    "options": [
+                        "Madaling masira ang pinto",
+                        "Pinapayagan nito ang apoy at nakalalasong usok na mabilis na kumalat sa mga exit route",
+                        "Hindi makakapasok ang mga empleyado",
+                        "Walang epekto ito sa kaligtasan"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang mga fire door ay kailangang nakasara upang mapigilan ang pagpasok ng usok at apoy sa mga ligtas na daanan."
+                },
+                {
+                    "q": "Ano ang pangunahing layunin ng compartmentalization sa disenyo ng commercial building?",
+                    "options": [
+                        "Upang maging maayos tingnan ang mga opisina",
+                        "Upang ikulong ang sunog at usok sa isang partikular na lugar upang makalikha ng oras para sa evacuation",
+                        "Upang makatipid sa kuryente sa aircon",
+                        "Wala sa nabanggit"
+                    ],
+                    "answer": 1,
+                    "hint": "Gumagamit ang compartmentalization ng mga harang laban sa apoy upang hindi mabilis na masunog ang buong gusali."
+                },
+                {
+                    "q": "Ano ang kahihinatnan ng pagharang sa isang emergency exit door sa isang negosyo?",
+                    "options": [
+                        "Maliit na bagay lamang na maaaring hintayin sa susunod na taon",
+                        "Seryosong paglabag sa kaligtasan na may mabigat na multa, pagsasara, o pagkawala ng buhay sa emerhensya",
+                        "Pinapayagan kung may label ang mga kahon",
+                        "Huwag pansinin"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang pagharang sa fire exit ay ilegal sa ilalim ng Fire Code ng Pilipinas at may mabigat na parusa."
+                },
+                {
+                    "q": "Ano ang panuntunan para sa mga emergency exit sign sa mga gusali ng negosyo?",
+                    "options": [
+                        "Dapat malinaw na nakikita at may ilaw sa lahat ng oras, kahit walang kuryente",
+                        "Binubuksan lamang kapag may inspeksyon ng bumbero",
+                        "Dapat kulay berde lamang at walang ilaw",
+                        "Kahit walang sign"
+                    ],
+                    "answer": 0,
+                    "hint": "Ang exit signs ay dapat may backup battery upang makita pa rin sa gitna ng kadiliman at usok."
+                },
+                {
+                    "q": "Ano ang tungkulin ng isang Fire Safety Coordinator sa isang tanggapan?",
+                    "options": [
+                        "Patayin ang malalaking apoy gamit ang fire hose",
+                        "Mag-coordinate ng inspections, drills, at gabayan ang evacuation teams sa emergency",
+                        "Mag-ayos ng mga sirang kagamitang de-kuryente",
+                        "Wala sa mga nabanggit"
+                    ],
+                    "answer": 1,
+                    "hint": "Sila ang namamahala sa paghahanda at paggabay sa mga tao patungo sa ligtas na assembly area."
+                },
+                {
+                    "q": "Ano ang panuntunan sa pag-lock ng mga emergency exit door habang may oras ng trabaho?",
+                    "options": [
+                        "Maaaring i-lock upang maiwasan ang pagnanakaw",
+                        "Hindi dapat nakakarekta o naka-lock mula sa loob, upang madaling makalabas ang sinuman nang walang susi",
+                        "Naka-lock mula sa labas lamang",
+                        "Naka-kadenang mahigpit"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang mga pinto sa paglikas ay dapat madaling mabuksan mula sa loob gamit ang simpleng tulak (tulad ng panic bar)."
+                },
+                {
+                    "q": "Saan dapat magtipon ang mga empleyado pagkatapos lumikas sa gusali habang may sunog?",
+                    "options": [
+                        "Sa loob ng lobby ng gusali",
+                        "Sa itinalagang ligtas na assembly area sa labas, malayo sa gusali",
+                        "Katabi mismo ng pangunahing pinto",
+                        "Kahit saan sa kalsada"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang assembly area ay dapat malayo sa gusali upang maiwasan ang pinsala mula sa mga bumabagsak na bubog o debris."
+                },
+                {
+                    "q": "Saan mapanganib mag-imbak ng mga materyal na madaling masunog sa commercial space?",
+                    "options": [
+                        "Sa loob ng isang bentiladong bodega",
+                        "Sa mga electrical room, hagdanan, at malapit sa mga kagamitang nag-iinit",
+                        "Sa labas ng gusali malapit sa basurahan",
+                        "Sa mesa ng opisina"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang pag-imbak ng basura o gamit sa utility rooms o hagdanan ay nagdudulot ng sunog at humaharang sa takasan."
+                }
+            ],
+            "taglish": [
+                {
+                    "q": "Ano ang BFP law tungkol sa emergency exit corridors sa isang business establishment?",
+                    "options": [
+                        "Maaari silang mag-store ng boxes basta may makitid na crawling space",
+                        "Kailangang manatiling completely clear sa kahit anong storage, trash, o obstructions sa lahat ng oras",
+                        "Dapat silang panatilihing naka-lock para iwas shoplifting",
+                        "Binubuksan lang kapag may inspeksyon"
+                    ],
+                    "answer": 1,
+                    "hint": "Dapat laging malinis ang exit paths para walang matisod kapag may mabilisang evacuation."
+                },
+                {
+                    "q": "Ano ang primary goal ng mandatory business fire drills?",
+                    "options": [
+                        "I-test kung malakas ang tunog ng fire alarms",
+                        "Siguraduhing alam ng bawat worker kung paano lumikas, saan ang exits, at mag-assemble nang ligtas",
+                        "I-check ang emergency light batteries",
+                        "Wala sa nabanggit"
+                    ],
+                    "answer": 1,
+                    "hint": "Nais ng drills na turuan ang muscle memory para iwas panic sa totoong sunog."
+                },
+                {
+                    "q": "Bakit bawal i-prop open ang double-acting fire doors sa business hallways?",
+                    "options": [
+                        "Mabilis nitong masisira ang door hinges",
+                        "Papayagan nito ang fire at toxic smoke na kumalat agad sa iba't ibang fire zones",
+                        "Nakaharang ito sa employee traffic flow",
+                        "Para makadaan ang hangin"
+                    ],
+                    "answer": 1,
+                    "hint": "Nais ng fire doors na i-contain ang usok at apoy. Kapag naka-wedge ito, mawawalan ito ng silbi."
+                },
+                {
+                    "q": "Ano ang main purpose ng compartmentalization sa commercial building design?",
+                    "options": [
+                        "Gawing organized tingnan ang offices",
+                        "I-contain ang fire at smoke sa isang zone para magkaroon ng time lumikas",
+                        "Makatipid sa aircon bills",
+                        "Wala sa nabanggit"
+                    ],
+                    "answer": 1,
+                    "hint": "Gumagamit ito ng fire-rated walls para hindi agad lamunin ng apoy ang buong building."
+                },
+                {
+                    "q": "Ano ang consequence ng pag-block ng fire exit door sa inyong workplace?",
+                    "options": [
+                        "Maliit na bagay lang na pwedeng ayusin next time",
+                        "Seryosong safety violation na may heavy fines, closure, or risk sa buhay ng tao sa emergency",
+                        "Allowed naman kung may label ang boxes",
+                        "Huwag pansinin"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang pag-block ng fire exit ay ilegal sa ilalim ng Fire Code at may mabigat na kaparusahan."
+                },
+                {
+                    "q": "Ano ang requirement para sa emergency exit signs sa business buildings?",
+                    "options": [
+                        "Dapat clear na nakikita at illuminated sa lahat ng oras, kahit may power outage",
+                        "Dapat naka-on lang kapag may inspection",
+                        "Dapat nakasulat sa green paint na walang lights",
+                        "Kahit walang sign"
+                    ],
+                    "answer": 0,
+                    "hint": "Kailangan may backup batteries ang exit signs para maliwanag pa rin kahit madilim at brownout."
+                },
+                {
+                    "q": "Ano ang role ng designated Fire Safety Coordinator sa office?",
+                    "options": [
+                        "Patayin ang malalaking sunog gamit ang fire hose",
+                        "Mamahala sa safety inspections, drills, at gabayan ang evacuation teams sa emergency",
+                        "Mag-repair ng electrical gadgets",
+                        "Wala sa nabanggit"
+                    ],
+                    "answer": 1,
+                    "hint": "Sila ang nag-oorganize ng emergency groups at nagtuturo ng daan sa mga tao palabas."
+                },
+                {
+                    "q": "Ano ang rule tungkol sa pag-lock ng exit doors habang may business hours?",
+                    "options": [
+                        "Pwedeng i-lock para iwas pagnanakaw or unauthorized entry",
+                        "Never dapat i-lock mula sa loob para makalabas ang sinuman nang walang key or effort",
+                        "Naka-lock mula sa labas lamang",
+                        "Naka-kadenang mahigpit"
+                    ],
+                    "answer": 1,
+                    "hint": "Dapat madaling itulak palabas ang exit doors (gamit ang panic bar) para walang ma-trap sa loob."
+                },
+                {
+                    "q": "Saan dapat mag-gather ang employees pagkatapos mag-evacuate sa building habang may fire drill?",
+                    "options": [
+                        "Sa building lobby",
+                        "Sa designated safe assembly area sa labas, malayo sa building",
+                        "Tapat mismo ng main entrance doors",
+                        "Kahit saan sa daan"
+                    ],
+                    "answer": 1,
+                    "hint": "Dapat malayo ang assembly area sa building para ligtas sa bumabagsak na debris at glass."
+                },
+                {
+                    "q": "Saan dangerous mag-store ng highly combustible materials sa commercial spaces?",
+                    "options": [
+                        "Sa designated ventilated storage room",
+                        "Sa electrical utility rooms, stairwells, at malapit sa heating appliances",
+                        "Sa outdoor recycling bin",
+                        "Sa reception desk"
+                    ],
+                    "answer": 1,
+                    "hint": "Bawal maglagay ng tambak sa utility rooms or hagdanan dahil mabilis itong mag-apoy at haharang sa takasan."
+                }
+            ]
+        }
+    },
+    "6": {
+        "title": {
+            "en": "Module 6: Special Care & Vulnerable Individuals",
+            "tl": "Modyul 6: Espesyal na Pangangalaga at mga Vulnerable na Indibidwal",
+            "taglish": "Module 6: Special Care & Vulnerable Individuals"
+        },
+        "summary": {
+            "en": "Evacuation buddies and FAST stroke protocol.",
+            "tl": "Evacuation buddies para sa mga bata at matatanda, at FAST stroke protocol.",
+            "taglish": "Evacuation buddies para sa mga bata at matatanda, at FAST stroke protocol."
+        },
+        "study_text": {
+            "en": "[center][b]Module 6: Special Care & Vulnerable Individuals[/b][/center]\n\n[b]1. Buddy System in Evacuation[/b]\n- Assign a dedicated person (buddy) to assist children, elderly, or disabled individuals during emergencies.\n\n[b]2. Medical Emergency (Stroke & FAST)[/b]\n- Recognize signs of stroke using [b]FAST[/b]:\n  - [b]F (Face Drooping)[/b]: Does one side of the face droop?\n  - [b]A (Arm Weakness)[/b]: Does one arm drift downward when raised?\n  - [b]S (Speech Difficulty)[/b]: Is speech slurred or strange?\n  - [b]T (Time to call 911/BFP)[/b]: Call emergency services immediately.\n- [b]NEVER GIVE FOOD OR WATER[/b]: Stroke or unconscious victims have a high choking hazard due to loss of throat muscle control.\n\n[b]3. Severe Allergic Reaction (Anaphylaxis)[/b]\n- Have them lie flat, loosen tight clothing, elevate legs to support blood circulation, and maintain clear breathing.",
+            "tl": "[center][b]Modyul 6: Espesyal na Pangangalaga at mga Vulnerable na Indibidwal[/b][/center]\n\n[b]1. Buddy System sa Evacuation[/b]\n- Magtalaga ng partikular na tao (buddy) upang tumulong sa mga bata, matatanda, o may kapansanan sa panahon ng paglikas.\n\n[b]2. Medikal na Emergency (Stroke & FAST)[/b]\n- Kilalanin ang mga senyales ng Stroke gamit ang [b]FAST[/b]:\n  - [b]F (Face Drooping)[/b]: Nakalaylay ba ang isang bahagi ng mukha?\n  - [b]A (Arm Weakness)[/b]: Nanghihina ba ang isang braso kapag itinaas?\n  - [b]S (Speech Difficulty)[/b]: Nabubuhol ba ang pananalita?\n  - [b]T (Time to call 911)[/b]: Oras na upang tumawag agad ng ambulansya.\n- [b]HUWAG MAGBIGAY NG PAGKAIN O TUBIG[/b]: Ang mga biktima ng stroke o nawalan ng malay ay maaaring mabulunan (choking hazard) dahil sa pagkawala ng kontrol sa kalamnan sa lalamunan.\n\n[b]3. Allergic Shock (Anaphylaxis)[/b]\n- Pahigain nang patag ang biktima, luwagan ang masikip na damit, itaas ang mga binti upang magkaroon ng sapat na daloy ng dugo pabalik sa puso, at panatilihing malaya ang paghinga.",
+            "taglish": "[center][b]Module 6: Special Care & Vulnerable Individuals[/b][/center]\n\n[b]1. Buddy System sa Evacuation[/b]\n- Mag-assign ng buddy upang tumulong sa mga bata, matatanda, o may kapansanan habang nag-e-evacuate.\n\n[b]2. Medical Emergency (Stroke & FAST)[/b]\n- Alamin ang signs ng Stroke gamit ang [b]FAST[/b]:\n  - [b]F (Face Drooping)[/b]: Nakalaylay ba ang isang side ng mukha?\n  - [b]A (Arm Weakness)[/b]: Nanghihina ba ang isang braso kapag itinaas?\n  - [b]S (Speech Difficulty)[/b]: Nabubuhol ba ang pagsasalita?\n  - [b]T (Time to call 911)[/b]: Oras na para tumawag agad ng ambulance.\n- [b]NEVER MAGBIGAY NG FOOD O WATER[/b]: Ang stroke o unconscious victims ay may mataas na choking hazard dahil nawawalan sila ng muscle control sa lalamunan."
+        },
+        "questions": {
+            "en": [
+                {
+                    "q": "How should a clinic or home prepare for evacuating disabled or elderly occupants?",
+                    "options": [
+                        "Instruct them to evacuate on their own when the alarm rings",
+                        "Assign dedicated buddies or responders to physically assist each vulnerable resident",
+                        "Lock them in their rooms until BFP teams arrive"
+                    ],
+                    "answer": 1,
+                    "hint": "Vulnerable individuals require direct physical assistance to navigate stairs or doorways quickly."
+                },
+                {
+                    "q": "What should you avoid doing if an elderly citizen shows signs of a stroke (slurred speech, arm droop)?",
+                    "options": [
+                        "Keeping them calm and flat on their back",
+                        "Giving them water, food, or aspirin by mouth",
+                        "Monitoring their breathing until help arrives"
+                    ],
+                    "answer": 1,
+                    "hint": "Stroke patients cannot swallow properly. Giving them food or liquid will choke them and block their airway."
+                },
+                {
+                    "q": "If a caller is having a severe allergic reaction (difficulty breathing, hives), what is the safest advice?",
+                    "options": [
+                        "Have them lie flat, loosen any tight clothing, elevate their legs, and stay calm",
+                        "Tell them to perform self-CPR compressions",
+                        "Instruct them to drink hot tea immediately"
+                    ],
+                    "answer": 0,
+                    "hint": "Lying flat with elevated legs supports blood circulation and keeps the airway clear and comfortable."
+                },
+                {
+                    "q": "What is the 'F' in the stroke FAST acronym, and what should you look for?",
+                    "options": [
+                        "Fever; check their forehead temperature",
+                        "Face; ask them to smile to see if one side of their face droops",
+                        "Fainting; check if they lose consciousness"
+                    ],
+                    "answer": 1,
+                    "hint": "A drooping face on one side is a primary indicator of an active stroke."
+                },
+                {
+                    "q": "What does the 'A' stand for in the stroke FAST acronym?",
+                    "options": [
+                        "Airway; check if they are breathing",
+                        "Arm; ask them to raise both arms to check if one arm drifts downward",
+                        "Allergy; check for skin rashes"
+                    ],
+                    "answer": 1,
+                    "hint": "Weakness or numbness in one arm during stroke causes it to drift down when raised."
+                },
+                {
+                    "q": "What does the 'S' stand for in the stroke FAST acronym?",
+                    "options": [
+                        "Skin; check for pale color",
+                        "Speech; ask them to repeat a simple sentence to see if it is slurred or strange",
+                        "Shock; check if their pulse is fast"
+                    ],
+                    "answer": 1,
+                    "hint": "Slurred, garbled, or incoherent speech is a major sign of a stroke."
+                },
+                {
+                    "q": "What does the 'T' stand for in the stroke FAST acronym?",
+                    "options": [
+                        "Temperature; check for chills",
+                        "Time; call emergency services immediately if any signs are shown, as time is critical",
+                        "Treatment; apply cold compress"
+                    ],
+                    "answer": 1,
+                    "hint": "Every second counts in a stroke. Rapid treatment prevents permanent brain damage."
+                },
+                {
+                    "q": "During severe allergic shock, why is elevating the victim's legs helpful?",
+                    "options": [
+                        "It relaxes their back muscles",
+                        "It helps blood flow back to the vital organs and heart",
+                        "It stops skin rashes from spreading"
+                    ],
+                    "answer": 1,
+                    "hint": "Elevating the legs improves blood flow to the head and heart, helping prevent shock."
+                },
+                {
+                    "q": "Why is water dangerous to give to a patient showing stroke signs?",
+                    "options": [
+                        "It thins the blood too fast",
+                        "It can enter their lungs (aspiration) due to paralyzed throat muscles, causing suffocation",
+                        "It makes them nauseous"
+                    ],
+                    "answer": 1,
+                    "hint": "Stroke paralyses the swallowing muscles. Water goes down the trachea instead of the esophagus."
+                },
+                {
+                    "q": "In a school or office, who should be assigned as buddies for children or people with mobility impairments?",
+                    "options": [
+                        "Other children of the same age",
+                        "Designated, trained staff members who are physically capable",
+                        "The local BFP inspector only"
+                    ],
+                    "answer": 1,
+                    "hint": "Buddies must be physically capable and trained to carry or guide the person safely out."
+                }
+            ],
+            "tl": [
+                {
+                    "q": "Paano mo masisiguro ang kaligtasan ng mga bata o matatanda sa paglikas?",
+                    "options": [
+                        "Hayaan silang lumikas nang mag-isa",
+                        "Magtalaga ng isang evacuation buddy upang alalayan sila",
+                        "Iwanan sila sa loob ng silid hanggang dumating ang bumbero",
+                        "Sabihan silang tumakbo nang mabilis"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang buddy system ay nagsisiguro na ang bawat vulnerable na indibidwal ay may nakatalagang gagabay sa kanila palabas."
+                },
+                {
+                    "q": "Bakit HINDI mo dapat bigyan ng tubig o pagkain ang isang taong inaatake ng stroke o walang malay?",
+                    "options": [
+                        "Maaari silang mabulunan dahil sa kawalan ng kontrol sa kalamnan sa lalamunan (choking hazard)",
+                        "Dahil hindi sila gutom",
+                        "Maaari nitong mapataas ang kanilang timbang",
+                        "Walang partikular na panganib"
+                    ],
+                    "answer": 0,
+                    "hint": "Ang mga stroke patient ay madalas mawalan ng kakayahang lumulon nang maayos, kaya lubhang mapanganib ang pagbibigay ng pagkain/tubig."
+                },
+                {
+                    "q": "Ano ang ibig sabihin ng FAST sa pagtukoy ng stroke?",
+                    "options": [
+                        "Fever, Arm, Speech, Time",
+                        "Face, Arm, Speech, Time",
+                        "Face, Action, Sickness, Temperature",
+                        "Feet, Arm, Sleep, Time"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang FAST ay nangangahulugang Face drooping, Arm weakness, Speech difficulty, at Time to call emergency services."
+                },
+                {
+                    "q": "Sa FAST stroke acronym, ano ang sinusuri sa 'F' o Face?",
+                    "options": [
+                        "Temperatura ng mukha",
+                        "Kung ang isang panig ng mukha ay nakalaylay o hindi simetriko kapag ngumiti",
+                        "Kulay ng mukha",
+                        "Kung sila ay nawalan ng malay"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang paglaylay ng kalahating bahagi ng mukha ay pangunahing palatandaan ng stroke."
+                },
+                {
+                    "q": "Sa FAST acronym, paano sinusuri ang 'A' o Arm?",
+                    "options": [
+                        "Tingnan kung may sugat sa braso",
+                        "Ipataas ang dalawang braso at tingnan kung bumababa o nahuhulog ang isa",
+                        "Kunan ng dugo sa braso",
+                        "Hilahin ang braso"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang stroke ay nagdudulot ng panghihina sa isang bahagi ng katawan, kaya hindi maitaas nang tuwid ang isang braso."
+                },
+                {
+                    "q": "Sa FAST acronym, ano ang sinusuri sa 'S' o Speech?",
+                    "options": [
+                        "Kung mabilis silang magsalita",
+                        "Kung ang kanilang pananalita ay nabubuhol, slurred, o hindi maintindihan",
+                        "Tulin ng pulso sa leeg",
+                        "Wala sa mga nabanggit"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang biglaang pagkabulol o slurred speech ay malinaw na palatandaan na naapektuhan ang utak ng stroke."
+                },
+                {
+                    "q": "Sa FAST acronym, ano ang ibig sabihin ng 'T' o Time?",
+                    "options": [
+                        "Oras ng pagkain",
+                        "Oras upang tumawag agad ng emergency hotline (911/BFP) dahil bawat segundo ay mahalaga",
+                        "Oras ng pagtulog",
+                        "Tingnan ang relo"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang maagang medikal na tulong ay kritikal upang maiwasan ang permanenteng pinsala sa utak mula sa stroke."
+                },
+                {
+                    "q": "Bakit tinataas ang mga binti ng biktima kapag sila ay nakakaranas ng matinding allergic shock?",
+                    "options": [
+                        "Upang ma-relax ang kanilang likod",
+                        "Upang matulungan ang dugo na dumaloy pabalik sa puso at mahahalagang organo",
+                        "Upang mapigilan ang pantal sa balat",
+                        "Huwag itong gawin"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang pagtataas ng binti ay nakakatulong sa daloy ng dugo upang maiwasan ang tuluyang pagbagsak ng presyon o shock."
+                },
+                {
+                    "q": "Bakit mapanganib magbigay ng tubig sa isang taong may senyales ng stroke?",
+                    "options": [
+                        "Dahil mapapabilis nito ang takbo ng dugo",
+                        "Maaari itong pumasok sa baga (aspiration) dahil sa paralisadong kalamnan sa lalamunan",
+                        "Dahil mawawalan sila ng malay",
+                        "Walang epekto"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang stroke ay nagpaparalisa sa kakayahang lumunok, na nagiging sanhi ng choking kapag pinainom."
+                },
+                {
+                    "q": "Sino ang dapat italagang evacuation buddy para sa mga may kapansanan sa paaralan o opisina?",
+                    "options": [
+                        "Mga kapwa bata o kasamahang walang sapat na lakas",
+                        "Mga sinanay na kawani o tauhan na may pisikal na kakayahan",
+                        "Ang lokal na inspektor ng BFP lamang",
+                        "Kahit sino"
+                    ],
+                    "answer": 1,
+                    "hint": "Mga kawaning physically fit at may training ang dapat maging buddies para sa kanila."
+                }
+            ],
+            "taglish": [
+                {
+                    "q": "Paano mo masisiguro ang kaligtasan ng mga bata o matatanda sa paglikas?",
+                    "options": [
+                        "Hayaan silang lumikas nang mag-isa",
+                        "Magtalaga ng isang evacuation buddy upang alalayan sila",
+                        "Iwanan sila sa loob ng silid hanggang dumating ang bumbero",
+                        "Sabihan silang tumakbo nang mabilis"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang buddy system ay nagsisiguro na ang bawat vulnerable na indibidwal ay may nakatalagang gagabay sa kanila palabas."
+                },
+                {
+                    "q": "Bakit HINDI mo dapat bigyan ng tubig o pagkain ang isang taong inaatake ng stroke o walang malay?",
+                    "options": [
+                        "Maaari silang mabulunan dahil sa kawalan ng kontrol sa kalamnan sa lalamunan (choking hazard)",
+                        "Dahil hindi sila gutom",
+                        "Maaari nitong mapataas ang kanilang timbang",
+                        "Walang partikular na panganib"
+                    ],
+                    "answer": 0,
+                    "hint": "Ang mga stroke patient ay madalas mawalan ng kakayahang lumulon nang maayos, kaya lubhang mapanganib ang pagbibigay ng pagkain/tubig."
+                },
+                {
+                    "q": "Ano ang ibig sabihin ng FAST sa pagtukoy ng stroke?",
+                    "options": [
+                        "Fever, Arm, Speech, Time",
+                        "Face, Arm, Speech, Time",
+                        "Face, Action, Sickness, Temperature",
+                        "Feet, Arm, Sleep, Time"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang FAST ay nangangahulugang Face drooping, Arm weakness, Speech difficulty, at Time to call emergency services."
+                },
+                {
+                    "q": "Sa FAST stroke acronym, paano sinusuri ang 'F' o Face?",
+                    "options": [
+                        "Check kung mainit ang face",
+                        "Ask them to smile at tingnan kung nakalaylay ang isang side ng mukha",
+                        "Check ang color ng cheeks",
+                        "Tingnan kung gising sila"
+                    ],
+                    "answer": 1,
+                    "hint": "Drooping face is a primary warning sign na nagpapakita ng stroke."
+                },
+                {
+                    "q": "Sa FAST acronym, paano sinusuri ang 'A' o Arm?",
+                    "options": [
+                        "I-check kung may blood sa braso",
+                        "Ipataas ang dalawang arms at tingnan kung bumababa o nahuhulog ang isa",
+                        "Kunan ng pulse sa wrist",
+                        "Hilahin ang arms"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang stroke ay nagdudulot ng weakness sa isang side, kaya nahihirapan silang i-hold up ang braso."
+                },
+                {
+                    "q": "Sa FAST acronym, ano ang sinusuri sa 'S' o Speech?",
+                    "options": [
+                        "Kung gaano sila kabilis mag-talk",
+                        "Kung slurred, nabubuhol, or incoherent ang kanilang pagsasalita",
+                        "Check ang neck pulse",
+                        "Wala sa mga nabanggit"
+                    ],
+                    "answer": 1,
+                    "hint": "Ang biglaang pagkabulol o slurred speech ay malinaw na sign ng stroke."
+                },
+                {
+                    "q": "Sa FAST acronym, ano ang 'T' or Time?",
+                    "options": [
+                        "Oras ng pagkain",
+                        "Time to call emergency hotlines (911/BFP) immediately dahil super critical ang bawat second",
+                        "Time to sleep",
+                        "Oras ng shift"
+                    ],
+                    "answer": 1,
+                    "hint": "Time is brain. Ang mabilis na emergency response ay nag-iwas sa permanent disability."
+                },
+                {
+                    "q": "Bakit tinataas ang legs ng patient kapag nakakaranas sila ng severe allergic shock?",
+                    "options": [
+                        "Para ma-relax ang back",
+                        "Para mapadali ang blood flow pabalik sa heart at vital organs",
+                        "Para hindi kumalat ang hives",
+                        "Huwag gawin ito"
+                    ],
+                    "answer": 1,
+                    "hint": "Elevating the legs improves blood circulation to head and chest, protecting from severe shock."
+                },
+                {
+                    "q": "Bakit dangerous magpakain o magpainom ng water sa may signs ng stroke?",
+                    "options": [
+                        "Madali sila masusuka",
+                        "Maaari silang mabulunan o pumasok sa baga (aspiration) dahil sa paralyzed swallowing muscles",
+                        "Dahil tataas ang fever",
+                        "Walang danger"
+                    ],
+                    "answer": 1,
+                    "hint": "Throat muscles are paralyzed during stroke, high choking hazard kung may ibibigay sa mouth."
+                },
+                {
+                    "q": "Sino ang dapat gawing buddy para sa disabled or elderly sa school o workplace?",
+                    "options": [
+                        "Mga kapwa vulnerable or bata",
+                        "Designated at trained staff na may physical capability",
+                        "BFP inspector lang",
+                        "Kahit sino"
+                    ],
+                    "answer": 1,
+                    "hint": "Buddies should be capable and ready to carry or assist the person to evacuate safely."
+                }
+            ]
+        }
+    }
+}

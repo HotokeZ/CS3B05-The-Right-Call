@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeScape | The Right Call - Emergency Dispatch Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0d1117;
+      --bg-surface: #161b22;
+      --bg-card: #21262d;
+      --border-subtle: #30363d;
+      --border-focus: #f97316;
+      --accent-orange: #ea580c;
+      --accent-amber: #f59e0b;
+      --accent-blue: #38bdf8;
+      --accent-green: #22c55e;
+      --accent-red: #ef4444;
+      --text-main: #f0f6fc;
+      --text-muted: #8b949e;
+      --text-dim: #6e7681;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.45);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top Navigation Bar */
+    header {
+      background: rgba(22, 27, 34, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      padding: 0.85rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, #f97316, #ef4444);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: white;
+      box-shadow: 0 4px 12px rgba(234, 88, 12, 0.35);
+    }
+
+    .brand-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-subtitle {
+      font-size: 0.75rem;
+      color: var(--accent-amber);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Active User Profile Pill in Header */
+    .user-profile-header {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      padding: 0.4rem 1rem 0.4rem 0.5rem;
+      border-radius: 999px;
+    }
+
+    .user-avatar {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: white;
+      border: 2px solid var(--border-subtle);
+    }
+
+    .user-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .user-name {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .user-role {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+    }
+
+    .profile-switch-btn {
+      background: transparent;
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .profile-switch-btn:hover {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-main);
+      border-color: var(--border-focus);
+    }
+
+    /* Main Container */
+    main {
+      flex: 1;
+      max-width: 1540px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 1.5rem;
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 1200px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Game Wrapper Section */
+    .game-section {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .game-header-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 0.85rem 1.25rem;
+    }
+
+    .game-status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .status-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--accent-green);
+      box-shadow: 0 0 8px var(--accent-green);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 1; }
+      50% { opacity: 0.4; }
+      100% { opacity: 1; }
+    }
+
+    .game-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 0.9rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.82rem;
+      font-weight: 600;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-card);
+      color: var(--text-main);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn:hover {
+      background: #2d333b;
+      border-color: #484f58;
+    }
+
+    .btn-primary {
+      background: var(--accent-orange);
+      border-color: #ea580c;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #c2410c;
+      border-color: #c2410c;
+    }
+
+    /* Responsive Game Frame Container (16:9 Aspect Ratio) */
+    .game-container {
+      position: relative;
+      width: 100%;
+      background: #000;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-lg);
+      aspect-ratio: 16 / 9;
+    }
+
+    .game-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Side Panel / Dashboard */
+    .dashboard-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+    }
+
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--text-main);
+    }
+
+    .card-title .badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent-blue);
+    }
+
+    /* Metrics Grid */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+
+    .metric-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 0.75rem;
+    }
+
+    .metric-label {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .metric-value {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text-main);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .metric-value.highlight-green {
+      color: var(--accent-green);
+    }
+
+    .metric-value.highlight-orange {
+      color: var(--accent-amber);
+    }
+
+    /* Live Activity Feed / Cloud Logs */
+    .log-feed {
+      background: #090d13;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 0.75rem;
+      height: 220px;
+      overflow-y: auto;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      line-height: 1.5;
+    }
+
+    .log-entry {
+      margin-bottom: 0.4rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      word-break: break-all;
+    }
+
+    .log-time {
+      color: var(--text-dim);
+    }
+
+    .log-type-save {
+      color: var(--accent-green);
+      font-weight: 600;
+    }
+
+    .log-type-api {
+      color: var(--accent-blue);
+    }
+
+    .log-type-err {
+      color: var(--accent-red);
+    }
+
+    /* Test Simulation Box */
+    .test-box {
+      margin-top: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .test-box button {
+      width: 100%;
+      justify-content: center;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: auto;
+      border-top: 1px solid var(--border-subtle);
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header>
+    <div class="brand">
+      <div class="brand-logo">BFP</div>
+      <div>
+        <div class="brand-title">SafeScape 2.0</div>
+        <div class="brand-subtitle">The Right Call Cloud Portal</div>
+      </div>
+    </div>
+
+    <!-- Active User Profile Display -->
+    <div class="user-profile-header">
+      <div class="user-avatar" id="headerAvatar">JS</div>
+      <div class="user-info">
+        <span class="user-name" id="headerUserName">Officer Juan Santos</span>
+        <span class="user-role" id="headerUserRole">User ID: #101 • Sta. Cruz Station</span>
+      </div>
+      <button class="profile-switch-btn" id="switchProfileBtn" title="Switch profile for testing">Switch Profile</button>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main>
+    <!-- Left Column: Embedded Godot Game -->
+    <section class="game-section">
+      <div class="game-header-bar">
+        <div class="game-status-badge">
+          <span class="status-dot"></span>
+          <span>Cloud Synchronization: <strong id="syncStatusText">Active & Ready</strong></span>
+        </div>
+        <div class="game-actions">
+          <button class="btn" id="reloadGameBtn">🔄 Reload Game</button>
+          <button class="btn btn-primary" id="fullscreenBtn">⛶ Fullscreen</button>
+        </div>
+      </div>
+
+      <!-- Godot HTML5 Export Embedded via Iframe -->
+      <div class="game-container" id="gameWrapper">
+        <iframe
+          id="godotFrame"
+          src=""
+          allow="autoplay; fullscreen; clipboard-read; clipboard-write;"
+          title="The Right Call Game"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Right Column: Profile Cloud Stats & Event Log -->
+    <aside class="dashboard-panel">
+      <!-- Profile Card -->
+      <div class="card">
+        <div class="card-title">
+          <span>Dispatcher Profile</span>
+          <span class="badge" id="profileBadge">Station Certified</span>
+        </div>
+        <div class="metrics-grid">
+          <div class="metric-box">
+            <div class="metric-label">High Score</div>
+            <div class="metric-value highlight-orange" id="metricHighScore">0</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-label">Calls Handled</div>
+            <div class="metric-value highlight-green" id="metricCalls">0</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-label">Successful</div>
+            <div class="metric-value" id="metricSuccess">0</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-label">Failed</div>
+            <div class="metric-value" id="metricFailed">0</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Save Log Feed -->
+      <div class="card">
+        <div class="card-title">
+          <span>Cloud Sync Activity</span>
+          <span class="badge" style="background: rgba(34, 197, 94, 0.15); color: var(--accent-green);">Live Listener</span>
+        </div>
+        <div class="log-feed" id="logFeed">
+          <div class="log-entry">
+            <span class="log-time">[Init]</span> Waiting for postMessage from game frame...
+          </div>
+        </div>
+      </div>
+
+      <!-- Developer Testing Panel (Matches Phase 4 Test Handover) -->
+      <div class="card">
+        <div class="card-title">
+          <span>Manual Browser Test</span>
+          <span class="badge" style="background: rgba(245, 158, 11, 0.15); color: var(--accent-amber);">Phase 4 Test</span>
+        </div>
+        <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+          Simulate a <code>RIGHT_CALL_SAVE</code> postMessage event directly from devtools / wrapper to test backend database write:
+        </p>
+        <div class="test-box">
+          <button class="btn" id="simulateSaveBtn">⚡ Dispatch Test Save Event</button>
+          <button class="btn" id="simulateWinBtn">🏆 Dispatch Victory (is_won) Save</button>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    SafeScape 2.0 &copy; Bureau of Fire Protection (BFP) Training Simulation Platform. Web Wrapper Architecture.
+  </footer>
+
+  <script>
+    // ── Pre-configured Demo Profiles ──────────────────────────────────────────
+    const PROFILES = [
+      { id: "101", name: "Officer Juan Santos", role: "Dispatcher Level II", avatar: "JS" },
+      { id: "202", name: "Cadet Maria Reyes", role: "Trainee Dispatcher", avatar: "MR" },
+      { id: "303", name: "Capt. Antonio Luna", role: "Shift Supervisor", avatar: "AL" },
+      { id: "guest", name: "Guest Player", role: "Unregistered Visitor", avatar: "GP" }
+    ];
+
+    let currentProfileIndex = 0;
+
+    function getActiveProfile() {
+      return PROFILES[currentProfileIndex];
+    }
+
+    // ── Update Header & Load Iframe with Profile Parameters ─────────────────
+    function initGameFrame() {
+      const profile = getActiveProfile();
+
+      document.getElementById('headerAvatar').textContent = profile.avatar;
+      document.getElementById('headerUserName').textContent = profile.name;
+      document.getElementById('headerUserRole').textContent = `User ID: #${profile.id} • ${profile.role}`;
+
+      // Set the Godot export URL with query parameters:
+      // In production: "/export/web/index.html" or "/games/the-right-call/index.html"
+      const gameBaseUrl = window.location.origin.includes('5500') || window.location.protocol === 'file:'
+        ? '../../export/web/index.html'
+        : '/games/the-right-call/index.html';
+
+      const gameUrl = `${gameBaseUrl}?user_id=${encodeURIComponent(profile.id)}&player_name=${encodeURIComponent(profile.name)}`;
+      
+      const iframe = document.getElementById('godotFrame');
+      iframe.src = gameUrl;
+
+      appendLog(`Loaded game iframe for profile: ${profile.name} (ID: ${profile.id})`, 'api');
+
+      // Fetch initial progress from cloud API for this profile
+      fetchCloudProfile(profile.id);
+    }
+
+    // ── Fetch Cloud Profile from Backend API ────────────────────────────────
+    async function fetchCloudProfile(userId) {
+      if (userId === 'guest') {
+        updateStatsUI({ high_score: 0, total_calls_handled: 0, successful_calls: 0, failed_calls: 0 });
+        return;
+      }
+
+      appendLog(`GET /api/games/right-call/load?user_id=${userId}`, 'api');
+      try {
+        const res = await fetch(`/api/games/right-call/load?user_id=${encodeURIComponent(userId)}`);
+        if (res.ok) {
+          const data = await res.json();
+          appendLog(`Profile loaded from cloud: HighScore=${data.high_score || 0}`, 'save');
+          updateStatsUI(data);
+        } else {
+          // If backend endpoint is not yet running on local file inspection, show default
+          appendLog(`Backend load returned HTTP ${res.status} (local mock mode active)`, 'err');
+        }
+      } catch (err) {
+        appendLog(`Cloud load connection notice: ${err.message}`, 'api');
+      }
+    }
+
+    // ── Update UI Metric Counters ───────────────────────────────────────────
+    function updateStatsUI(data) {
+      document.getElementById('metricHighScore').textContent = data.high_score ?? data.score ?? 0;
+      document.getElementById('metricCalls').textContent = data.total_calls_handled ?? data.calls_handled ?? 0;
+      document.getElementById('metricSuccess').textContent = data.successful_calls ?? 0;
+      document.getElementById('metricFailed').textContent = data.failed_calls ?? 0;
+    }
+
+    // ── Logging Utility ─────────────────────────────────────────────────────
+    function appendLog(message, type = 'api') {
+      const feed = document.getElementById('logFeed');
+      const entry = document.createElement('div');
+      entry.className = 'log-entry';
+
+      const now = new Date().toLocaleTimeString();
+      let typeClass = 'log-type-api';
+      if (type === 'save') typeClass = 'log-type-save';
+      if (type === 'err') typeClass = 'log-type-err';
+
+      entry.innerHTML = `<span class="log-time">[${now}]</span> <span class="${typeClass}">[${type.toUpperCase()}]</span> ${message}`;
+      feed.appendChild(entry);
+      feed.scrollTop = feed.scrollHeight;
+    }
+
+    // ── Window postMessage Listener (Core Handover Requirement) ─────────────
+    // Listens for 'RIGHT_CALL_SAVE' emitted by Godot via JavaScriptBridge
+    window.addEventListener('message', async (event) => {
+      // Validate event payload structure
+      if (!event.data || event.data.type !== 'RIGHT_CALL_SAVE') {
+        return;
+      }
+
+      const payload = event.data.payload;
+      appendLog(`Received postMessage 'RIGHT_CALL_SAVE': Score=${payload.score}, Calls=${payload.calls_handled}, Win=${payload.is_won}`, 'save');
+      console.log("[SafeScape Host] Received RIGHT_CALL_SAVE payload:", payload);
+
+      // Update UI dashboard immediately
+      updateStatsUI(payload);
+      document.getElementById('syncStatusText').textContent = 'Saving to cloud...';
+
+      // Forward to Cloud Backend API via POST
+      try {
+        const response = await fetch('/api/games/right-call/save', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
+
+        if (response.ok) {
+          const resJson = await response.json().catch(() => ({ status: 'saved' }));
+          appendLog(`POST /api/games/right-call/save -> 200 OK (${resJson.status || 'saved'})`, 'save');
+          document.getElementById('syncStatusText').textContent = 'Saved to Cloud (200 OK)';
+        } else {
+          appendLog(`POST /api/games/right-call/save failed with HTTP ${response.status}`, 'err');
+          document.getElementById('syncStatusText').textContent = `Cloud Error ${response.status}`;
+        }
+      } catch (err) {
+        // Fallback for standalone file demo where no backend server is currently bound to port
+        appendLog(`Simulated local cloud write for user ${payload.user_id}: Saved successfully (Mock).`, 'save');
+        document.getElementById('syncStatusText').textContent = 'Saved Locally (Simulation)';
+      }
+    });
+
+    // ── Controls & Event Listeners ──────────────────────────────────────────
+    document.getElementById('switchProfileBtn').addEventListener('click', () => {
+      currentProfileIndex = (currentProfileIndex + 1) % PROFILES.length;
+      initGameFrame();
+    });
+
+    document.getElementById('reloadGameBtn').addEventListener('click', () => {
+      const iframe = document.getElementById('godotFrame');
+      iframe.src = iframe.src;
+      appendLog('Reloading game instance...', 'api');
+    });
+
+    document.getElementById('fullscreenBtn').addEventListener('click', () => {
+      const container = document.getElementById('gameWrapper');
+      if (!document.fullscreenElement) {
+        container.requestFullscreen().catch(err => alert("Fullscreen error: " + err.message));
+      } else {
+        document.exitFullscreen();
+      }
+    });
+
+    // ── Phase 4 Manual Browser Test Helpers ─────────────────────────────────
+    document.getElementById('simulateSaveBtn').addEventListener('click', () => {
+      const profile = getActiveProfile();
+      window.postMessage({
+        type: 'RIGHT_CALL_SAVE',
+        payload: {
+          user_id: parseInt(profile.id) || 0,
+          score: 500,
+          calls_handled: 2,
+          successful_calls: 2,
+          failed_calls: 0,
+          completed_scenarios: ['test_call_01'],
+          is_won: false
+        }
+      }, '*');
+    });
+
+    document.getElementById('simulateWinBtn').addEventListener('click', () => {
+      const profile = getActiveProfile();
+      window.postMessage({
+        type: 'RIGHT_CALL_SAVE',
+        payload: {
+          user_id: parseInt(profile.id) || 0,
+          score: 1250,
+          calls_handled: 10,
+          successful_calls: 10,
+          failed_calls: 0,
+          completed_scenarios: ['call_kitchen_fire', 'call_boss_scenario'],
+          is_won: true
+        }
+      }, '*');
+    });
+
+    // Run initialization
+    initGameFrame();
+  </script>
+</body>
+</html>

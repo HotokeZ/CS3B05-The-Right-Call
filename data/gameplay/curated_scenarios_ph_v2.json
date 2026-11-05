@@ -1,0 +1,2392 @@
+{
+  "scenarios": [
+    {
+      "id": "seed_fire_001_kitchen_grease",
+      "category": "fire",
+      "type": "fire",
+      "title": "Kitchen grease fire spreading to cabinets",
+      "severity": "high",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "Caller",
+          "text": "Help! I was frying chicken at {location} and the pan caught on fire! It's starting to reach the cabinets!"
+        },
+        {
+          "speaker": "911",
+          "options": [
+            {
+              "text": "Do not use water. Cover the pan with a metal lid or use baking soda if safe.",
+              "label": "safe",
+              "explanation": "Smothering a grease fire removes oxygen. This is the safest immediate procedure."
+            },
+            {
+              "text": "Quickly throw a pitcher of water on the stove to put it out.",
+              "label": "unsafe",
+              "explanation": "Water vaporizes instantly in hot grease, causing a violent explosion that spreads the fire."
+            },
+            {
+              "text": "Carefully grab the handle of the pan and carry it outside to the yard.",
+              "label": "unsafe",
+              "explanation": "Carrying a burning pan usually results in spilling boiling, flaming grease on the carrier."
+            },
+            {
+              "text": "Turn off the heat source immediately if you can safely reach the stove knob.",
+              "label": "safe",
+              "explanation": "Removing the heat source is a critical step in stopping a grease fire from escalating."
+            },
+            {
+              "text": "Open all the windows and exterior doors to let the toxic smoke out.",
+              "label": "unsafe",
+              "explanation": "Opening doors and windows creates drafts that feed oxygen to the fire, causing it to grow faster."
+            },
+            {
+              "text": "Try to beat the flames out with a wet dish towel or an apron.",
+              "label": "unsafe",
+              "explanation": "Swatting at the fire can splash burning grease onto you and the surrounding cabinets."
+            }
+          ],
+          "nlp_evaluation": {
+            "safe_keywords": [
+              "smother",
+              "lid",
+              "baking soda",
+              "turn off",
+              "heat",
+              "do not use water"
+            ],
+            "unsafe_keywords": [
+              "water",
+              "throw",
+              "carry",
+              "outside",
+              "window",
+              "towel"
+            ]
+          }
+        },
+        {
+          "speaker": "Caller",
+          "text": "Okay, I'm doing exactly what you said! But the fire already touched the ceiling, there's so much smoke!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Evacuate everyone immediately, close doors behind you if safe, and wait outside for the BFP.",
+          "label": "safe",
+          "hint": "Life safety first.",
+          "explanation": "Evacuation is safer than in-place suppression once the fire has spread."
+        },
+        {
+          "text": "Stay in the kitchen and keep trying to smother it with blankets until the BFP arrives.",
+          "label": "unsafe",
+          "hint": "The fire has already spread beyond the pan.",
+          "explanation": "Civilian suppression is dangerous once fire spreads to cabinets/ceiling."
+        },
+        {
+          "text": "Open the front door to push smoke out before evacuating.",
+          "label": "unsafe",
+          "hint": "Airflow intensifies fires.",
+          "explanation": "Ventilation feeds fire growth."
+        },
+        {
+          "text": "Run to your bedroom to grab your wallet and keys before exiting.",
+          "label": "unsafe",
+          "hint": "Property over life?",
+          "explanation": "Re-entry risks entrapment and smoke inhalation."
+        },
+        {
+          "text": "Break the kitchen windows to let the smoke out.",
+          "label": "unsafe",
+          "hint": "Uncontrolled ventilation.",
+          "explanation": "Breaking windows feeds the fire oxygen."
+        },
+        {
+          "text": "Hide in the bathroom and put a wet towel under the door.",
+          "label": "unsafe",
+          "hint": "Never hide during a fire.",
+          "explanation": "Bathrooms are not fire-rated safe rooms and become fatal smoke traps."
+        }
+      ],
+      "safe_keywords": [
+        "evacuate",
+        "close doors",
+        "wait outside",
+        "bfp",
+        "do not use water"
+      ],
+      "unsafe_keywords": [
+        "go back inside",
+        "ventilate",
+        "smother while spreading",
+        "throw water",
+        "hide"
+      ]
+    },
+    {
+      "id": "seed_fire_002_downed_powerline",
+      "category": "fire",
+      "type": "fire",
+      "title": "Downed live wire sparking near residential gate",
+      "severity": "high",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "Caller",
+          "text": "There's a loud buzzing noise!"
+        },
+        {
+          "speaker": "911",
+          "options": [
+            {
+              "text": "911, what is your exact location and emergency?",
+              "label": "safe",
+              "explanation": "Standard protocol requires establishing location immediately."
+            },
+            {
+              "text": "Calm down, what's making the noise?",
+              "label": "unsafe",
+              "explanation": "You must establish location before diagnosing the emergency."
+            },
+            {
+              "text": "Are you in danger right now?",
+              "label": "safe",
+              "explanation": "Assessing immediate life threat is important, but location is still priority."
+            },
+            {
+              "text": "Please hold the line.",
+              "label": "unsafe",
+              "explanation": "Never place an active emergency on hold without knowing the location."
+            },
+            {
+              "text": "Is this a medical emergency?",
+              "label": "unsafe",
+              "explanation": "Guessing the emergency wastes time. Ask directly."
+            },
+            {
+              "text": "BFP dispatcher, where is the fire?",
+              "label": "unsafe",
+              "explanation": "Assuming it is a fire without asking can lead to incorrect dispatching."
+            }
+          ],
+          "nlp_evaluation": {
+            "safe_keywords": [
+              "location",
+              "where",
+              "address",
+              "emergency",
+              "what happened"
+            ],
+            "unsafe_keywords": [
+              "hold on",
+              "who is this",
+              "calm down"
+            ]
+          }
+        },
+        {
+          "speaker": "Caller",
+          "text": "I'm at {location}. A typhoon just blew through and a power line snapped. It's sparking on the wet pavement right in front of our gate!"
+        },
+        {
+          "speaker": "911",
+          "options": [
+            {
+              "text": "Keep everyone inside, stay away from the gate, and do not step in any puddles.",
+              "label": "safe",
+              "explanation": "Electricity can travel through wet ground (step potential)."
+            },
+            {
+              "text": "Use a dry wooden broom to push the wire away from your gate.",
+              "label": "unsafe",
+              "explanation": "Wood can contain moisture and conduct high-voltage electricity."
+            },
+            {
+              "text": "Slowly walk outside to see whose house it connects to.",
+              "label": "unsafe",
+              "explanation": "Approaching a downed wire is a fatal electrocution risk."
+            },
+            {
+              "text": "Throw a heavy rubber mat over the wire to stop the sparks.",
+              "label": "unsafe",
+              "explanation": "Household rubber is not rated for high-voltage utility lines."
+            },
+            {
+              "text": "Go turn off your main breaker switch immediately.",
+              "label": "unsafe",
+              "explanation": "The live wire is on the street side; touching your breaker won't stop the utility line."
+            },
+            {
+              "text": "Stay inside, I am dispatching the BFP to secure the area.",
+              "label": "safe",
+              "explanation": "Securing the caller in place while deploying units is the correct action."
+            }
+          ],
+          "nlp_evaluation": {
+            "safe_keywords": [
+              "stay inside",
+              "away",
+              "do not touch",
+              "puddles",
+              "bfp",
+              "secure"
+            ],
+            "unsafe_keywords": [
+              "broom",
+              "push",
+              "walk outside",
+              "rubber",
+              "breaker"
+            ]
+          }
+        },
+        {
+          "speaker": "Caller",
+          "text": "Understood, we are locking the doors and staying inside the house."
+        }
+      ],
+      "options": [
+        {
+          "text": "Maintain a perimeter from inside, do not attempt to leave until BFP and the power company arrive.",
+          "label": "safe",
+          "hint": "Isolation is critical around energized hazards.",
+          "explanation": "Live-wire incidents require perimeter control and no civilian intervention."
+        },
+        {
+          "text": "Extinguish any small grass fires near the wire with a garden hose from your window.",
+          "label": "unsafe",
+          "hint": "Water and electricity.",
+          "explanation": "Spraying water near a live wire can conduct electricity back to the caller."
+        },
+        {
+          "text": "Evacuate the house immediately by jumping over the wire.",
+          "label": "unsafe",
+          "hint": "Step potential.",
+          "explanation": "Moving near a live wire on wet ground is an electrocution hazard."
+        },
+        {
+          "text": "Tell your neighbors to come out and move their cars.",
+          "label": "unsafe",
+          "hint": "Do not increase the crowd.",
+          "explanation": "Drawing more people into the hazard zone increases casualty risk."
+        },
+        {
+          "text": "Wait for the sparks to stop, then carefully step around it to leave.",
+          "label": "unsafe",
+          "hint": "Wires can re-energize.",
+          "explanation": "Downed lines can automatically re-energize without warning."
+        },
+        {
+          "text": "Throw buckets of sand onto the sparking wire from your porch.",
+          "label": "unsafe",
+          "hint": "Do not approach.",
+          "explanation": "Throwing objects puts the caller in proximity to the electrical arc."
+        }
+      ],
+      "safe_keywords": [
+        "stay inside",
+        "perimeter",
+        "wait for bfp",
+        "power company"
+      ],
+      "unsafe_keywords": [
+        "hose",
+        "water",
+        "jump over",
+        "move cars",
+        "step around",
+        "sand"
+      ]
+    },
+    {
+      "id": "seed_fire_003_ebike_battery",
+      "category": "fire",
+      "type": "fire",
+      "title": "E-bike lithium battery thermal runaway in living room",
+      "severity": "high",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "Caller",
+          "text": "My e-bike is smoking! I'm at {location} and the battery is hissing and shooting out white smoke!"
+        },
+        {
+          "speaker": "911",
+          "options": [
+            {
+              "text": "Evacuate immediately. Do not try to move the bike or put it out.",
+              "label": "safe",
+              "explanation": "Lithium-ion thermal runaway produces toxic gas and cannot be extinguished with household items."
+            },
+            {
+              "text": "Unplug it and drag the bike outside before it catches fire.",
+              "label": "unsafe",
+              "explanation": "Moving a battery in thermal runaway exposes the caller to violent explosion and severe burns."
+            },
+            {
+              "text": "Throw a heavy blanket over the battery to smother the smoke.",
+              "label": "unsafe",
+              "explanation": "Lithium-ion batteries generate their own oxygen; a blanket will just catch fire."
+            },
+            {
+              "text": "Use your household fire extinguisher on the battery pack.",
+              "label": "unsafe",
+              "explanation": "Standard ABC dry chemical extinguishers do not stop lithium-ion thermal runaway."
+            },
+            {
+              "text": "Pour buckets of water on it to cool it down.",
+              "label": "unsafe",
+              "explanation": "While firefighters use water for cooling, a civilian cannot apply enough volume safely indoors."
+            },
+            {
+              "text": "Get out of the house now, the smoke is highly toxic.",
+              "label": "safe",
+              "explanation": "Prioritizing life safety and toxic gas avoidance is the correct dispatch action."
+            }
+          ],
+          "nlp_evaluation": {
+            "safe_keywords": [
+              "evacuate",
+              "get out",
+              "toxic",
+              "do not move",
+              "leave"
+            ],
+            "unsafe_keywords": [
+              "drag",
+              "move",
+              "blanket",
+              "extinguisher",
+              "water"
+            ]
+          }
+        },
+        {
+          "speaker": "Caller",
+          "text": "Okay, I'm leaving the house now. It just started popping!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Wait outside at a safe distance and do not re-enter. The BFP is en route.",
+          "label": "safe",
+          "hint": "Thermal runaway requires professional HazMat/Fire response.",
+          "explanation": "Lithium fires require massive amounts of water and specialized overhaul by the BFP."
+        },
+        {
+          "text": "Go back in quickly just to unplug the charger from the wall.",
+          "label": "unsafe",
+          "hint": "Toxic smoke and explosive risk.",
+          "explanation": "The toxic gases released can incapacitate a person in seconds."
+        },
+        {
+          "text": "Open all the windows from the outside to let the gas out.",
+          "label": "unsafe",
+          "hint": "Avoid the smoke plume.",
+          "explanation": "Approaching the structure exposes the caller to the highly toxic vapor cloud."
+        },
+        {
+          "text": "Try to spray a garden hose through the front door.",
+          "label": "unsafe",
+          "hint": "Not enough GPM to stop runaway.",
+          "explanation": "A garden hose cannot cool the battery enough and puts the caller in the hazard zone."
+        },
+        {
+          "text": "Wait for it to stop popping, then go back inside to check the damage.",
+          "label": "unsafe",
+          "hint": "Off-gassing continues after flames stop.",
+          "explanation": "The environment remains toxic and the battery can reignite at any time."
+        },
+        {
+          "text": "Tell your neighbors to grab their extinguishers and help you.",
+          "label": "unsafe",
+          "hint": "Do not endanger neighbors.",
+          "explanation": "Encouraging untrained civilians to fight a lithium fire will cause mass casualties."
+        }
+      ],
+      "safe_keywords": [
+        "wait outside",
+        "safe distance",
+        "do not re-enter",
+        "bfp"
+      ],
+      "unsafe_keywords": [
+        "go back",
+        "unplug",
+        "windows",
+        "hose",
+        "neighbors",
+        "extinguisher"
+      ]
+    },
+    {
+      "id": "seed_pol_001_silent_intrusion",
+      "category": "criminal",
+      "type": "criminal",
+      "title": "Home intrusion with caller hiding silently",
+      "severity": "high",
+      "recommended_vehicle": "police",
+      "transcript": [
+        {
+          "speaker": "Caller",
+          "text": "(whispering) Please help... someone broke the glass downstairs. I'm hiding in my closet."
+        },
+        {
+          "speaker": "911",
+          "options": [
+            {
+              "text": "911, can you safely whisper your address to me?",
+              "label": "safe",
+              "explanation": "Verifying the location quietly ensures the PNP can be dispatched without exposing the caller."
+            },
+            {
+              "text": "SPEAK UP, I CANNOT HEAR YOU!",
+              "label": "unsafe",
+              "explanation": "Yelling at a hiding caller can cause them to make noise, alerting the intruder."
+            },
+            {
+              "text": "Where are you? Are you armed?",
+              "label": "safe",
+              "explanation": "Getting location and assessing weapons is standard protocol."
+            },
+            {
+              "text": "Are they still inside? Go look.",
+              "label": "unsafe",
+              "explanation": "Never tell a hiding caller to leave concealment to investigate an intruder."
+            },
+            {
+              "text": "I will call you right back on video chat.",
+              "label": "unsafe",
+              "explanation": "Ringing the caller's phone or forcing video will expose their hiding spot."
+            },
+            {
+              "text": "Hold on, transferring you to the police.",
+              "label": "unsafe",
+              "explanation": "Do not transfer a critical life-safety call without getting the address first."
+            }
+          ],
+          "nlp_evaluation": {
+            "safe_keywords": [
+              "whisper",
+              "address",
+              "location",
+              "where are you",
+              "armed"
+            ],
+            "unsafe_keywords": [
+              "speak up",
+              "go look",
+              "investigate",
+              "video",
+              "hold on",
+              "transfer"
+            ]
+          }
+        },
+        {
+          "speaker": "Caller",
+          "text": "(whispering) I'm at {location}. I hear footsteps coming up the stairs."
+        }
+      ],
+      "options": [
+        {
+          "text": "Keep silent, dim your phone screen, turn off ringers, and stay on the line. PNP is on the way.",
+          "label": "safe",
+          "hint": "Stealth preserves caller safety until police entry.",
+          "explanation": "Silent communication and concealment reduce detection risk during active intrusion."
+        },
+        {
+          "text": "Yell that the PNP is coming to scare them away.",
+          "label": "unsafe",
+          "hint": "Do not reveal position.",
+          "explanation": "Noise exposes the caller's location and escalates violence risk."
+        },
+        {
+          "text": "Grab a weapon and prepare to ambush them if they open the closet.",
+          "label": "unsafe",
+          "hint": "Dispatch guidance should prioritize survival and de-escalation.",
+          "explanation": "Encouraging confrontation increases the risk of fatal outcomes."
+        },
+        {
+          "text": "Sneak out of the closet and try to run past them down the stairs.",
+          "label": "unsafe",
+          "hint": "Do not abandon a safe hiding spot.",
+          "explanation": "Moving increases the chance of being spotted and intercepted by the intruder."
+        },
+        {
+          "text": "Turn on your phone flashlight so you can see them coming.",
+          "label": "unsafe",
+          "hint": "Light destroys concealment.",
+          "explanation": "A light source in a dark room immediately gives away the caller's position."
+        },
+        {
+          "text": "Hang up the phone immediately so they don't hear you talking.",
+          "label": "unsafe",
+          "hint": "Maintain the open line.",
+          "explanation": "An open line allows dispatch to hear what is happening and relay suspect movement to the PNP."
+        }
+      ],
+      "safe_keywords": [
+        "keep silent",
+        "dim phone",
+        "turn off ringers",
+        "stay on line",
+        "pnp"
+      ],
+      "unsafe_keywords": [
+        "yell",
+        "ambush",
+        "sneak out",
+        "run",
+        "flashlight",
+        "hang up"
+      ]
+    },
+    {
+      "id": "seed_pol_002_aggressive_driver",
+      "category": "criminal",
+      "type": "criminal",
+      "title": "Road rage incident with weapon brandishing",
+      "severity": "high",
+      "recommended_vehicle": "police",
+      "transcript": [
+        {
+          "speaker": "Caller",
+          "text": "This crazy guy just cut me off and brake-checked me!"
+        },
+        {
+          "speaker": "911",
+          "options": [
+            {
+              "text": "911, what is your current location and direction of travel?",
+              "label": "safe",
+              "explanation": "Establishing location and movement is required for PNP interception."
+            },
+            {
+              "text": "Did you hit his car?",
+              "label": "unsafe",
+              "explanation": "Determine location before investigating the details of the incident."
+            },
+            {
+              "text": "Stop your car right now and wait for the police.",
+              "label": "unsafe",
+              "explanation": "Stopping in traffic with an aggressive driver makes the caller a sitting target."
+            },
+            {
+              "text": "Just ignore him and drive home.",
+              "label": "unsafe",
+              "explanation": "Driving home can lead the aggressive driver to the caller's residence."
+            },
+            {
+              "text": "Follow him so you can get his license plate.",
+              "label": "unsafe",
+              "explanation": "Following an aggressive driver escalates the road rage into a high-speed chase."
+            },
+            {
+              "text": "Where are you? Do you have his plate number?",
+              "label": "safe",
+              "explanation": "Getting location and identifying information safely is correct."
+            }
+          ],
+          "nlp_evaluation": {
+            "safe_keywords": [
+              "location",
+              "direction",
+              "travel",
+              "plate number",
+              "where are you"
+            ],
+            "unsafe_keywords": [
+              "stop",
+              "ignore",
+              "drive home",
+              "follow"
+            ]
+          }
+        },
+        {
+          "speaker": "Caller",
+          "text": "I'm passing the mall at {location}. He just pulled up next to me and pointed a gun out the window!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Do not engage. Take the next turn to separate yourself, drive to the nearest PNP station, and stay on the line.",
+          "label": "safe",
+          "hint": "De-escalate and seek a safe haven.",
+          "explanation": "Creating distance and driving to a police station deters the suspect and provides immediate safety."
+        },
+        {
+          "text": "Ram his car off the road before he shoots.",
+          "label": "unsafe",
+          "hint": "Do not escalate to deadly force with a vehicle.",
+          "explanation": "Advising a civilian to intentionally crash their vehicle creates extreme liability and danger."
+        },
+        {
+          "text": "Roll down your window and tell him you are on the phone with 911.",
+          "label": "unsafe",
+          "hint": "Do not interact with the suspect.",
+          "explanation": "Engaging the suspect can provoke them into firing the weapon."
+        },
+        {
+          "text": "Slam on your brakes and hide under the dashboard.",
+          "label": "unsafe",
+          "hint": "Keep moving.",
+          "explanation": "Stopping the car makes the caller a stationary target and causes a traffic pileup."
+        },
+        {
+          "text": "Speed up and try to outrun him on the highway.",
+          "label": "unsafe",
+          "hint": "Avoid high-speed chases.",
+          "explanation": "High-speed driving increases the risk of a fatal multi-vehicle crash."
+        },
+        {
+          "text": "Pull over to the shoulder and put your hands up.",
+          "label": "unsafe",
+          "hint": "Do not surrender to a road rage suspect.",
+          "explanation": "Pulling over gives the suspect total control over the situation."
+        }
+      ],
+      "safe_keywords": [
+        "do not engage",
+        "turn away",
+        "pnp station",
+        "stay on line"
+      ],
+      "unsafe_keywords": [
+        "ram",
+        "roll down window",
+        "brakes",
+        "hide",
+        "outrun",
+        "pull over"
+      ]
+    },
+    {
+      "id": "seed_pol_003_shoplifter_violent",
+      "category": "criminal",
+      "type": "criminal",
+      "title": "Shoplifter turns violent against security",
+      "severity": "medium",
+      "recommended_vehicle": "police",
+      "transcript": [
+        {
+          "speaker": "Caller",
+          "text": "Send the police! The security guard at {location} tackled a shoplifter and now they are fighting on the floor!"
+        },
+        {
+          "speaker": "911",
+          "options": [
+            {
+              "text": "Are there any weapons involved?",
+              "label": "safe",
+              "explanation": "Assessing for weapons dictates the severity of the PNP response."
+            },
+            {
+              "text": "Jump in and help the security guard!",
+              "label": "unsafe",
+              "explanation": "Never instruct a civilian bystander to enter a physical altercation."
+            },
+            {
+              "text": "What did the shoplifter steal?",
+              "label": "unsafe",
+              "explanation": "Property value is irrelevant when an active physical assault is occurring."
+            },
+            {
+              "text": "Tell the security guard to let him go.",
+              "label": "unsafe",
+              "explanation": "Dispatch cannot give tactical orders to private security via a bystander."
+            },
+            {
+              "text": "Is anyone injured and needing an ambulance?",
+              "label": "safe",
+              "explanation": "Checking for injuries ensures MDRRMO is dispatched if needed."
+            },
+            {
+              "text": "Record it on your phone for evidence.",
+              "label": "unsafe",
+              "explanation": "Recording distracts the caller from safety and providing updates."
+            }
+          ],
+          "nlp_evaluation": {
+            "safe_keywords": [
+              "weapons",
+              "injured",
+              "ambulance",
+              "hurt",
+              "armed"
+            ],
+            "unsafe_keywords": [
+              "jump in",
+              "help",
+              "steal",
+              "let go",
+              "record"
+            ]
+          }
+        },
+        {
+          "speaker": "Caller",
+          "text": "No weapons, but the shoplifter is punching the guard in the face repeatedly!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Keep your distance, ensure bystanders are clear, and I will rush PNP units to your location.",
+          "label": "safe",
+          "hint": "Observe and report from safety.",
+          "explanation": "Bystander safety is paramount. PNP officers are trained to separate combatants."
+        },
+        {
+          "text": "Grab a heavy item from the store shelf and hit the shoplifter.",
+          "label": "unsafe",
+          "hint": "Do not escalate.",
+          "explanation": "Civilian intervention can result in severe injury or legal liability."
+        },
+        {
+          "text": "Get close and yell that the police are coming.",
+          "label": "unsafe",
+          "hint": "Distance is safety.",
+          "explanation": "Getting too close makes the caller a target for the violent suspect."
+        },
+        {
+          "text": "Block the exit doors so the shoplifter cannot escape.",
+          "label": "unsafe",
+          "hint": "Do not trap a violent suspect.",
+          "explanation": "Blocking an exit forces a violent suspect to attack whoever is in the way."
+        },
+        {
+          "text": "Try to pull the shoplifter off the guard.",
+          "label": "unsafe",
+          "hint": "No physical intervention.",
+          "explanation": "The caller lacks training and protective equipment to break up a fight."
+        },
+        {
+          "text": "Leave the store immediately and let them sort it out.",
+          "label": "unsafe",
+          "hint": "Maintain visual if safe.",
+          "explanation": "While distancing is good, leaving entirely means dispatch loses situational updates."
+        }
+      ],
+      "safe_keywords": [
+        "keep distance",
+        "bystanders clear",
+        "pnp",
+        "rush units"
+      ],
+      "unsafe_keywords": [
+        "heavy item",
+        "hit",
+        "get close",
+        "block exit",
+        "pull off",
+        "leave store"
+      ]
+    },
+    {
+      "id": "seed_med_001_cardiac_arrest",
+      "category": "medical",
+      "type": "medical",
+      "title": "Sudden cardiac arrest at the gym",
+      "severity": "high",
+      "recommended_vehicle": "ambulance",
+      "transcript": [
+        {
+          "speaker": "Caller",
+          "text": "Help! A guy just collapsed off the treadmill at {location}!"
+        },
+        {
+          "speaker": "911",
+          "options": [
+            {
+              "text": "Is he awake? Is he breathing normally?",
+              "label": "safe",
+              "explanation": "Assessing consciousness and normal breathing determines if CPR is needed."
+            },
+            {
+              "text": "What is his name and age?",
+              "label": "unsafe",
+              "explanation": "Gathering demographics wastes time during a potential cardiac arrest."
+            },
+            {
+              "text": "Put him in a chair so he can rest.",
+              "label": "unsafe",
+              "explanation": "A collapsed patient should be left flat on the floor."
+            },
+            {
+              "text": "Did he hit his head?",
+              "label": "safe",
+              "explanation": "Trauma assessment is good, but breathing takes priority."
+            },
+            {
+              "text": "Give him some water.",
+              "label": "unsafe",
+              "explanation": "Never give liquids to an unconscious person; it causes choking/aspiration."
+            },
+            {
+              "text": "Check his pulse on his wrist.",
+              "label": "unsafe",
+              "explanation": "Civilian pulse checks are unreliable. Focus on breathing."
+            }
+          ],
+          "nlp_evaluation": {
+            "safe_keywords": [
+              "awake",
+              "breathing",
+              "conscious",
+              "hit head"
+            ],
+            "unsafe_keywords": [
+              "name",
+              "age",
+              "chair",
+              "water",
+              "pulse"
+            ]
+          }
+        },
+        {
+          "speaker": "Caller",
+          "text": "He's not responding! He's just making weird gasping sounds!"
+        }
+      ],
+      "options": [
+        {
+          "text": "That is agonal breathing, not normal breathing. Start chest compressions immediately; push hard and fast in the center of the chest. MDRRMO is en route.",
+          "label": "safe",
+          "hint": "Agonal gasps equal cardiac arrest.",
+          "explanation": "Gasping in an unresponsive patient indicates cardiac arrest. Immediate CPR and AED use are required."
+        },
+        {
+          "text": "He is breathing. Just roll him on his side and wait for the ambulance.",
+          "label": "unsafe",
+          "hint": "Gasping is not breathing.",
+          "explanation": "Mistaking agonal gasps for breathing delays life-saving CPR."
+        },
+        {
+          "text": "Do mouth-to-mouth rescue breaths first.",
+          "label": "unsafe",
+          "hint": "Compressions first.",
+          "explanation": "Modern dispatcher-assisted CPR prioritizes hands-only chest compressions."
+        },
+        {
+          "text": "Slap his face and yell his name to wake him up.",
+          "label": "unsafe",
+          "hint": "He is unconscious.",
+          "explanation": "Physical stimulation wastes time when compressions are needed."
+        },
+        {
+          "text": "Check his pockets for heart medication.",
+          "label": "unsafe",
+          "hint": "Do not search for meds.",
+          "explanation": "Medications cannot restart a stopped heart; only CPR and an AED can."
+        },
+        {
+          "text": "Wait for the MDRRMO medics to arrive before touching him.",
+          "label": "unsafe",
+          "hint": "Brain death begins in 4 minutes.",
+          "explanation": "Delaying CPR until medics arrive drastically reduces survival chances."
+        }
+      ],
+      "safe_keywords": [
+        "chest compressions",
+        "push hard",
+        "center of chest",
+        "mdrrmo"
+      ],
+      "unsafe_keywords": [
+        "roll on side",
+        "mouth-to-mouth",
+        "slap",
+        "medication",
+        "wait for medics"
+      ]
+    },
+    {
+      "id": "seed_med_002_severe_burn",
+      "category": "medical",
+      "type": "medical",
+      "title": "Severe boiling water burn in kitchen",
+      "severity": "medium",
+      "recommended_vehicle": "ambulance",
+      "transcript": [
+        {
+          "speaker": "Caller",
+          "text": "My grandmother accidentally pulled a pot of boiling water off the stove at {location}! Her chest and arms are burned!"
+        },
+        {
+          "speaker": "911",
+          "options": [
+            {
+              "text": "Is she having any trouble breathing?",
+              "label": "safe",
+              "explanation": "Burns to the chest/neck can cause airway swelling. Always check airway first."
+            },
+            {
+              "text": "Apply butter or oil to the burns immediately.",
+              "label": "unsafe",
+              "explanation": "Grease traps heat and causes infection. Never apply butter to a burn."
+            },
+            {
+              "text": "Pop the blisters so the fluid can drain.",
+              "label": "unsafe",
+              "explanation": "Popping blisters opens the skin to severe infection."
+            },
+            {
+              "text": "Put ice packs directly on her skin.",
+              "label": "unsafe",
+              "explanation": "Direct ice causes frostbite and tissue damage to compromised skin."
+            },
+            {
+              "text": "Is she still wearing the hot, wet clothing?",
+              "label": "safe",
+              "explanation": "Hot wet clothing continues to burn the skin and must be removed safely."
+            },
+            {
+              "text": "Tell her to walk to the shower.",
+              "label": "unsafe",
+              "explanation": "A severely burned elderly patient may go into shock and fall."
+            }
+          ],
+          "nlp_evaluation": {
+            "safe_keywords": [
+              "breathing",
+              "airway",
+              "clothing",
+              "wet"
+            ],
+            "unsafe_keywords": [
+              "butter",
+              "oil",
+              "blisters",
+              "pop",
+              "ice",
+              "walk"
+            ]
+          }
+        },
+        {
+          "speaker": "Caller",
+          "text": "She's breathing fine but crying in pain. Her shirt is soaked with hot water!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Carefully remove the wet shirt. Cool the burns with cool running water for 10-20 minutes. MDRRMO is on the way.",
+          "label": "safe",
+          "hint": "Stop the burning process.",
+          "explanation": "Removing the heat source (wet clothes) and using cool (not ice) water halts tissue damage."
+        },
+        {
+          "text": "Leave the shirt on and wrap her in a thick blanket.",
+          "label": "unsafe",
+          "hint": "The shirt is still boiling hot.",
+          "explanation": "Keeping hot clothing on the skin worsens the burn depth."
+        },
+        {
+          "text": "Peel the shirt off, even if it is stuck to the skin.",
+          "label": "unsafe",
+          "hint": "Do not peel adhered clothing.",
+          "explanation": "If clothing is melted or stuck, peeling it rips the skin off. Cut around it instead."
+        },
+        {
+          "text": "Apply toothpaste to the burns to cool them down.",
+          "label": "unsafe",
+          "hint": "No home remedies.",
+          "explanation": "Toothpaste is unsterile and must be scrubbed out by doctors later, causing agony."
+        },
+        {
+          "text": "Have her drink a large glass of ice water.",
+          "label": "unsafe",
+          "hint": "Risk of shock and vomiting.",
+          "explanation": "Major burn patients should not eat or drink due to surgery requirements and shock."
+        },
+        {
+          "text": "Put a tight bandage over her chest.",
+          "label": "unsafe",
+          "hint": "Swelling will occur.",
+          "explanation": "Tight bandages restrict breathing and circulation as the burn swells."
+        }
+      ],
+      "safe_keywords": [
+        "remove shirt",
+        "cool water",
+        "running water",
+        "mdrrmo"
+      ],
+      "unsafe_keywords": [
+        "leave shirt",
+        "peel",
+        "toothpaste",
+        "ice water",
+        "tight bandage"
+      ]
+    },
+    {
+      "id": "seed_med_003_allergic_reaction",
+      "category": "medical",
+      "type": "medical",
+      "title": "Anaphylactic shock from bee sting",
+      "severity": "high",
+      "recommended_vehicle": "ambulance",
+      "transcript": [
+        {
+          "speaker": "Caller",
+          "text": "Help! We are at the park at {location}. My son got stung by a bee and his face is swelling up!"
+        },
+        {
+          "speaker": "911",
+          "options": [
+            {
+              "text": "Is he having difficulty breathing or wheezing?",
+              "label": "safe",
+              "explanation": "Airway compromise is the primary life threat in anaphylaxis."
+            },
+            {
+              "text": "Try to suck the venom out of the sting.",
+              "label": "unsafe",
+              "explanation": "Sucking venom is ineffective and introduces mouth bacteria."
+            },
+            {
+              "text": "Put mud on the sting to soothe it.",
+              "label": "unsafe",
+              "explanation": "Mud causes infection and does not stop an allergic reaction."
+            },
+            {
+              "text": "Does he have a prescribed epinephrine auto-injector (EpiPen)?",
+              "label": "safe",
+              "explanation": "Identifying if life-saving medication is available is critical."
+            },
+            {
+              "text": "Have him run around to keep his heart rate up.",
+              "label": "unsafe",
+              "explanation": "Exertion accelerates the spread of venom and worsens shock."
+            },
+            {
+              "text": "Give him a sip of water.",
+              "label": "unsafe",
+              "explanation": "With a swelling airway, liquids pose a severe choking hazard."
+            }
+          ],
+          "nlp_evaluation": {
+            "safe_keywords": [
+              "breathing",
+              "wheezing",
+              "epinephrine",
+              "epipen",
+              "medication"
+            ],
+            "unsafe_keywords": [
+              "suck",
+              "venom",
+              "mud",
+              "run",
+              "water"
+            ]
+          }
+        },
+        {
+          "speaker": "Caller",
+          "text": "He's wheezing really bad! I have his EpiPen right here in my bag!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Administer the EpiPen into his outer thigh immediately. Lay him flat and raise his legs. MDRRMO is responding.",
+          "label": "safe",
+          "hint": "Epinephrine reverses anaphylaxis.",
+          "explanation": "Immediate epinephrine and the shock position (legs elevated) save lives during anaphylaxis."
+        },
+        {
+          "text": "Wait to see if the wheezing stops before using the EpiPen.",
+          "label": "unsafe",
+          "hint": "Do not delay.",
+          "explanation": "Delaying epinephrine administration is the leading cause of death in anaphylaxis."
+        },
+        {
+          "text": "Inject the EpiPen into his chest.",
+          "label": "unsafe",
+          "hint": "Wrong injection site.",
+          "explanation": "EpiPens are designed for intramuscular injection in the thick vastus lateralis (outer thigh) muscle."
+        },
+        {
+          "text": "Give him an antihistamine pill instead.",
+          "label": "unsafe",
+          "hint": "Pills are too slow.",
+          "explanation": "Oral antihistamines take 30-60 minutes to work and do not reverse airway swelling."
+        },
+        {
+          "text": "Sit him straight up and tilt his head back.",
+          "label": "unsafe",
+          "hint": "Blood pressure dropping.",
+          "explanation": "Sitting a patient in anaphylactic shock upright can cause cardiac arrest due to sudden blood pressure drop (empty vena cava syndrome)."
+        },
+        {
+          "text": "Use the EpiPen on the bee sting directly.",
+          "label": "unsafe",
+          "hint": "Systemic medication.",
+          "explanation": "The medication must go into the large thigh muscle to circulate systemically, not locally at the sting."
+        }
+      ],
+      "safe_keywords": [
+        "administer epipen",
+        "outer thigh",
+        "lay flat",
+        "raise legs",
+        "mdrrmo"
+      ],
+      "unsafe_keywords": [
+        "wait",
+        "chest",
+        "antihistamine",
+        "sit straight up",
+        "on the sting"
+      ]
+    },
+    {
+      "id": "gen_fire_001_apartment_candle_fire",
+      "category": "fire",
+      "type": "fire",
+      "title": "Apartment Building Fire - Unattended Candle",
+      "severity": "high",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "Caller",
+          "text": "Oh my god, my neighbor's apartment is on fire! There's smoke pouring out of Unit 4B and I can see flames! The fire alarms are going off everywhere!"
+        },
+        {
+          "speaker": "911",
+          "options": [
+            {
+              "text": "Advise caller to evacuate the building immediately via the nearest safe exit and not use elevators.",
+              "label": "safe",
+              "explanation": "Prioritizing the caller's immediate safety by instructing evacuation from a burning building is crucial. Elevators can fail or become smoke traps in a fire."
+            },
+            {
+              "text": "Instruct caller to try and knock on Unit 4B's door to see if anyone is inside.",
+              "label": "unsafe",
+              "explanation": "Approaching a burning unit is extremely dangerous due to heat, smoke, and potential structural collapse, putting the caller at severe risk."
+            },
+            {
+              "text": "Tell caller to grab a fire extinguisher and try to put out the fire in Unit 4B themselves.",
+              "label": "unsafe",
+              "explanation": "A fire already producing visible flames and thick smoke is beyond the scope of a portable extinguisher and too dangerous for an untrained individual to tackle."
+            },
+            {
+              "text": "Ask caller to check other floors for fire spread before evacuating.",
+              "label": "unsafe",
+              "explanation": "The caller's priority should be their own immediate evacuation. Checking other floors can delay their escape and expose them to further danger."
+            },
+            {
+              "text": "Tell caller to find the building manager to report the fire before calling emergency services.",
+              "label": "unsafe",
+              "explanation": "Emergency services (911/BFP) are already on the line and are the primary responders for a building fire, not building management for initial reporting."
+            },
+            {
+              "text": "Keep the caller on the line and ask for a detailed description of the smoke color and flame intensity.",
+              "label": "unsafe",
+              "explanation": "While information is useful, the caller is in immediate danger. Immediate evacuation instructions are paramount over detailed descriptive questioning at this point."
+            }
+          ],
+          "nlp_evaluation": {
+            "safe_keywords": [
+              "evacuate",
+              "exit",
+              "safe",
+              "danger",
+              "get out"
+            ],
+            "unsafe_keywords": [
+              "enter",
+              "fight fire",
+              "open door",
+              "check",
+              "investigate",
+              "wait"
+            ]
+          }
+        },
+        {
+          "speaker": "Caller",
+          "text": "It's the Grandview Apartments, 123 Main Street! I saw Mrs. Rodriguez earlier, but I don't see her now. The smoke is getting thicker in the hallway!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Dispatch a BFP (Bureau of Fire Protection) fire_truck with lights and sirens, advising all residents to evacuate and check for trapped individuals.",
+          "label": "safe",
+          "hint": "Immediate, high-priority dispatch with safety instructions.",
+          "explanation": "This is the correct, urgent response for a confirmed apartment building fire, prioritizing rapid intervention, resident evacuation, and potential rescue operations."
+        },
+        {
+          "text": "Dispatch a BFP (Bureau of Fire Protection) fire_truck to the scene, but advise them to wait for the police department to secure the area first.",
+          "label": "unsafe",
+          "hint": "Delays critical fire response.",
+          "explanation": "Delaying fire response for police when a confirmed fire is spreading in a residential building with potential entrapment is inappropriate and could lead to severe consequences."
+        },
+        {
+          "text": "Advise the caller that building management should handle this and provide them with the building management contact information.",
+          "label": "unsafe",
+          "hint": "Incorrect agency for active fire.",
+          "explanation": "An active fire with visible flames and thick smoke is a severe emergency requiring BFP intervention, not just building management."
+        },
+        {
+          "text": "Dispatch a BFP (Bureau of Fire Protection) fire_truck without lights and sirens to avoid panic among residents.",
+          "label": "unsafe",
+          "hint": "Compromises response time and awareness.",
+          "explanation": "Lights and sirens are crucial for rapid response, ensuring clear passage for emergency vehicles and alerting the public to the imminent danger, which outweighs concerns about panic in a real fire."
+        },
+        {
+          "text": "Instruct the caller to try and locate a fire alarm pull station if they haven't heard alarms on their floor.",
+          "label": "unsafe",
+          "hint": "Caller's priority should be evacuation.",
+          "explanation": "The caller explicitly stated that fire alarms are 'going off everywhere,' indicating the system is active. Their priority should be safe evacuation, not additional alarm activation."
+        },
+        {
+          "text": "Request a non-emergency police unit to assess the situation before sending fire services, in case it's a false alarm.",
+          "label": "unsafe",
+          "hint": "Dismisses credible fire report.",
+          "explanation": "The caller describes visible flames and thick smoke, which are clear indicators of a confirmed, severe fire, not a false alarm. This would lead to a dangerous delay."
+        }
+      ],
+      "safe_keywords": [
+        "fire",
+        "smoke",
+        "flames",
+        "apartment",
+        "trapped",
+        "evacuate",
+        "emergency"
+      ],
+      "unsafe_keywords": [
+        "wait",
+        "delay",
+        "enter",
+        "fight",
+        "contain",
+        "unconfirmed",
+        "minor"
+      ]
+    },
+    {
+      "id": "gen_fire_002_warehouse_unknown_contents",
+      "category": "fire",
+      "type": "fire",
+      "title": "Commercial Warehouse Fire - Unknown Contents",
+      "severity": "high",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "Caller",
+          "text": "I'm a security guard at Apex Logistics Warehouse, and there's a huge fire inside! I just finished my rounds, came back to the main office, and the alarms are blaring, smoke is everywhere near the back loading docks!"
+        },
+        {
+          "speaker": "911",
+          "options": [
+            {
+              "text": "Advise the caller to evacuate to a safe distance immediately and await BFP (Bureau of Fire Protection) arrival, providing details from afar.",
+              "label": "safe",
+              "explanation": "Given the size of the fire and unknown contents, the caller's immediate safety by evacuating to a safe distance is the top priority."
+            },
+            {
+              "text": "Instruct the caller to try and locate the fire's source to determine what's burning.",
+              "label": "unsafe",
+              "explanation": "Entering a large, smoky warehouse with unknown contents, potentially hazardous, is extremely dangerous and could lead to the caller being overcome by smoke or fire."
+            },
+            {
+              "text": "Tell the caller to try and activate the sprinkler system manually if it hasn't started yet.",
+              "label": "unsafe",
+              "explanation": "Manual activation could expose the caller to significant danger. The system might already be compromised or active, and this is not a task for a non-firefighter in an active blaze."
+            },
+            {
+              "text": "Ask the caller to check employee muster points to see if all staff have evacuated.",
+              "label": "unsafe",
+              "explanation": "While knowing if staff are safe is important, the caller's personal safety is paramount. BFP personnel will manage evacuation verification upon arrival."
+            },
+            {
+              "text": "Suggest the caller use a forklift to move any flammable materials away from the fire.",
+              "label": "unsafe",
+              "explanation": "Attempting to operate heavy machinery in a smoke-filled, burning warehouse is incredibly dangerous and could exacerbate the situation or injure the caller."
+            },
+            {
+              "text": "Inquire if the caller has access to the building's schematics to identify storage areas.",
+              "label": "unsafe",
+              "explanation": "While useful information, delaying immediate safety instructions or dispatch for this information is not ideal. BFP will request this upon arrival if needed."
+            }
+          ],
+          "nlp_evaluation": {
+            "safe_keywords": [
+              "evacuate",
+              "safe distance",
+              "leave",
+              "exit"
+            ],
+            "unsafe_keywords": [
+              "enter",
+              "investigate",
+              "manual",
+              "check inside",
+              "move materials"
+            ]
+          }
+        },
+        {
+          "speaker": "Caller",
+          "text": "It's 456 Industrial Parkway. I think there are mostly electronics and some solvents back there, but I'm not sure specifically. I don't think anyone else is inside, everyone cleared out after the alarm, but it's a big place."
+        }
+      ],
+      "options": [
+        {
+          "text": "Dispatch a BFP (Bureau of Fire Protection) fire_truck with full lights and sirens, alerting them to potential hazardous materials and requesting a HazMat team for assessment.",
+          "label": "safe",
+          "hint": "Immediate dispatch, recognizing hazmat risk.",
+          "explanation": "This is the comprehensive and appropriate response for a commercial warehouse fire, especially with unknown potentially hazardous contents, ensuring rapid, specialized intervention."
+        },
+        {
+          "text": "Dispatch a BFP (Bureau of Fire Protection) fire_truck without sirens, as it's a commercial area and shouldn't cause panic.",
+          "label": "unsafe",
+          "hint": "Compromises response time.",
+          "explanation": "Sirens are critical for emergency vehicles to clear traffic and respond rapidly, especially to a high-severity incident like a commercial fire, where speed can prevent greater damage or loss of life."
+        },
+        {
+          "text": "Advise the caller to monitor the fire from a safe distance and call back if it appears to be spreading outside the building.",
+          "label": "unsafe",
+          "hint": "Delays intervention for an active fire.",
+          "explanation": "The fire is already confirmed and internal, requiring immediate BFP response, not just monitoring. Waiting for external spread will only worsen the situation."
+        },
+        {
+          "text": "Instruct the caller to find a main water valve to try and shut off water to the building to prevent further damage.",
+          "label": "unsafe",
+          "hint": "Incorrect action; BFP needs water.",
+          "explanation": "This is an incorrect and dangerous action. BFP needs access to water for firefighting, and the caller should not enter a burning building to locate a valve."
+        },
+        {
+          "text": "Suggest the caller use any available fire extinguishers to try and contain the fire until BFP arrives.",
+          "label": "unsafe",
+          "hint": "Fire is too large for individual effort.",
+          "explanation": "A large warehouse fire with unknown contents is too extensive and dangerous for an individual to tackle with portable extinguishers, posing an extreme risk to the caller."
+        },
+        {
+          "text": "Dispatch a BFP (Bureau of Fire Protection) fire_truck but advise them to wait for the caller to confirm specific contents before entering.",
+          "label": "unsafe",
+          "hint": "Delays critical fire suppression.",
+          "explanation": "Delaying critical fire suppression based on information the caller might not accurately provide increases the risk to the building, its contents, and potentially lingering individuals. BFP will assess on arrival."
+        }
+      ],
+      "safe_keywords": [
+        "warehouse",
+        "fire",
+        "smoke",
+        "hazardous",
+        "materials",
+        "unknown",
+        "commercial",
+        "evacuate",
+        "HazMat"
+      ],
+      "unsafe_keywords": [
+        "delay",
+        "wait",
+        "enter",
+        "contain",
+        "monitor",
+        "non-emergency"
+      ]
+    },
+    {
+      "id": "gen_fire_003_brushfire_approaching_homes",
+      "category": "fire",
+      "type": "fire",
+      "title": "Rapidly Spreading Brushfire Near Residences",
+      "severity": "high",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "Caller",
+          "text": "There's a massive brushfire! It's coming right towards our houses in the Canyon Ridge neighborhood! The wind is really strong, and I can see huge flames probably a quarter-mile away, getting closer fast!"
+        },
+        {
+          "speaker": "911",
+          "options": [
+            {
+              "text": "Advise the caller and neighbors to prepare for immediate evacuation if not already doing so, heading away from the fire's path.",
+              "label": "safe",
+              "explanation": "With a rapidly spreading brushfire threatening homes, immediate preparation for evacuation and moving to safety is the most critical instruction for residents."
+            },
+            {
+              "text": "Instruct the caller to start watering down their roof and surrounding vegetation with a garden hose.",
+              "label": "unsafe",
+              "explanation": "While defensive actions can sometimes help, a 'massive' and 'rapidly spreading' brushfire is beyond homeowner mitigation; this could put them at risk or waste valuable evacuation time."
+            },
+            {
+              "text": "Tell the caller to try and create a fire break by clearing brush around their property.",
+              "label": "unsafe",
+              "explanation": "Attempting to create a fire break against a large, fast-moving brushfire is highly dangerous, time-consuming, and ineffective for an untrained individual, consuming critical evacuation time."
+            },
+            {
+              "text": "Ask the caller to get closer to assess the exact speed and direction of the flames.",
+              "label": "unsafe",
+              "explanation": "Approaching a large, rapidly spreading brushfire is extremely dangerous due to unpredictable fire behavior, intense heat, smoke, and ember showers."
+            },
+            {
+              "text": "Suggest the caller gather all important documents and sentimental items, then wait for further instructions.",
+              "label": "unsafe",
+              "explanation": "While gathering documents is good, 'waiting for further instructions' in the face of a rapidly approaching fire is too passive; immediate proactive evacuation preparation is key."
+            },
+            {
+              "text": "Inquire if the caller knows who owns the land where the fire started for liability purposes.",
+              "label": "unsafe",
+              "explanation": "The ownership of the land where the fire started is irrelevant to the immediate life safety and fire suppression needs of a brushfire threatening homes."
+            }
+          ],
+          "nlp_evaluation": {
+            "safe_keywords": [
+              "evacuate",
+              "prepare",
+              "leave",
+              "away from fire",
+              "safe"
+            ],
+            "unsafe_keywords": [
+              "fight fire",
+              "water down",
+              "create break",
+              "get closer",
+              "wait"
+            ]
+          }
+        },
+        {
+          "speaker": "Caller",
+          "text": "I'm at 789 Hillside Drive. The wind is blowing from the west, so it's coming straight towards us! No structures caught yet, but it's really close to the first few houses on the ridge!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Dispatch a BFP (Bureau of Fire Protection) fire_truck with full emergency response, notifying units of rapidly spreading brushfire with structures threatened and requesting air support if available.",
+          "label": "safe",
+          "hint": "Comprehensive response for severe brushfire.",
+          "explanation": "This is the appropriate and comprehensive response for a high-severity brushfire threatening residential structures, encompassing rapid ground response and potential aerial assets."
+        },
+        {
+          "text": "Dispatch a BFP (Bureau of Fire Protection) fire_truck to investigate, but advise them to wait for the fire to reach structures before engaging fully.",
+          "label": "unsafe",
+          "hint": "Delaying engagement is dangerous.",
+          "explanation": "Delaying full engagement until the fire reaches structures increases danger, damage, and makes control more difficult. Early intervention is crucial for brushfires."
+        },
+        {
+          "text": "Advise the caller that local park rangers or forestry services typically handle brushfires, and direct them to call that agency.",
+          "label": "unsafe",
+          "hint": "Incorrect agency for immediate threat.",
+          "explanation": "This is a severe emergency directly threatening homes, requiring immediate BFP response, regardless of initial land ownership or typical jurisdictional handling for less urgent situations."
+        },
+        {
+          "text": "Instruct the caller to organize a neighborhood volunteer effort to put out the fire with buckets of water.",
+          "label": "unsafe",
+          "hint": "Extremely dangerous and ineffective.",
+          "explanation": "Organizing untrained volunteers to fight a 'massive,' 'rapidly spreading' brushfire is extremely dangerous, ineffective, and puts lives at severe risk."
+        },
+        {
+          "text": "Dispatch a BFP (Bureau of Fire Protection) fire_truck but prioritize advising the fire department to focus only on structure protection, not the brush itself.",
+          "label": "unsafe",
+          "hint": "Incomplete strategy; both are needed.",
+          "explanation": "For a brushfire threatening structures, both direct brushfire suppression and structure protection are necessary for effective containment and overall safety."
+        },
+        {
+          "text": "Tell the caller to evacuate to a safe public shelter and not worry about their home, as BFP will eventually get to it.",
+          "label": "unsafe",
+          "hint": "Dismissive, implies delayed response.",
+          "explanation": "While evacuation is correct, implying a delayed response or lack of concern for their home is inappropriate and could cause distress or non-compliance from the caller."
+        }
+      ],
+      "safe_keywords": [
+        "brushfire",
+        "wildfire",
+        "spreading",
+        "wind",
+        "threatened",
+        "homes",
+        "evacuate",
+        "emergency",
+        "air support"
+      ],
+      "unsafe_keywords": [
+        "wait",
+        "delay",
+        "volunteer",
+        "focus only",
+        "not worry",
+        "investigate only"
+      ]
+    },
+    {
+      "id": "gen_fire_004_bus_fire_highway",
+      "category": "fire",
+      "type": "fire",
+      "title": "Passenger Bus Fire on Busy Highway",
+      "severity": "high",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "Caller",
+          "text": "I'm on the highway, and there's a bus on fire right ahead of me! Huge flames coming from the engine compartment, and smoke is everywhere! People are trying to get off!"
+        },
+        {
+          "speaker": "911",
+          "options": [
+            {
+              "text": "Advise the caller to keep a safe distance from the burning bus due to potential explosions or hazardous materials.",
+              "label": "safe",
+              "explanation": "Vehicle fires, especially large ones like a bus, carry risks of fuel tank explosions, tire explosions, or hazardous material leaks, making a safe distance crucial for bystander safety."
+            },
+            {
+              "text": "Instruct the caller to pull over and assist any passengers evacuating the bus.",
+              "label": "unsafe",
+              "explanation": "While well-intentioned, assisting at an active vehicle fire on a busy highway is extremely dangerous due to the fire itself, smoke inhalation, and passing traffic."
+            },
+            {
+              "text": "Tell the caller to try and direct traffic around the burning bus until responders arrive.",
+              "label": "unsafe",
+              "explanation": "Directing traffic on a busy highway, especially near a hazardous incident, is dangerous and should only be performed by trained law enforcement or traffic control personnel."
+            },
+            {
+              "text": "Ask the caller to get closer to see if anyone is still trapped inside the bus.",
+              "label": "unsafe",
+              "explanation": "Approaching a burning bus is extremely dangerous due to the risk of explosions, structural collapse, and toxic smoke, putting the caller at severe risk."
+            },
+            {
+              "text": "Inquire about the bus company and route number for documentation purposes.",
+              "label": "unsafe",
+              "explanation": "While useful, gathering detailed administrative information like bus company and route number can wait; the immediate priority is life safety, emergency response, and securing the scene."
+            },
+            {
+              "text": "Suggest the caller use their vehicle's fire extinguisher if they have one to douse the flames.",
+              "label": "unsafe",
+              "explanation": "A bus fire is far too large and dangerous for a small personal fire extinguisher, and attempting to use one would place the caller in extreme peril."
+            }
+          ],
+          "nlp_evaluation": {
+            "safe_keywords": [
+              "safe distance",
+              "stay back",
+              "away from",
+              "danger",
+              "explosions"
+            ],
+            "unsafe_keywords": [
+              "approach",
+              "assist",
+              "direct traffic",
+              "use extinguisher",
+              "get closer"
+            ]
+          }
+        },
+        {
+          "speaker": "Caller",
+          "text": "We're on the northbound lanes of the SLEX, just past the Sucat exit. Looks like most people are off, but I can't tell if anyone's hurt from here. The fire is really picking up!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Dispatch a BFP (Bureau of Fire Protection) fire_truck with full emergency response to the highway location, alerting them to a bus fire with potential injuries and traffic hazards.",
+          "label": "safe",
+          "hint": "Comprehensive, immediate response for highway incident.",
+          "explanation": "This is the appropriate and comprehensive response for a high-severity vehicle fire on a busy highway, ensuring rapid fire suppression, medical assessment, and coordination with traffic control."
+        },
+        {
+          "text": "Dispatch a BFP (Bureau of Fire Protection) fire_truck but advise them to wait for the Highway Patrol to secure the scene first due to traffic.",
+          "label": "unsafe",
+          "hint": "Delays critical fire suppression.",
+          "explanation": "Delaying critical fire suppression on a burning bus on a highway is unacceptable, as it prolongs the danger to passengers, other motorists, and the highway infrastructure."
+        },
+        {
+          "text": "Advise the caller to continue driving, as their assistance is not needed and could cause more traffic.",
+          "label": "unsafe",
+          "hint": "Dismissive and prevents gathering ongoing info.",
+          "explanation": "While the caller shouldn't intervene, this response is dismissive and prevents the dispatcher from gathering crucial ongoing information or providing further safety advice."
+        },
+        {
+          "text": "Instruct the caller to inform the bus company directly, as they are responsible for their vehicles.",
+          "label": "unsafe",
+          "hint": "Incorrect protocol for an emergency.",
+          "explanation": "This is an active emergency requiring immediate intervention from BFP (Bureau of Fire Protection), not just the bus company, whose role is secondary to life safety and fire suppression."
+        },
+        {
+          "text": "Dispatch a BFP (Bureau of Fire Protection) fire_truck but instruct them to prioritize diverting traffic rather than immediately engaging the fire.",
+          "label": "unsafe",
+          "hint": "Misprioritizes; fire suppression is primary.",
+          "explanation": "While traffic management is important, the primary priority for a burning bus is immediate fire suppression to prevent explosions and protect lives. Traffic diversion is handled concurrently by other units."
+        },
+        {
+          "text": "Request a tow truck to the scene first to move the bus off the highway before BFP begins fire suppression.",
+          "label": "unsafe",
+          "hint": "Dangerous and delays fire fighting.",
+          "explanation": "Attempting to move a burning vehicle is extremely dangerous, could worsen the fire, and critically delays immediate fire suppression, which is the paramount priority."
+        }
+      ],
+      "safe_keywords": [
+        "bus",
+        "fire",
+        "highway",
+        "passengers",
+        "evacuating",
+        "injuries",
+        "traffic",
+        "explosion"
+      ],
+      "unsafe_keywords": [
+        "wait",
+        "delay",
+        "assist",
+        "direct traffic",
+        "continue driving",
+        "tow truck first"
+      ]
+    },
+    {
+      "id": "gen_fire_005_chemical_plant_fire",
+      "category": "fire",
+      "type": "fire",
+      "title": "Industrial Chemical Plant Fire with Spill",
+      "severity": "high",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "Caller",
+          "text": "This is urgent! There's been an explosion and a massive fire at the Zenith Chemicals plant! I'm an employee, and I saw a spill ignite near Reactor 3! We have multiple people down and injured!"
+        },
+        {
+          "speaker": "911",
+          "options": [
+            {
+              "text": "Advise the caller to activate any emergency shutdown procedures they are trained for, only if it's safe to do so from a remote location.",
+              "label": "safe",
+              "explanation": "If the caller is trained and can safely activate shutdown procedures remotely, this can mitigate the incident's source without risking their safety."
+            },
+            {
+              "text": "Instruct the caller to try and help the injured colleagues get to a safer area, avoiding the spill.",
+              "label": "unsafe",
+              "explanation": "Entering an active chemical fire and spill zone is extremely dangerous for an untrained individual and could lead to them becoming another casualty."
+            },
+            {
+              "text": "Tell the caller to gather as much information as possible about the chemical involved, even if it means approaching the spill.",
+              "label": "unsafe",
+              "explanation": "Prioritizing information gathering over the caller's safety, especially by suggesting they approach a hazardous chemical spill, is highly inappropriate and dangerous."
+            },
+            {
+              "text": "Ask the caller to confirm if the plant's internal fire suppression systems have engaged.",
+              "label": "unsafe",
+              "explanation": "While useful, the caller's immediate safety is paramount. BFP personnel will assess the status of internal systems upon arrival; this question could distract from critical safety instructions."
+            },
+            {
+              "text": "Suggest the caller find a fire extinguisher suitable for chemical fires and attempt to contain the flames.",
+              "label": "unsafe",
+              "explanation": "A chemical plant fire involving an explosion and spill is far too dangerous and complex for an individual to attempt containment with a portable extinguisher."
+            },
+            {
+              "text": "Inquire if the caller can identify the specific cause of the initial explosion.",
+              "label": "unsafe",
+              "explanation": "The cause of the explosion is an investigative detail that is secondary to addressing the immediate life safety and active fire/spill situation."
+            }
+          ],
+          "nlp_evaluation": {
+            "safe_keywords": [
+              "shutdown",
+              "remote",
+              "safe",
+              "evacuate",
+              "away"
+            ],
+            "unsafe_keywords": [
+              "help injured",
+              "approach spill",
+              "gather info",
+              "contain fire",
+              "investigate"
+            ]
+          }
+        },
+        {
+          "speaker": "Caller",
+          "text": "It's 1000 Innovation Way. I think it's sulfuric acid, it smells awful and is corrosive! The plant sirens are going off, and the emergency teams are trying to get people out, but it's chaotic!"
+        }
+      ],
+      "options": [
+        {
+          "text": "Dispatch multiple BFP (Bureau of Fire Protection) fire_trucks with full emergency response, alerting them to a chemical plant fire with spill, multiple injuries, and immediate need for HazMat and medical support.",
+          "label": "safe",
+          "hint": "Comprehensive, multi-agency response for hazmat fire.",
+          "explanation": "This is the appropriate, comprehensive, and urgent response for a major industrial chemical incident, ensuring rapid fire suppression, hazardous materials mitigation, and emergency medical services."
+        },
+        {
+          "text": "Dispatch a BFP (Bureau of Fire Protection) fire_truck but advise them to wait outside the plant gates for the company's internal emergency response team to provide an assessment.",
+          "label": "unsafe",
+          "hint": "Delays critical response.",
+          "explanation": "Delaying critical emergency response for an internal assessment from a potentially overwhelmed plant team is unacceptable for a rapidly escalating chemical plant fire with injuries."
+        },
+        {
+          "text": "Advise the caller that due to the hazardous nature of chemicals, BFP cannot immediately engage and will need specialized protocols which take time.",
+          "label": "unsafe",
+          "hint": "Implies inaction, offers no hope.",
+          "explanation": "While specialized protocols are necessary, implying inaction or a significant delay offers no immediate reassurance or strategy and could lead to further panic or despair."
+        },
+        {
+          "text": "Instruct the caller to advise plant management to evacuate all personnel within a 5-mile radius immediately.",
+          "label": "unsafe",
+          "hint": "Dispatcher lacks authority for broad evacuation.",
+          "explanation": "A 911 dispatcher typically does not have the authority to unilaterally order such a large-scale evacuation. This decision is made by BFP incident command and local authorities."
+        },
+        {
+          "text": "Dispatch a BFP (Bureau of Fire Protection) fire_truck but instruct the crew to focus on rescuing injured personnel first before attempting fire suppression.",
+          "label": "unsafe",
+          "hint": "Misprioritizes; both are interconnected.",
+          "explanation": "In a hazardous environment, fire suppression and rescue are often interconnected. BFP will prioritize both, assessing how fire control can facilitate safer rescue operations."
+        },
+        {
+          "text": "Request a single BFP (Bureau of Fire Protection) fire_truck to assess the situation discreetly to avoid further panic.",
+          "label": "unsafe",
+          "hint": "Inadequate and inappropriate response.",
+          "explanation": "A chemical plant explosion and fire is a major, overt incident that requires a full-scale, highly visible emergency response, not a discreet assessment to 'avoid panic.'"
+        }
+      ],
+      "safe_keywords": [
+        "chemical plant",
+        "explosion",
+        "fire",
+        "spill",
+        "injured",
+        "hazardous",
+        "HazMat",
+        "emergency",
+        "multiple"
+      ],
+      "unsafe_keywords": [
+        "wait",
+        "delay",
+        "discreetly",
+        "focus only",
+        "cannot engage",
+        "5-mile radius"
+      ]
+    },
+    {
+      "id": "gen_fire_001_restaurant_electrical",
+      "category": "fire",
+      "type": "fire",
+      "title": "Electrical Fire in Small Restaurant Kitchen",
+      "severity": "high",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "Caller",
+          "text": "911, it's our restaurant! There's smoke pouring out from behind the deep fryers, I think it's the electrical panel! We just started smelling it, then the lights flickered and now it's getting worse!"
+        },
+        {
+          "speaker": "911",
+          "options": [
+            {
+              "text": "Tell me, is anyone currently trying to extinguish the fire?",
+              "label": "unsafe",
+              "explanation": "This question can implicitly encourage the caller or others to attempt to fight an electrical fire, which is highly dangerous without proper training and equipment."
+            },
+            {
+              "text": "Can you confirm the exact address and the nearest cross street for the BFP?",
+              "label": "safe",
+              "explanation": "Confirming location details ensures BFP (Bureau of Fire Protection) can respond swiftly and accurately to the incident."
+            },
+            {
+              "text": "Are all customers and staff safely evacuated from the building?",
+              "label": "safe",
+              "explanation": "Prioritizing the evacuation of all occupants is crucial for safety and allows BFP to focus on fire suppression without rescue operations."
+            },
+            {
+              "text": "Have you tried turning off the main power breaker for the restaurant?",
+              "label": "unsafe",
+              "explanation": "Directing the caller to interact with a potentially active electrical panel during a fire is extremely hazardous and could lead to electrocution or worsening the situation."
+            },
+            {
+              "text": "Could you go back to check if the smoke is getting thicker or thinner?",
+              "label": "unsafe",
+              "explanation": "Asking the caller to re-enter or approach a burning building for observation puts them in immediate danger from smoke inhalation, electrocution, or structural collapse."
+            },
+            {
+              "text": "Is there a fire extinguisher nearby that someone can use?",
+              "label": "unsafe",
+              "explanation": "Suggesting the use of a fire extinguisher for an electrical fire by an untrained person can be ineffective or dangerous, especially if it's not a Class C extinguisher."
+            }
+          ],
+          "nlp_evaluation": {
+            "safe_keywords": [
+              "address",
+              "cross street",
+              "evacuated",
+              "customers",
+              "staff"
+            ],
+            "unsafe_keywords": [
+              "extinguish",
+              "turning off",
+              "main power breaker",
+              "go back to check",
+              "fire extinguisher"
+            ]
+          }
+        },
+        {
+          "speaker": "Caller",
+          "text": "Yes, we got everyone out! But the smoke is getting really thick now, I can hear crackling! It's [Restaurant Name] at 123 Main Street, near Elm Avenue!"
+        }
+      ],
+      "options": [
+        {
+          "text": "I am sending help. (Bureau of Fire Protection) with a 'Structure Fire - Commercial' priority and I advise you to immediate evacuation of surrounding businesses.",
+          "label": "safe",
+          "hint": "This response prioritizes safety, alerts the correct agency, and expands the evacuation zone due to the high risk.",
+          "explanation": "Dispatching BFP immediately with a high priority ensures a rapid response to a dangerous commercial electrical fire, and advising evacuation of surrounding businesses protects a wider population from potential spread or hazards."
+        },
+        {
+          "text": "Advise the caller to re-enter the kitchen to try and disconnect the power source if possible.",
+          "label": "unsafe",
+          "hint": "This action puts the caller at severe risk of electrocution or smoke inhalation.",
+          "explanation": "Instructing the caller to re-enter a burning building with an electrical fire is extremely dangerous and could lead to severe injury or death due to electrocution, smoke, or fire spread."
+        },
+        {
+          "text": "Tell the caller to wait for a manager or owner to arrive before BFP is contacted.",
+          "label": "unsafe",
+          "hint": "Delaying BFP dispatch in a high-severity fire allows the situation to escalate dangerously.",
+          "explanation": "Delaying the dispatch of BFP (Bureau of Fire Protection) for a rapidly escalating fire significantly increases the risk of property damage, injury, and potential loss of life."
+        },
+        {
+          "text": "Recommend the caller try to smother the flames with a wet blanket or towels.",
+          "label": "unsafe",
+          "hint": "Water on an electrical fire is extremely hazardous and can worsen the situation or cause electrocution.",
+          "explanation": "Attempting to smother an electrical fire with water-based materials is extremely hazardous, as water conducts electricity and can lead to electrocution or further spread."
+        },
+        {
+          "text": "Suggest opening all windows and doors to vent the smoke out of the building.",
+          "label": "unsafe",
+          "hint": "Opening windows and doors can introduce oxygen, potentially fueling the fire and accelerating its spread.",
+          "explanation": "Opening windows and doors can provide oxygen to the fire, accelerating its growth and spread, which is counterproductive in a fire emergency."
+        },
+        {
+          "text": "Inform the caller that an electrician should be called first, as it's an electrical issue.",
+          "label": "unsafe",
+          "hint": "An electrician is not equipped to handle an active electrical fire, and delaying BFP response is critical.",
+          "explanation": "An active fire, regardless of origin, requires the immediate response of BFP (Bureau of Fire Protection), not an electrician, who is not equipped or trained for fire suppression."
+        }
+      ],
+      "safe_keywords": [
+        "evacuate",
+        "BFP",
+        "dispatch",
+        "address confirmation",
+        "safety"
+      ],
+      "unsafe_keywords": [
+        "re-enter",
+        "disconnect power",
+        "wait for manager",
+        "smother flames",
+        "wet blanket",
+        "open windows",
+        "electrician first"
+      ]
+    },
+    {
+      "id": "gen_fire_002_parking_garage_car",
+      "category": "fire",
+      "type": "fire",
+      "title": "Car Fire in Multi-Story Parking Garage",
+      "severity": "high",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "Caller",
+          "text": "There's a car on fire in the parking garage! Level 3! Oh my god, the smoke is everywhere, and I can see flames! It's by the far corner, near the exit ramp!"
+        },
+        {
+          "speaker": "911",
+          "options": [
+            {
+              "text": "Can you tell me if anyone is inside the burning vehicle?",
+              "label": "safe",
+              "explanation": "Determining if occupants are trapped is a critical piece of information for BFP (Bureau of Fire Protection) to prioritize rescue operations."
+            },
+            {
+              "text": "Are there other vehicles parked immediately next to the burning car?",
+              "label": "safe",
+              "explanation": "Assessing the proximity of other vehicles helps BFP understand the potential for fire spread and additional hazards, guiding their response."
+            },
+            {
+              "text": "Have you seen anyone try to put it out with an extinguisher?",
+              "label": "unsafe",
+              "explanation": "This question implies that trying to fight the fire is an expectation, potentially encouraging the caller or others to attempt a dangerous task."
+            },
+            {
+              "text": "Could you try to move other cars away from the flames if they're close?",
+              "label": "unsafe",
+              "explanation": "Instructing the caller to move vehicles near an active car fire is extremely dangerous due to potential explosions, toxic fumes, and rapid fire spread."
+            },
+            {
+              "text": "Is the smoke dissipating at all or getting worse?",
+              "label": "unsafe",
+              "explanation": "Asking for observations of smoke conditions by approaching a dangerous fire puts the caller at risk of smoke inhalation and other hazards."
+            },
+            {
+              "text": "Can you see if any fuel or liquids are leaking from the car?",
+              "label": "unsafe",
+              "explanation": "Asking the caller to approach a burning vehicle to observe fuel leaks exposes them to extreme heat, toxic fumes, and potential explosions."
+            }
+          ],
+          "nlp_evaluation": {
+            "safe_keywords": [
+              "anyone inside",
+              "other vehicles parked",
+              "trapped"
+            ],
+            "unsafe_keywords": [
+              "put it out",
+              "move other cars",
+              "smoke dissipating",
+              "fuel or liquids leaking"
+            ]
+          }
+        },
+        {
+          "speaker": "Caller",
+          "text": "I don't see anyone inside, thank goodness! But yes, there are cars on both sides, and above us too! The smoke is so bad, I'm heading out now!"
+        }
+      ],
+      "options": [
+        {
+          "text": "I am sending help. (Bureau of Fire Protection) immediately for a 'Vehicle Fire - Structure Involved' and I advise you to all occupants to evacuate the entire garage.",
+          "label": "safe",
+          "hint": "This response prioritizes BFP arrival, identifies the high risk of structural involvement, and ensures safety of all garage occupants.",
+          "explanation": "Immediately dispatching BFP for a vehicle fire within a structure is critical due to potential for rapid spread, structural damage, and hazardous fumes, and evacuation protects all occupants."
+        },
+        {
+          "text": "Tell the caller to notify parking garage security and wait for their instructions.",
+          "label": "unsafe",
+          "hint": "Relying solely on security delays critical BFP response to an escalating fire.",
+          "explanation": "Delaying the dispatch of BFP (Bureau of Fire Protection) by waiting for security in an active vehicle fire within a structure is dangerous and can lead to severe consequences."
+        },
+        {
+          "text": "Instruct the caller to try and push the burning car away from others if possible.",
+          "label": "unsafe",
+          "hint": "Attempting to move a burning vehicle is incredibly dangerous due to intense heat, explosions, and toxic fumes.",
+          "explanation": "Directing someone to attempt to move a burning vehicle is extremely hazardous and could result in severe burns, smoke inhalation, or injury from potential explosions."
+        },
+        {
+          "text": "Advise the caller to use a fire extinguisher on the flames if one is available.",
+          "label": "unsafe",
+          "hint": "Car fires are often too intense for small extinguishers, and the fumes are toxic.",
+          "explanation": "Car fires are highly dangerous due to intense heat, toxic fumes, and potential for explosion, making it unsafe for untrained individuals to attempt extinguishing with a small extinguisher."
+        },
+        {
+          "text": "Suggest that the caller try to open the hood of the car to get a better look at the engine.",
+          "label": "unsafe",
+          "hint": "Opening the hood of a burning car can provide oxygen to the fire, intensifying it, and puts the caller at risk.",
+          "explanation": "Opening the hood of a burning vehicle can expose the caller to a sudden flare-up or toxic fumes, and provides oxygen to the fire, making it worse."
+        },
+        {
+          "text": "Tell the caller to stay nearby to direct BFP when they arrive.",
+          "label": "unsafe",
+          "hint": "Staying near a burning car in a garage is unsafe due to smoke, heat, and potential explosions.",
+          "explanation": "Asking the caller to remain in close proximity to an active car fire in a parking garage puts them at severe risk of smoke inhalation, burns, or injury from potential explosions."
+        }
+      ],
+      "safe_keywords": [
+        "BFP",
+        "dispatch",
+        "evacuate",
+        "structure involved",
+        "safety"
+      ],
+      "unsafe_keywords": [
+        "security",
+        "push car",
+        "fire extinguisher",
+        "open hood",
+        "stay nearby"
+      ]
+    },
+    {
+      "id": "gen_fire_003_daycare_dumpster_fence",
+      "category": "fire",
+      "type": "fire",
+      "title": "Dumpster Fire Threatening Daycare Fence",
+      "severity": "high",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "Caller",
+          "text": "Help! There's a dumpster on fire right next to our daycare fence! The flames are getting high, and it's starting to scorch the wooden fence! All the kids are inside, but the smoke is blowing towards the building!"
+        },
+        {
+          "speaker": "911",
+          "options": [
+            {
+              "text": "Confirm the exact address of the daycare and describe the materials in the dumpster if you can see them.",
+              "label": "safe",
+              "explanation": "Obtaining precise location information and details about the burning materials helps BFP (Bureau of Fire Protection) prepare for the specific hazards and achieve a faster response."
+            },
+            {
+              "text": "Are all children and staff currently safe and accounted for inside the building?",
+              "label": "safe",
+              "explanation": "Ensuring the safety and accountability of all occupants, especially children, is the highest priority for BFP and dispatchers."
+            },
+            {
+              "text": "Is there a hose or water source available that you could use on the fire?",
+              "label": "unsafe",
+              "explanation": "Encouraging an untrained individual to fight a fire, especially one that is spreading, can lead to injury and is often ineffective, delaying professional help."
+            },
+            {
+              "text": "Can you try to move the dumpster away from the fence using a vehicle?",
+              "label": "unsafe",
+              "explanation": "Attempting to move a burning dumpster is extremely dangerous due to intense heat, potential for collapse, and igniting other materials during movement."
+            },
+            {
+              "text": "What color is the smoke? Is it thick black or lighter?",
+              "label": "unsafe",
+              "explanation": "Asking the caller to observe smoke color requires them to be close to the fire, exposing them to toxic fumes and potential dangers."
+            },
+            {
+              "text": "Have you tried calling the building manager or owner first?",
+              "label": "unsafe",
+              "explanation": "An active fire requires immediate BFP (Bureau of Fire Protection) response; contacting a manager first delays critical emergency services."
+            }
+          ],
+          "nlp_evaluation": {
+            "safe_keywords": [
+              "address",
+              "materials",
+              "children",
+              "staff",
+              "safe",
+              "accounted for"
+            ],
+            "unsafe_keywords": [
+              "hose",
+              "water source",
+              "move the dumpster",
+              "color of smoke",
+              "building manager",
+              "owner"
+            ]
+          }
+        },
+        {
+          "speaker": "Caller",
+          "text": "Yes, all the kids are in the far wing, away from the smoke, and all staff are with them. It's [Daycare Name] on Oak Street, across from the park. The dumpster has regular trash, cardboard, etc. The fence is definitely burning now!"
+        }
+      ],
+      "options": [
+        {
+          "text": "I am sending help. (Bureau of Fire Protection) immediately for a 'Commercial Structure Threat - Exterior Fire' and I advise you to an immediate lockdown and relocation to the safest part of the building.",
+          "label": "safe",
+          "hint": "This response prioritizes BFP arrival, identifies the threat to the daycare, and gives specific safety instructions for the vulnerable population.",
+          "explanation": "Immediately dispatching BFP for an exterior fire threatening a commercial structure, especially a daycare, is crucial, and instructing relocation to the safest part of the building minimizes risk to occupants."
+        },
+        {
+          "text": "Tell the caller to wet down the fence with a garden hose to prevent spread.",
+          "label": "unsafe",
+          "hint": "Approaching a burning fence and dumpster with a garden hose is unsafe and likely ineffective against an escalating fire.",
+          "explanation": "Instructing the caller to engage an active fire, especially one involving a dumpster and wooden fence, with a garden hose is unsafe, potentially ineffective, and delays professional help."
+        },
+        {
+          "text": "Advise the caller to try and push the burning dumpster further away from the fence.",
+          "label": "unsafe",
+          "hint": "Moving a burning dumpster is extremely dangerous due to heat, potential for collapse, and igniting new areas.",
+          "explanation": "Attempting to move a burning dumpster is extremely hazardous due to intense heat, the risk of it falling apart, and the potential to spread the fire to new areas."
+        },
+        {
+          "text": "Suggest gathering buckets of water to pour onto the fire until BFP arrives.",
+          "label": "unsafe",
+          "hint": "Directing individuals to engage a growing fire with buckets of water is dangerous and unlikely to be effective.",
+          "explanation": "Asking untrained individuals to fight a spreading fire with buckets of water is dangerous, exposes them to smoke and heat, and is unlikely to be effective against a significant fire."
+        },
+        {
+          "text": "Instruct the caller to send someone outside to stand by the driveway to direct BFP.",
+          "label": "unsafe",
+          "hint": "Sending someone outside near a spreading fire and smoke plume puts them at unnecessary risk.",
+          "explanation": "Sending someone to wait outside near a spreading fire and smoke plume exposes them to hazardous conditions and is an unnecessary risk when BFP (Bureau of Fire Protection) will locate the incident."
+        },
+        {
+          "text": "Tell the caller to wait to see if the fire dies down on its own.",
+          "label": "unsafe",
+          "hint": "An active fire near a structure should never be left to burn; it will likely escalate.",
+          "explanation": "Waiting for an active fire to die down on its own is extremely dangerous, as it will likely spread rapidly, causing more damage and increasing risk to life and property."
+        }
+      ],
+      "safe_keywords": [
+        "BFP",
+        "dispatch",
+        "lockdown",
+        "relocation",
+        "safest part",
+        "daycare"
+      ],
+      "unsafe_keywords": [
+        "wet down fence",
+        "garden hose",
+        "push dumpster",
+        "buckets of water",
+        "stand by driveway",
+        "wait for fire to die"
+      ]
+    },
+    {
+      "id": "gen_fire_004_lumber_yard_fire",
+      "category": "fire",
+      "type": "fire",
+      "title": "Lumber Yard Fire with Rapid Spread",
+      "severity": "high",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "Caller",
+          "text": "The lumber yard is on fire! Oh my god, it's huge! I work here, it started near the back, and with this wind, it's just ripping through the stacks of wood! It's going to get to the main office!"
+        },
+        {
+          "speaker": "911",
+          "options": [
+            {
+              "text": "Can you provide the exact address of the lumber yard and confirm if there are any employees still on site?",
+              "label": "safe",
+              "explanation": "Confirming the precise location and accounting for all personnel are crucial for BFP (Bureau of Fire Protection) to ensure a targeted response and prevent casualties."
+            },
+            {
+              "text": "Is there anything flammable or hazardous stored near where the fire is spreading, like fuel tanks or chemicals?",
+              "label": "safe",
+              "explanation": "Identifying proximity to hazardous materials helps BFP assess additional risks (e.g., explosions) and modify their approach to ensure responder safety."
+            },
+            {
+              "text": "Are there any fire breaks or open spaces that might slow the spread?",
+              "label": "safe",
+              "explanation": "Knowing about fire breaks or open spaces can help BFP (Bureau of Fire Protection) understand the potential fire path and strategize containment."
+            },
+            {
+              "text": "Have you or anyone else tried to use a fire hose or extinguisher on it yet?",
+              "label": "unsafe",
+              "explanation": "This question can implicitly encourage individuals to fight a large, rapidly spreading fire, which is highly dangerous and ineffective for untrained personnel."
+            },
+            {
+              "text": "Could you try to get closer to tell me how tall the flames are?",
+              "label": "unsafe",
+              "explanation": "Asking the caller to approach a rapidly spreading, large fire exposes them to extreme heat, smoke, and potential engulfment, putting their life at risk."
+            },
+            {
+              "text": "Is there heavy machinery nearby that could be used to create a fire break?",
+              "label": "unsafe",
+              "explanation": "Directing the caller to operate heavy machinery in proximity to an active, rapidly spreading fire is highly dangerous and requires specialized training and safety protocols."
+            }
+          ],
+          "nlp_evaluation": {
+            "safe_keywords": [
+              "address",
+              "employees on site",
+              "flammable",
+              "hazardous",
+              "fuel tanks",
+              "chemicals",
+              "fire breaks",
+              "open spaces"
+            ],
+            "unsafe_keywords": [
+              "fire hose",
+              "extinguisher",
+              "get closer",
+              "tall the flames",
+              "heavy machinery",
+              "create a fire break"
+            ]
+          }
+        },
+        {
+          "speaker": "Caller",
+          "text": "Everyone's evacuating! I'm the last one! No, no hazardous chemicals, just tons of dry wood. It's [Lumber Yard Name] at 456 Industrial Way. The fire is huge, easily 20 feet high already!"
+        }
+      ],
+      "options": [
+        {
+          "text": "I am sending help. (Bureau of Fire Protection) with a 'Wildland-Urban Interface Fire - Industrial' priority, requesting multiple units due to rapid spread and fuel load.",
+          "label": "safe",
+          "hint": "This response escalates the incident appropriately, considering the environment and fuel, and ensures sufficient resources are deployed.",
+          "explanation": "Immediately dispatching multiple BFP units for a large industrial fire with a heavy fuel load (lumber) and rapid spread is critical to containment and preventing catastrophic loss."
+        },
+        {
+          "text": "Advise the caller to try and operate heavy equipment to move unburnt lumber away.",
+          "label": "unsafe",
+          "hint": "Operating heavy equipment near a large, spreading fire is extremely dangerous and requires professional training and conditions.",
+          "explanation": "Instructing untrained personnel to operate heavy equipment near a massive, rapidly spreading fire is highly dangerous, risking severe injury, equipment damage, and exacerbating the situation."
+        },
+        {
+          "text": "Tell the caller to wait for the yard owner to authorize BFP dispatch.",
+          "label": "unsafe",
+          "hint": "Delaying BFP dispatch for a rapidly spreading industrial fire can lead to catastrophic damage and endanger lives.",
+          "explanation": "Delaying BFP (Bureau of Fire Protection) dispatch for a large, rapidly spreading industrial fire is extremely negligent and will result in significant escalation, property loss, and danger to life."
+        },
+        {
+          "text": "Suggest the caller try to create a makeshift firebreak using existing tools if available.",
+          "label": "unsafe",
+          "hint": "Trying to create a firebreak in a large, rapidly spreading fire with inadequate tools is futile and dangerous.",
+          "explanation": "Attempting to create a firebreak with makeshift tools in a large, rapidly spreading industrial fire is dangerous, likely ineffective, and diverts the caller from safe evacuation."
+        },
+        {
+          "text": "Ask the caller if they can identify the specific cause of the fire.",
+          "label": "unsafe",
+          "hint": "Investigating the cause of an active, large fire is for professionals after the scene is safe, not during the emergency.",
+          "explanation": "Asking the caller to investigate the cause of an active, large industrial fire is inappropriate and places them in extreme danger from the fire itself and collapsing structures."
+        },
+        {
+          "text": "Recommend trying to douse the perimeter of the fire with any available water sources.",
+          "label": "unsafe",
+          "hint": "Attempting to fight a large industrial fire with inadequate water sources is ineffective and puts the caller at risk.",
+          "explanation": "Attempting to douse the perimeter of a large, rapidly spreading industrial fire with insufficient water resources is ineffective and exposes the caller to significant danger."
+        }
+      ],
+      "safe_keywords": [
+        "BFP",
+        "dispatch",
+        "multiple units",
+        "wildland-urban interface",
+        "rapid spread",
+        "fuel load"
+      ],
+      "unsafe_keywords": [
+        "operate heavy equipment",
+        "wait for owner",
+        "makeshift firebreak",
+        "identify cause",
+        "douse perimeter",
+        "available water sources"
+      ]
+    },
+    {
+      "id": "gen_fire_005_attic_electrical",
+      "category": "fire",
+      "type": "fire",
+      "title": "Attic Fire from Electrical Overload",
+      "severity": "high",
+      "recommended_vehicle": "fire_truck",
+      "transcript": [
+        {
+          "speaker": "Caller",
+          "text": "I smell smoke! It's a burning plastic smell, coming from my attic! I can hear crackling, and the ceiling in the hallway feels warm now! I think something is wrong with the wiring up there!"
+        },
+        {
+          "speaker": "911",
+          "options": [
+            {
+              "text": "Can you tell me your exact home address and the number of people inside the house right now?",
+              "label": "safe",
+              "explanation": "Confirming the address is vital for BFP (Bureau of Fire Protection) response, and knowing the number of occupants ensures everyone's safety is accounted for."
+            },
+            {
+              "text": "Are there any carbon monoxide detectors or smoke detectors going off in the house?",
+              "label": "safe",
+              "explanation": "This helps confirm the presence of smoke or dangerous gases, providing BFP with additional information about the severity of the fire."
+            },
+            {
+              "text": "Have you tried to turn off the main electrical breaker for your entire house?",
+              "label": "safe",
+              "explanation": "Safely cutting power to the house can prevent further electrical arcing and reduce the fire's intensity, if the caller can do so without re-entering danger."
+            },
+            {
+              "text": "Can you go into the attic to see if you can locate the source of the fire?",
+              "label": "unsafe",
+              "explanation": "Directing the caller into an attic with a suspected electrical fire is extremely dangerous due to potential collapse, electrocution, smoke inhalation, and rapid fire spread."
+            },
+            {
+              "text": "Could you try to pour water onto the warm ceiling area to cool it down?",
+              "label": "unsafe",
+              "explanation": "Pouring water onto an electrical fire from below is extremely dangerous, risks electrocution, and can cause ceiling collapse and water damage without effectively suppressing the fire."
+            },
+            {
+              "text": "Have you called an electrician to come take a look at it first?",
+              "label": "unsafe",
+              "explanation": "An active fire, especially one with a burning smell and warm ceiling, requires immediate BFP (Bureau of Fire Protection) response, not an electrician, who is not equipped for fire suppression."
+            }
+          ],
+          "nlp_evaluation": {
+            "safe_keywords": [
+              "address",
+              "people inside",
+              "carbon monoxide detectors",
+              "smoke detectors",
+              "main electrical breaker",
+              "turn off power"
+            ],
+            "unsafe_keywords": [
+              "go into the attic",
+              "locate the source",
+              "pour water",
+              "warm ceiling",
+              "electrician first"
+            ]
+          }
+        },
+        {
+          "speaker": "Caller",
+          "text": "It's 789 Maple Drive, and there are three of us. No smoke detectors are going off yet, but the smell is getting stronger. I'll go turn off the main breaker right now!"
+        }
+      ],
+      "options": [
+        {
+          "text": "I am sending help. (Bureau of Fire Protection) for a 'Residential Structure Fire - Electrical' priority and I advise you to immediate evacuation of all occupants, instructing them to stay outside and away from the house.",
+          "label": "safe",
+          "hint": "This response ensures immediate BFP arrival for a serious residential fire and prioritizes the safety of all occupants by getting them clear of the hazard.",
+          "explanation": "Immediately dispatching BFP for a residential attic fire with electrical involvement is crucial due to the hidden nature of the fire and potential for rapid spread and collapse; evacuation ensures occupant safety."
+        },
+        {
+          "text": "Tell the caller to go into the attic to try and locate the exact wiring issue.",
+          "label": "unsafe",
+          "hint": "Entering an attic with an active electrical fire is extremely dangerous due to smoke, heat, electrocution risk, and potential for structural collapse.",
+          "explanation": "Instructing the caller to enter an attic with an active electrical fire is extremely dangerous due to the risks of electrocution, smoke inhalation, structural collapse, and rapid fire spread."
+        },
+        {
+          "text": "Suggest opening windows and doors to try and air out the smoke from the house.",
+          "label": "unsafe",
+          "hint": "Opening windows can provide oxygen to the hidden fire, potentially accelerating its growth and spread.",
+          "explanation": "Opening windows and doors can introduce oxygen to a hidden fire, potentially fueling its growth and accelerating its spread, making the situation worse."
+        },
+        {
+          "text": "Advise the caller to try and remove any valuable items from the attic before BFP arrives.",
+          "label": "unsafe",
+          "hint": "Attempting to retrieve items from an attic fire risks severe injury or death; lives are prioritized over property.",
+          "explanation": "Prioritizing property retrieval over personal safety in an attic fire is extremely dangerous, as the structure could collapse or the fire could intensify rapidly, trapping the caller."
+        },
+        {
+          "text": "Instruct the caller to remain inside the house to await BFP, as it is safest there.",
+          "label": "unsafe",
+          "hint": "Remaining inside a house with an active fire, especially one originating in the attic, is extremely dangerous.",
+          "explanation": "Remaining inside a house with an active fire, particularly one in the attic, is highly dangerous due to smoke inhalation, potential for collapse, and rapid fire spread."
+        },
+        {
+          "text": "Tell the caller to just monitor the situation and call back if it gets worse.",
+          "label": "unsafe",
+          "hint": "An active fire, especially a hidden one, requires immediate BFP response; waiting will only allow it to escalate.",
+          "explanation": "An active fire with smoke and crackling in an attic requires immediate BFP (Bureau of Fire Protection) intervention; 'monitoring' allows the fire to escalate, endangering lives and property."
+        }
+      ],
+      "safe_keywords": [
+        "BFP",
+        "dispatch",
+        "evacuation",
+        "stay outside",
+        "electrical fire"
+      ],
+      "unsafe_keywords": [
+        "go into attic",
+        "locate wiring issue",
+        "open windows",
+        "air out smoke",
+        "remove valuable items",
+        "remain inside",
+        "monitor situation"
+      ]
+    }
+  ]
+}

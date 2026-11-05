@@ -1,0 +1,366 @@
+[gd_scene load_steps=3 format=3 uid="uid://console_overlay_scene"]
+
+[ext_resource type="Script" path="res://scripts/ui/console_overlay.gd" id="1_overlay_script"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_overlay"]
+bg_color = Color(0.08, 0.09, 0.11, 1)
+
+[node name="ConsoleOverlay" type="CanvasLayer"]
+layer = 128
+script = ExtResource("1_overlay_script")
+
+[node name="Panel" type="PanelContainer" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_overlay")
+
+[node name="VBox" type="VBoxContainer" parent="Panel"]
+layout_mode = 2
+
+[node name="Header" type="HBoxContainer" parent="Panel/VBox"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="Panel/VBox/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "  SafeScape 2.0 Developer & Evaluation Console (Itch.io)"
+
+[node name="FinishCallBtn" type="Button" parent="Panel/VBox/Header"]
+layout_mode = 2
+text = "Finish Call"
+
+[node name="EndShiftBtn" type="Button" parent="Panel/VBox/Header"]
+layout_mode = 2
+text = "End Shift"
+
+[node name="ResetBktBtn" type="Button" parent="Panel/VBox/Header"]
+layout_mode = 2
+text = "Reset BKT"
+
+[node name="CopyBtn" type="Button" parent="Panel/VBox/Header"]
+layout_mode = 2
+text = "Copy Logs"
+
+[node name="ClearBtn" type="Button" parent="Panel/VBox/Header"]
+layout_mode = 2
+text = "Clear"
+
+[node name="CloseBtn" type="Button" parent="Panel/VBox/Header"]
+layout_mode = 2
+text = " X "
+
+[node name="Tabs" type="TabContainer" parent="Panel/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+current_tab = 0
+
+[node name="Evaluation Logs" type="VBoxContainer" parent="Panel/VBox/Tabs"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Scroll" type="ScrollContainer" parent="Panel/VBox/Tabs/Evaluation Logs"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LogDisplay" type="TextEdit" parent="Panel/VBox/Tabs/Evaluation Logs/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+editable = false
+wrap_mode = 1
+
+[node name="Performance Monitor" type="VBoxContainer" parent="Panel/VBox/Tabs"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PerfToolbar" type="HBoxContainer" parent="Panel/VBox/Tabs/Performance Monitor"]
+layout_mode = 2
+
+[node name="PerfTitle" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfToolbar"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "DEVELOPER / EVALUATION PERFORMANCE MONITOR"
+
+[node name="PerfStartBtn" type="Button" parent="Panel/VBox/Tabs/Performance Monitor/PerfToolbar"]
+layout_mode = 2
+text = "Start Perf Session"
+
+[node name="PerfStopBtn" type="Button" parent="Panel/VBox/Tabs/Performance Monitor/PerfToolbar"]
+layout_mode = 2
+text = "Stop Perf Session"
+
+[node name="PerfRecoveryBtn" type="Button" parent="Panel/VBox/Tabs/Performance Monitor/PerfToolbar"]
+layout_mode = 2
+text = "Test Recovery"
+
+[node name="PerfReportBtn" type="Button" parent="Panel/VBox/Tabs/Performance Monitor/PerfToolbar"]
+layout_mode = 2
+text = "Generate Report"
+
+[node name="PerfClearBtn" type="Button" parent="Panel/VBox/Tabs/Performance Monitor/PerfToolbar"]
+layout_mode = 2
+text = "Clear Perf Metrics"
+
+[node name="PerfScroll" type="ScrollContainer" parent="Panel/VBox/Tabs/Performance Monitor"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PerfContent" type="VBoxContainer" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Grid" type="GridContainer" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent"]
+layout_mode = 2
+size_flags_horizontal = 3
+columns = 4
+
+[node name="SessionPanel" type="PanelContainer" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBox" type="VBoxContainer" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/SessionPanel"]
+layout_mode = 2
+
+[node name="Header" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/SessionPanel/VBox"]
+layout_mode = 2
+text = "[ SESSION STABILITY ]"
+
+[node name="SessionIdLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/SessionPanel/VBox"]
+layout_mode = 2
+text = "ID: idle"
+
+[node name="SessionDurationLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/SessionPanel/VBox"]
+layout_mode = 2
+text = "Duration: 0.0s"
+
+[node name="SessionStatusLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/SessionPanel/VBox"]
+layout_mode = 2
+text = "Status: idle"
+
+[node name="SessionSceneLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/SessionPanel/VBox"]
+layout_mode = 2
+text = "Scene: -"
+
+[node name="FpsPanel" type="PanelContainer" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBox" type="VBoxContainer" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/FpsPanel"]
+layout_mode = 2
+
+[node name="Header" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/FpsPanel/VBox"]
+layout_mode = 2
+text = "[ FPS / FRAME-RATE ]"
+
+[node name="FpsCurrentLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/FpsPanel/VBox"]
+layout_mode = 2
+text = "Current: 0.0"
+
+[node name="FpsAverageLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/FpsPanel/VBox"]
+layout_mode = 2
+text = "Average: 0.0"
+
+[node name="FpsMinMaxLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/FpsPanel/VBox"]
+layout_mode = 2
+text = "Min / Max: 0.0 / 0.0"
+
+[node name="FpsLowLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/FpsPanel/VBox"]
+layout_mode = 2
+text = "Low (<30): 0 (0.0%)"
+
+[node name="MemoryPanel" type="PanelContainer" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBox" type="VBoxContainer" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/MemoryPanel"]
+layout_mode = 2
+
+[node name="Header" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/MemoryPanel/VBox"]
+layout_mode = 2
+text = "[ MEMORY UTILIZATION ]"
+
+[node name="MemoryCurrentLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/MemoryPanel/VBox"]
+layout_mode = 2
+text = "Current: 0.0 MB"
+
+[node name="MemoryPeakLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/MemoryPanel/VBox"]
+layout_mode = 2
+text = "Peak: 0.0 MB"
+
+[node name="MemoryStatusLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/MemoryPanel/VBox"]
+layout_mode = 2
+text = "Supported: Yes"
+
+[node name="MemoryNoteLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/MemoryPanel/VBox"]
+layout_mode = 2
+text = "Tracking: Active"
+
+[node name="LoadingPanel" type="PanelContainer" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBox" type="VBoxContainer" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/LoadingPanel"]
+layout_mode = 2
+
+[node name="Header" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/LoadingPanel/VBox"]
+layout_mode = 2
+text = "[ LOADING TIME ]"
+
+[node name="LoadingTotalLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/LoadingPanel/VBox"]
+layout_mode = 2
+text = "Total Loads: 0"
+
+[node name="LoadingAverageLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/LoadingPanel/VBox"]
+layout_mode = 2
+text = "Average: 0.0 ms"
+
+[node name="LoadingMinMaxLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/LoadingPanel/VBox"]
+layout_mode = 2
+text = "Min / Max: 0.0 / 0.0 ms"
+
+[node name="LoadingFailLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/LoadingPanel/VBox"]
+layout_mode = 2
+text = "Failures: 0"
+
+[node name="ApiPanel" type="PanelContainer" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBox" type="VBoxContainer" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/ApiPanel"]
+layout_mode = 2
+
+[node name="Header" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/ApiPanel/VBox"]
+layout_mode = 2
+text = "[ API RESPONSE TIME ]"
+
+[node name="ApiRequestsLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/ApiPanel/VBox"]
+layout_mode = 2
+text = "Requests: 0 (N/A)"
+
+[node name="ApiAverageLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/ApiPanel/VBox"]
+layout_mode = 2
+text = "Average: N/A"
+
+[node name="ApiMinMaxLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/ApiPanel/VBox"]
+layout_mode = 2
+text = "Min / Max: N/A"
+
+[node name="ApiFailLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/ApiPanel/VBox"]
+layout_mode = 2
+text = "Failures / Timeouts: 0 / 0"
+
+[node name="ErrorPanel" type="PanelContainer" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBox" type="VBoxContainer" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/ErrorPanel"]
+layout_mode = 2
+
+[node name="Header" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/ErrorPanel/VBox"]
+layout_mode = 2
+text = "[ ERROR RATE ]"
+
+[node name="ErrorTotalLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/ErrorPanel/VBox"]
+layout_mode = 2
+text = "Errors: 0"
+
+[node name="ErrorOpsLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/ErrorPanel/VBox"]
+layout_mode = 2
+text = "Operations: 0"
+
+[node name="ErrorRateLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/ErrorPanel/VBox"]
+layout_mode = 2
+text = "Rate: 0.00%"
+
+[node name="ErrorStatusLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/ErrorPanel/VBox"]
+layout_mode = 2
+text = "Software: 0 failures"
+
+[node name="StabilityPanel" type="PanelContainer" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBox" type="VBoxContainer" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/StabilityPanel"]
+layout_mode = 2
+
+[node name="Header" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/StabilityPanel/VBox"]
+layout_mode = 2
+text = "[ STABILITY STATUS ]"
+
+[node name="StabilityStateLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/StabilityPanel/VBox"]
+layout_mode = 2
+text = "State: Operational"
+
+[node name="StabilityInterrLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/StabilityPanel/VBox"]
+layout_mode = 2
+text = "Interruptions: 0"
+
+[node name="StabilityUnrecLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/StabilityPanel/VBox"]
+layout_mode = 2
+text = "Unrecovered Fails: 0"
+
+[node name="StabilityTransLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/StabilityPanel/VBox"]
+layout_mode = 2
+text = "Transitions: 0 ok / 0 fail"
+
+[node name="RecoveryPanel" type="PanelContainer" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBox" type="VBoxContainer" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/RecoveryPanel"]
+layout_mode = 2
+
+[node name="Header" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/RecoveryPanel/VBox"]
+layout_mode = 2
+text = "[ RECOVERY BEHAVIOR ]"
+
+[node name="RecoveryAttemptsLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/RecoveryPanel/VBox"]
+layout_mode = 2
+text = "Attempts: 0"
+
+[node name="RecoverySuccessLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/RecoveryPanel/VBox"]
+layout_mode = 2
+text = "Success / Fail: 0 / 0"
+
+[node name="RecoveryAvgLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/RecoveryPanel/VBox"]
+layout_mode = 2
+text = "Average: 0.0 ms"
+
+[node name="RecoveryMaxLabel" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent/Grid/RecoveryPanel/VBox"]
+layout_mode = 2
+text = "Max: 0.0 ms"
+
+[node name="PerfEventsHeader" type="Label" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent"]
+layout_mode = 2
+text = "RECENT PERFORMANCE & STABILITY EVENTS:"
+
+[node name="PerfLogDisplay" type="TextEdit" parent="Panel/VBox/Tabs/Performance Monitor/PerfScroll/PerfContent"]
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+size_flags_horizontal = 3
+editable = false
+wrap_mode = 1
+
+[node name="CommandBar" type="HBoxContainer" parent="Panel/VBox"]
+layout_mode = 2
+
+[node name="PromptLabel" type="Label" parent="Panel/VBox/CommandBar"]
+layout_mode = 2
+text = " > "
+
+[node name="CommandInput" type="LineEdit" parent="Panel/VBox/CommandBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Enter command (finish_call, end_shift, performance_start, performance_stop, performance_report, test_recovery, help)..."
+
+[node name="ExecuteBtn" type="Button" parent="Panel/VBox/CommandBar"]
+layout_mode = 2
+text = "Execute"

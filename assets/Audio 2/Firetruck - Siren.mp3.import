@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://wlkuo64ixafk"
+path="res://.godot/imported/Firetruck - Siren.mp3-fdd2715238c08727381cc0be78a4308a.mp3str"
+
+[deps]
+
+source_file="res://assets/Audio 2/Firetruck - Siren.mp3"
+dest_files=["res://.godot/imported/Firetruck - Siren.mp3-fdd2715238c08727381cc0be78a4308a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

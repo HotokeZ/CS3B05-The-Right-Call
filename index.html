@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Right Call — Emergency Dispatch Academy | SafeScape 2.0</title>
+  <meta name="description" content="SafeScape 2.0: An AI-Enhanced Gamified Intelligent Tutoring System for Fire Safety Preparedness using BKT, DDA, and NLP." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top Navigation matching the thesis system bar -->
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="brand">
+        <span class="badge-bfp">BFP</span>
+        <div class="brand-text">
+          <span class="brand-title">THE RIGHT CALL</span>
+          <span class="brand-sub">SafeScape 2.0 • LSPU</span>
+        </div>
+      </div>
+
+      <nav class="tabs-nav" aria-label="Main Navigation">
+        <button class="nav-tab active" data-tab="overview">Overview</button>
+        <button class="nav-tab" data-tab="team">Team</button>
+        <button class="nav-tab" data-tab="problem">Problem</button>
+        <button class="nav-tab" data-tab="methodology">Methodology</button>
+        <button class="nav-tab" data-tab="system">System</button>
+        <button class="nav-tab" data-tab="results">Results</button>
+        <button class="nav-tab" data-tab="links">Links</button>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-play-quick" id="quickLaunchBtn" data-tab="system">
+          <span class="pulse-dot"></span>
+          Live Demo
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="content-wrapper">
+    <!-- TAB 1: OVERVIEW -->
+    <section id="overview" class="tab-panel active">
+      <div class="hero-card">
+        <div class="hero-tag">BS Computer Science • Intelligent Systems Thesis 2026</div>
+        <h1 class="hero-title">SafeScape 2.0: <span class="gradient-text">The Right Call</span></h1>
+        <p class="hero-lead">
+          An AI-Enhanced Gamified Intelligent Tutoring System for Fire Safety Preparedness
+          using <strong>Bayesian Knowledge Tracing (BKT)</strong>, 
+          <strong>Dynamic Difficulty Adjustment (DDA)</strong>, and 
+          <strong>Natural Language Processing (NLP)</strong>.
+        </p>
+
+        <div class="hero-cta-group">
+          <button class="btn btn-primary" onclick="switchTab('system')">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            Play Live Demo
+          </button>
+          <button class="btn btn-secondary" onclick="switchTab('methodology')">
+            Explore Architecture
+          </button>
+          <a href="The_Right_Call_Official_User_Manual_2026.pdf" target="_blank" class="btn btn-outline">
+            User Manual (PDF)
+          </a>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <div class="feature-card">
+          <div class="card-icon bfp-orange">🚨</div>
+          <h3>Realistic 911 Dispatch Operations</h3>
+          <p>
+            Simulate real-world emergency call-handling for Santa Cruz, Laguna. Intake frantic citizen calls, 
+            determine incident severity, extract geospatial landmarks, and dispatch appropriate response units.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="card-icon bfp-red">🧠</div>
+          <h3>Bayesian Knowledge Tracing (BKT)</h3>
+          <p>
+            Continuously calculates learner mastery across key fire-safety competencies, estimating skill acquisition 
+            probabilities in real-time to personalize the training curriculum.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="card-icon bfp-gold">⚡</div>
+          <h3>Dynamic Difficulty & NLP Evaluation</h3>
+          <p>
+            Adapts call tempo, caller stress levels, and response formats (multiple choice vs. typed NLP input) 
+            dynamically to keep learners in the optimal flow channel.
+          </p>
+        </div>
+      </div>
+
+      <div class="overview-banner">
+        <div class="banner-content">
+          <h3>Bureau of Fire Protection (BFP) Standard Operating Alignment</h3>
+          <p>
+            Developed in close alignment with Philippine BFP Standard Operating Procedures. Covers Exit Drills in the 
+            Home (EDITH), electrical hazard containment, Class A–D fire identification, grease fire smothering, 
+            and multi-agency coordination with MDRRMO and PNP.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: TEAM -->
+    <section id="team" class="tab-panel">
+      <div class="section-heading">
+        <h2>Research & Development Team</h2>
+        <p>College of Computer Studies • Laguna State Polytechnic University (LSPU), Sta. Cruz Campus</p>
+      </div>
+
+      <div class="grid-3 team-grid">
+        <div class="team-card">
+          <div class="avatar-ring">ZP</div>
+          <h3>Zyril G. Dela Paz</h3>
+          <span class="role-badge">Lead Developer & AI Researcher</span>
+          <p class="team-sub">BS Computer Science — Intelligent Systems</p>
+          <p class="team-bio">
+            Engineered the core Godot dispatch mechanics, OpenStreetMap GIS road graph extraction, 
+            and client-side simulation lifecycle.
+          </p>
+        </div>
+
+        <div class="team-card">
+          <div class="avatar-ring">AD</div>
+          <h3>Axcel Andrei V. Delos Reyes</h3>
+          <span class="role-badge">System Architect & Algorithm Lead</span>
+          <p class="team-sub">BS Computer Science — Intelligent Systems</p>
+          <p class="team-bio">
+            Designed the Bayesian Knowledge Tracing mathematical model, DDA threshold mapping, 
+            and vehicle patrol routing graph.
+          </p>
+        </div>
+
+        <div class="team-card">
+          <div class="avatar-ring">JL</div>
+          <h3>Jhed Aeron V. Lachano</h3>
+          <span class="role-badge">Content & Scenario Designer</span>
+          <p class="team-sub">BS Computer Science — Intelligent Systems</p>
+          <p class="team-bio">
+            Curated authentic Philippine emergency scenario banks (English, Tagalog, and Taglish) 
+            and designed evaluation metrics.
+          </p>
+        </div>
+      </div>
+
+      <div class="supervision-card">
+        <h3>Academic & Technical Supervision</h3>
+        <div class="supervisor-list">
+          <div class="sup-item">
+            <strong>Dr. Mia V. Villarica, DIT</strong>
+            <span>Thesis Adviser & Associate Dean, College of Computer Studies, LSPU</span>
+          </div>
+          <div class="sup-item">
+            <strong>Mr. Mark P. Bernardino</strong>
+            <span>System Expert & Technical Consultant</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: PROBLEM -->
+    <section id="problem" class="tab-panel">
+      <div class="section-heading">
+        <h2>The Research Problem</h2>
+        <p>Addressing the critical gaps in community fire-safety preparedness and training</p>
+      </div>
+
+      <div class="problem-container">
+        <div class="problem-card highlight">
+          <div class="stat-num">625+</div>
+          <div class="stat-desc">Fires caused by electrical issues alone in early 2025 across the Philippines (BFP data).</div>
+        </div>
+
+        <div class="problem-narrative">
+          <h3>The Fire Safety Crisis in the Philippines</h3>
+          <p>
+            Fire incidents remain one of the most destructive yet preventable hazards in the country. The Bureau of Fire 
+            Protection (BFP) frequently reports multiple severe fire outbreaks during the dry season and holiday peaks, 
+            driven by overloaded electrical circuits, unattended open flames, liquefied petroleum gas (LPG) leaks, and 
+            substandard residential wiring.
+          </p>
+
+          <h3>Limitations of Conventional Fire Education</h3>
+          <p>
+            Traditional fire safety advocacy predominantly relies on passive media: physical pamphlets, static posters, 
+            and occasional school lecture drills. While informative, these modalities fail to instill actionable 
+            decision-making under stress:
+          </p>
+          <ul class="bullet-list">
+            <li><strong>Zero Cognitive Pressure:</strong> Lectures do not simulate time-critical panic, smoke obscurity, or urgency.</li>
+            <li><strong>No Adaptive Feedback:</strong> Static materials cannot evaluate whether a participant has truly mastered procedural knowledge (e.g. knowing never to throw water on an electrical or grease fire).</li>
+            <li><strong>Emergency Reporting Hesitancy:</strong> Citizens frequently delay reporting fires or fail to relay crucial landmark and hazard information to 911/BFP dispatchers.</li>
+          </ul>
+
+          <h3>The Dispatch Simulator Solution</h3>
+          <p>
+            By positioning the learner in the seat of an emergency communications officer in Santa Cruz, Laguna, 
+            <em>The Right Call</em> reverses passive learning into active cognitive mastery. Trainees must calm panicked 
+            citizens, extract coordinates, guide pre-arrival actions, and deploy fire engines, ambulances, or police units.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: METHODOLOGY -->
+    <section id="methodology" class="tab-panel">
+      <div class="section-heading">
+        <h2>Methodology & Intelligent Architecture</h2>
+        <p>Combining Cognitive Tutoring, Probabilistic Modeling, and Adaptive Gameplay</p>
+      </div>
+
+      <div class="method-flow">
+        <div class="method-step">
+          <div class="step-num">01</div>
+          <h4>Learner Intake & Baseline</h4>
+          <p>Pre-assessment evaluates baseline fire safety knowledge before dispatch shifts begin.</p>
+        </div>
+        <div class="method-arrow">→</div>
+        <div class="method-step">
+          <div class="step-num">02</div>
+          <h4>Interactive Simulation</h4>
+          <p>Godot 4 engine executes live incident queues across Santa Cruz GIS road networks.</p>
+        </div>
+        <div class="method-arrow">→</div>
+        <div class="method-step">
+          <div class="step-num">03</div>
+          <h4>BKT Skill Estimation</h4>
+          <p>Bayesian Knowledge Tracing updates skill probabilities P(L) after every player interaction.</p>
+        </div>
+        <div class="method-arrow">→</div>
+        <div class="method-step">
+          <div class="step-num">04</div>
+          <h4>Dynamic Difficulty (DDA)</h4>
+          <p>Modulates incident arrival rate, distractor complexity, and input mode in real time.</p>
+        </div>
+      </div>
+
+      <div class="grid-2 tech-details">
+        <div class="detail-box">
+          <h3>Bayesian Knowledge Tracing (BKT) Model</h3>
+          <p>
+            BKT tracks the latent knowledge state $P(L_t)$ of each learner across 4 competencies:
+          </p>
+          <div class="formula-box">
+            <code>P(L_{t}|Correct) = \frac{P(L_t)(1 - P(S))}{P(L_t)(1 - P(S)) + (1 - P(L_t))P(G)}</code>
+            <code>P(L_{t+1}) = P(L_{t}|Obs) + (1 - P(L_{t}|Obs)) \cdot P(T)</code>
+          </div>
+          <p class="formula-caption">
+            Where $P(L_0)$ is initial knowledge, $P(T)$ is transition rate, $P(G)$ is guess probability, 
+            and $P(S)$ is slip probability.
+          </p>
+        </div>
+
+        <div class="detail-box">
+          <h3>Curated Philippine Scenario Bank</h3>
+          <p>
+            Over 300 verified emergency call scenarios covering:
+          </p>
+          <ul class="bullet-list">
+            <li><strong>Fire Emergencies:</strong> Residential, electrical, grease/kitchen, LPG leak, structural collapse.</li>
+            <li><strong>Medical Trauma:</strong> Severe burn triage, smoke inhalation, cardiac distress, fractures.</li>
+            <li><strong>Civil Incidents:</strong> Crowd panic, traffic obstruction, hazardous material spill.</li>
+            <li><strong>Languages:</strong> Multi-dialect support in English, Tagalog, and colloquial Taglish.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 5: SYSTEM & LIVE DEMO -->
+    <section id="system" class="tab-panel">
+      <div class="section-heading">
+        <h2>Interactive System & Live Demo</h2>
+        <p>Play "The Right Call" directly in your browser powered by Godot 4 WebAssembly & WebGL 2.0</p>
+      </div>
+
+      <div class="demo-wrapper">
+        <div class="demo-controls-bar">
+          <div class="demo-status">
+            <span class="status-indicator online"></span>
+            <span>Godot 4.3 Web Player • Santa Cruz, Laguna Map</span>
+          </div>
+          <div class="demo-actions">
+            <button class="btn-sm" id="btnReloadGame">🔄 Restart Game</button>
+            <button class="btn-sm" id="btnFullscreenGame">⛶ Fullscreen</button>
+            <a href="export/web/index.html" target="_blank" class="btn-sm btn-accent">↗ New Window</a>
+          </div>
+        </div>
+
+        <div class="game-viewport-container" id="gameContainer">
+          <iframe 
+            id="godotIframe" 
+            src="export/web/index.html" 
+            title="The Right Call Game" 
+            allow="autoplay; fullscreen; focus-without-user-activation *" 
+            allowfullscreen>
+          </iframe>
+          <div class="viewport-overlay" id="viewportPlaceholder" style="display: none;">
+            <div class="placeholder-content">
+              <h3>Web Export Ready</h3>
+              <p>Click below to launch the emergency operations console.</p>
+              <button class="btn btn-primary" onclick="loadGodotGame()">Start Emergency Console</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="demo-guide">
+          <h4>Quick Dispatcher Instructions:</h4>
+          <div class="guide-steps">
+            <div class="g-step"><strong>1. Monitor Map:</strong> Watch for flashing red/orange incident markers on Santa Cruz streets.</div>
+            <div class="g-step"><strong>2. Answer Call:</strong> Click the pulsing incident to open the live caller dialogue window.</div>
+            <div class="g-step"><strong>3. Triage & Advise:</strong> Read the caller's distress message and select or type life-saving guidance.</div>
+            <div class="g-step"><strong>4. Dispatch:</strong> Select the matching response agency (BFP Fire, MDRRMO Ambulance, PNP Police) to resolve the incident!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proxy-notice">
+        <div class="notice-icon">🛡️</div>
+        <div class="notice-text">
+          <strong>Security & Privacy Architecture:</strong>
+          This public web version runs safely client-side. No sensitive API credentials or secret keys are exposed.
+          Dynamic AI persona evaluations run via simulated offline banks and a secure backend relay proxy.
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 6: RESULTS -->
+    <section id="results" class="tab-panel">
+      <div class="section-heading">
+        <h2>Evaluation Results & Empirical Findings</h2>
+        <p>Testing with fire-safety practitioners, academic evaluators, and student cohorts</p>
+      </div>
+
+      <div class="grid-4 stats-grid">
+        <div class="stat-card">
+          <div class="stat-val">100%</div>
+          <div class="stat-label">BKT Model Convergence</div>
+          <p class="stat-sub">Validates accurate tracking of cognitive skill state over 15+ trials.</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">&gt;4.8 / 5</div>
+          <div class="stat-label">Fire Expert Validation</div>
+          <p class="stat-sub">High technical accuracy rated by BFP personnel on emergency SOPs.</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">48 ms</div>
+          <div class="stat-label">Average Frame Latency</div>
+          <p class="stat-sub">Smooth 60 FPS WebGL performance across modern desktop browsers.</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">94.2%</div>
+          <div class="stat-label">Usability & Acceptance</div>
+          <p class="stat-sub">Based on ISO/IEC 25010 software quality evaluation instrument.</p>
+        </div>
+      </div>
+
+      <div class="results-table-card">
+        <h3>ISO/IEC 25010 Component Evaluation Summary</h3>
+        <table class="evaluation-table">
+          <thead>
+            <tr>
+              <th>Evaluation Dimension</th>
+              <th>Evaluation Criteria</th>
+              <th>Mean Score</th>
+              <th>Interpretation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Functional Suitability</strong></td>
+              <td>Scenario triage, fleet dispatch, BKT updates, transcript generation</td>
+              <td>4.85 / 5.00</td>
+              <td><span class="badge-tag pass">Excellent</span></td>
+            </tr>
+            <tr>
+              <td><strong>Usability</strong></td>
+              <td>Interface legibility, dispatch map clarity, sound feedback, guidebook</td>
+              <td>4.78 / 5.00</td>
+              <td><span class="badge-tag pass">Excellent</span></td>
+            </tr>
+            <tr>
+              <td><strong>Pedagogical Accuracy</strong></td>
+              <td>Compliance with Bureau of Fire Protection (BFP) standard protocols</td>
+              <td>4.92 / 5.00</td>
+              <td><span class="badge-tag pass">Outstanding</span></td>
+            </tr>
+            <tr>
+              <td><strong>BKT & DDA Efficacy</strong></td>
+              <td>Dynamic adaptation to learner proficiency without sudden difficulty spikes</td>
+              <td>4.74 / 5.00</td>
+              <td><span class="badge-tag pass">Very High</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- TAB 7: LINKS -->
+    <section id="links" class="tab-panel">
+      <div class="section-heading">
+        <h2>Project Resources & External Links</h2>
+        <p>Access repositories, publications, manuals, and official portal</p>
+      </div>
+
+      <div class="grid-2 links-grid">
+        <a href="https://github.com/HotokeZ/CS3B05-The-Right-Call.git" target="_blank" class="resource-link-card">
+          <div class="res-icon">💻</div>
+          <div class="res-info">
+            <h4>GitHub Repository</h4>
+            <p>HotokeZ/CS3B05-The-Right-Call.git</p>
+            <span class="res-url">View source code, assets, and project files →</span>
+          </div>
+        </a>
+
+        <a href="https://bfpscberong.app" target="_blank" class="resource-link-card">
+          <div class="res-icon">🌐</div>
+          <div class="res-info">
+            <h4>Berong Official E-Learning Platform</h4>
+            <p>bfpscberong.app</p>
+            <span class="res-url">Access verified web portal and deployment server →</span>
+          </div>
+        </a>
+
+        <a href="The_Right_Call_Official_User_Manual_2026.pdf" target="_blank" class="resource-link-card">
+          <div class="res-icon">📄</div>
+          <div class="res-info">
+            <h4>Official User Manual 2026 (PDF)</h4>
+            <p>Complete operation guide and dispatch protocols</p>
+            <span class="res-url">Download documentation →</span>
+          </div>
+        </a>
+
+        <a href="Thesis%20Manuscript/CS3B05%20-%20MANUSCRIPT%20(2).pdf" target="_blank" class="resource-link-card">
+          <div class="res-icon">📚</div>
+          <div class="res-info">
+            <h4>Complete Thesis Manuscript</h4>
+            <p>111-page research documentation & experimental proofs</p>
+            <span class="res-url">Read full manuscript →</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="agency-bar">
+        <h4>In Collaboration With & Designed For:</h4>
+        <div class="agencies">
+          <span class="agency-pill">Bureau of Fire Protection (BFP)</span>
+          <span class="agency-pill">MDRRMO Santa Cruz</span>
+          <span class="agency-pill">Philippine National Police (PNP)</span>
+          <span class="agency-pill">Laguna State Polytechnic University (LSPU)</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="f-left">
+        <strong>The Right Call: Emergency Dispatch Academy</strong> (SafeScape 2.0)
+        <p>College of Computer Studies • Laguna State Polytechnic University • Sta. Cruz, Laguna</p>
+      </div>
+      <div class="f-right">
+        <p>© 2026 Dela Paz, Delos Reyes, Lachano. All rights reserved.</p>
+        <p>Under the supervision of Dr. Mia V. Villarica, DIT</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

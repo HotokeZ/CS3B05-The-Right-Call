@@ -1,0 +1,22 @@
+{
+  "stations": [
+    {
+      "type": "police",
+      "name": "PNP",
+      "x": 0.540038,
+      "y": 0.485219
+    },
+    {
+      "type": "fire_truck",
+      "name": "BFP Santa Cruz Fire Station",
+      "x": 0.546296,
+      "y": 0.481259
+    },
+    {
+      "type": "ambulance",
+      "name": "MDRRMO",
+      "x": 0.729613,
+      "y": 0.456317
+    }
+  ]
+}

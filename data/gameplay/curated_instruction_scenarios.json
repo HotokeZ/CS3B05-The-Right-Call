@@ -1,0 +1,1033 @@
+{
+    "scenarios": [
+        {
+            "id": "cur_fire_f01_garage_workshop",
+            "category": "fire",
+            "type": "fire",
+            "title": "Garage workshop fire with motor oil and power tools",
+            "severity": "high",
+            "recommended_vehicle": "fire_truck",
+            "transcript": [
+                {
+                    "speaker": "911",
+                    "text": "911, where is your emergency?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "My husband was grinding metal in our garage at {location}. Sparks ignited the workbench and motor oil near plugged power tools!"
+                },
+                {
+                    "speaker": "911",
+                    "text": "Is anyone still inside the garage?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "He is near the door but the flames are spreading fast."
+                },
+                {
+                    "speaker": "911",
+                    "text": "Stay on the line and follow my instructions."
+                }
+            ],
+            "options": [
+                {
+                    "text": "Use a garden hose on the bench and floor immediately.",
+                    "label": "unsafe",
+                    "hint": "Think about oil and energized tools.",
+                    "explanation": "Water can spread burning oil and increase electrocution risk near live tools.",
+                    "dda_role": "obvious_distractor"
+                },
+                {
+                    "text": "Do not use water. Cut power only if safe, use a dry chemical extinguisher if available, otherwise evacuate.",
+                    "label": "safe",
+                    "hint": "Control electricity and fuel before acting.",
+                    "explanation": "Oil and electrical hazards require dry chemical suppression and immediate evacuation if control is unsafe.",
+                    "dda_role": "correct"
+                },
+                {
+                    "text": "Send only an ambulance and cool possible burns with ice first.",
+                    "label": "unsafe",
+                    "hint": "Which threat is currently spreading?",
+                    "explanation": "The active fire is the primary life threat and needs fire suppression response immediately.",
+                    "dda_role": "plausible_distractor"
+                },
+                {
+                    "text": "Open all garage doors and windows to vent smoke.",
+                    "label": "unsafe",
+                    "hint": "More oxygen can change fire behavior.",
+                    "explanation": "Ventilation can feed the fire and accelerate spread before crews arrive.",
+                    "dda_role": "close_distractor"
+                }
+            ],
+            "safe_keywords": [
+                "dry chemical",
+                "cut power",
+                "evacuate",
+                "fire truck",
+                "do not use water"
+            ],
+            "unsafe_keywords": [
+                "garden hose",
+                "open windows",
+                "ignore fire",
+                "ice first"
+            ],
+            "complexity": 3
+        },
+        {
+            "id": "cur_fire_f02_highrise_smoke_trap",
+            "category": "fire",
+            "type": "fire",
+            "title": "High-rise resident trapped by hallway smoke",
+            "severity": "high",
+            "recommended_vehicle": "fire_truck",
+            "transcript": [
+                {
+                    "speaker": "911",
+                    "text": "Can you confirm your floor and room number?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "I am on the 14th floor at {location}. The hallway is full of thick smoke and I cannot see the stairs."
+                },
+                {
+                    "speaker": "911",
+                    "text": "Are you currently inside your apartment with the door closed?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "Yes, I am inside and the alarm is blaring."
+                }
+            ],
+            "options": [
+                {
+                    "text": "Run through the smoke to find the stairs quickly.",
+                    "label": "unsafe",
+                    "hint": "Smoke inhalation can incapacitate in seconds.",
+                    "explanation": "Moving through dense smoke without protection can cause fatal inhalation injury.",
+                    "dda_role": "obvious_distractor"
+                },
+                {
+                    "text": "Take the elevator down immediately.",
+                    "label": "unsafe",
+                    "hint": "Elevators are unsafe during fire incidents.",
+                    "explanation": "Elevators can fail or open into fire zones during building fires.",
+                    "dda_role": "plausible_distractor"
+                },
+                {
+                    "text": "Stay in the apartment, seal door gaps with wet cloth, and signal firefighters from the window.",
+                    "label": "safe",
+                    "hint": "Compartmentation can buy survival time.",
+                    "explanation": "A closed room with sealed gaps reduces smoke entry while rescue crews locate occupants.",
+                    "dda_role": "correct"
+                },
+                {
+                    "text": "Break a window for fresh air and wait near the opening.",
+                    "label": "unsafe",
+                    "hint": "Air flow can intensify fire spread.",
+                    "explanation": "Breaking windows can draw fire and smoke toward occupied spaces.",
+                    "dda_role": "close_distractor"
+                }
+            ],
+            "safe_keywords": [
+                "stay inside",
+                "seal door",
+                "wet towel",
+                "signal window",
+                "fire truck"
+            ],
+            "unsafe_keywords": [
+                "elevator",
+                "run through smoke",
+                "break window"
+            ],
+            "complexity": 3
+        },
+        {
+            "id": "cur_fire_f03_pool_chemical_reaction",
+            "category": "fire",
+            "type": "fire",
+            "title": "Pool chemical reaction producing toxic gas",
+            "severity": "high",
+            "recommended_vehicle": "fire_truck",
+            "transcript": [
+                {
+                    "speaker": "911",
+                    "text": "What exactly is happening at the scene?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "At the pool supply shed in {location}, two chemical buckets mixed. It is fizzing yellow gas and plastic is melting."
+                },
+                {
+                    "speaker": "911",
+                    "text": "Is anyone coughing or having trouble breathing?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "Yes, people near the shed are coughing."
+                }
+            ],
+            "options": [
+                {
+                    "text": "Cover the spill with sand to smother it.",
+                    "label": "unsafe",
+                    "hint": "Unknown chemical reactions are unpredictable.",
+                    "explanation": "Adding materials to reactive chemicals can worsen or accelerate reactions.",
+                    "dda_role": "obvious_distractor"
+                },
+                {
+                    "text": "Flood it with water to dilute the chemicals.",
+                    "label": "unsafe",
+                    "hint": "Some pool chemicals react violently with water.",
+                    "explanation": "Water can intensify reaction, release gas, and spread contamination.",
+                    "dda_role": "plausible_distractor"
+                },
+                {
+                    "text": "Evacuate the area immediately, move upwind, and do not attempt cleanup.",
+                    "label": "safe",
+                    "hint": "Distance and fresh air are immediate priorities.",
+                    "explanation": "Suspected toxic release requires rapid evacuation and exposure control while fire/hazmat responders deploy.",
+                    "dda_role": "correct"
+                },
+                {
+                    "text": "Ask everyone to rinse their eyes first before leaving.",
+                    "label": "unsafe",
+                    "hint": "Which action protects the most people first?",
+                    "explanation": "Mass evacuation and contamination avoidance must happen before noncritical first aid.",
+                    "dda_role": "close_distractor"
+                }
+            ],
+            "safe_keywords": [
+                "evacuate",
+                "upwind",
+                "do not touch",
+                "toxic gas",
+                "fire truck"
+            ],
+            "unsafe_keywords": [
+                "add water",
+                "sand",
+                "clean it yourself"
+            ],
+            "complexity": 3
+        },
+        {
+            "id": "cur_fire_f04_downed_powerline",
+            "category": "fire",
+            "type": "fire",
+            "title": "Downed live wire igniting roadside grass",
+            "severity": "high",
+            "recommended_vehicle": "fire_truck",
+            "transcript": [
+                {
+                    "speaker": "911",
+                    "text": "Tell me what you can see now."
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "A power line snapped near {location}. It is sparking on wet ground and nearby grass is burning."
+                },
+                {
+                    "speaker": "911",
+                    "text": "Are people standing close to the wire?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "Yes, some bystanders moved near it to record videos."
+                }
+            ],
+            "options": [
+                {
+                    "text": "Use a metal object to move the wire away from the grass.",
+                    "label": "unsafe",
+                    "hint": "Electricity can travel through metal and wet ground.",
+                    "explanation": "Touching or moving a live wire can cause immediate electrocution.",
+                    "dda_role": "obvious_distractor"
+                },
+                {
+                    "text": "Keep everyone at least 10 meters away, prevent contact with puddles, and wait for responders.",
+                    "label": "safe",
+                    "hint": "Isolation is critical around energized hazards.",
+                    "explanation": "Live-wire incidents require perimeter control and no civilian intervention until utility/fire teams secure the area.",
+                    "dda_role": "correct"
+                },
+                {
+                    "text": "Extinguish flames first with buckets, then call emergency services.",
+                    "label": "unsafe",
+                    "hint": "You must secure the electrical hazard first.",
+                    "explanation": "Civilian firefighting near energized lines is unsafe and may expand casualties.",
+                    "dda_role": "plausible_distractor"
+                },
+                {
+                    "text": "Tell bystanders to stand under a nearby roof to avoid rain splash.",
+                    "label": "unsafe",
+                    "hint": "Step potential can still injure nearby people.",
+                    "explanation": "Distance from live-wire contact zones is safer than clustering nearby.",
+                    "dda_role": "close_distractor"
+                }
+            ],
+            "safe_keywords": [
+                "keep distance",
+                "live wire",
+                "do not touch",
+                "perimeter",
+                "fire truck"
+            ],
+            "unsafe_keywords": [
+                "move wire",
+                "metal object",
+                "bucket near wire"
+            ],
+            "complexity": 3
+        },
+        {
+            "id": "cur_fire_f05_fryer_flashover",
+            "category": "fire",
+            "type": "fire",
+            "title": "Restaurant fryer fire with spreading ceiling flames",
+            "severity": "high",
+            "recommended_vehicle": "fire_truck",
+            "transcript": [
+                {
+                    "speaker": "911",
+                    "text": "What is burning and where are occupants now?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "A fryer flashed at our restaurant in {location}. Flames reached the hood and smoke is filling the dining area."
+                },
+                {
+                    "speaker": "911",
+                    "text": "Is everyone out of the dining area?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "Most people are out but staff are still near the kitchen trying to help."
+                }
+            ],
+            "options": [
+                {
+                    "text": "Turn off the fryer and try smothering with a lid while staff remain inside.",
+                    "label": "unsafe",
+                    "hint": "The fire has already spread beyond the pan.",
+                    "explanation": "Once fire spreads to hood/ceiling, continued suppression attempts by unprotected staff are dangerous.",
+                    "dda_role": "obvious_distractor"
+                },
+                {
+                    "text": "Evacuate everyone immediately, close kitchen doors if safe, and wait outside for firefighters.",
+                    "label": "safe",
+                    "hint": "Large fire plus smoke means life safety first.",
+                    "explanation": "For rapidly growing commercial fires, full evacuation and isolation are safer than in-place suppression attempts.",
+                    "dda_role": "correct"
+                },
+                {
+                    "text": "Open front and rear doors to push smoke out before evacuation.",
+                    "label": "unsafe",
+                    "hint": "Airflow can intensify large fires.",
+                    "explanation": "Uncontrolled ventilation may feed fire growth and worsen tenability.",
+                    "dda_role": "plausible_distractor"
+                },
+                {
+                    "text": "Send one employee back for cash records before exiting.",
+                    "label": "unsafe",
+                    "hint": "Property is never prioritized over life.",
+                    "explanation": "Re-entry during active fire conditions risks entrapment and fatal smoke exposure.",
+                    "dda_role": "close_distractor"
+                }
+            ],
+            "safe_keywords": [
+                "evacuate",
+                "close doors",
+                "wait outside",
+                "fire truck"
+            ],
+            "unsafe_keywords": [
+                "go back inside",
+                "ventilate",
+                "smother while spreading"
+            ],
+            "complexity": 3
+        },
+        {
+            "id": "cur_med_m01_choking_silent",
+            "category": "medical",
+            "type": "medical",
+            "title": "Adult choking and unable to speak",
+            "severity": "high",
+            "recommended_vehicle": "ambulance",
+            "transcript": [
+                {
+                    "speaker": "911",
+                    "text": "Tell me exactly what happened."
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "My dad collapsed while eating steak at {location}. He grabbed his throat, turned blue, and cannot make a sound."
+                },
+                {
+                    "speaker": "911",
+                    "text": "Is he conscious right now?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "Yes, but panicking and cannot breathe."
+                }
+            ],
+            "options": [
+                {
+                    "text": "Lay him flat and start chest compressions now.",
+                    "label": "unsafe",
+                    "hint": "Different emergency, different first step.",
+                    "explanation": "For severe conscious choking, airway obstruction maneuvers are needed before CPR.",
+                    "dda_role": "obvious_distractor"
+                },
+                {
+                    "text": "Do blind finger sweeps to pull food out.",
+                    "label": "unsafe",
+                    "hint": "Blind sweeps can worsen obstruction.",
+                    "explanation": "Finger sweeps may push the object deeper and injure airway tissue.",
+                    "dda_role": "plausible_distractor"
+                },
+                {
+                    "text": "Perform abdominal thrusts from behind until object is expelled or he becomes unresponsive.",
+                    "label": "safe",
+                    "hint": "Use anti-choking protocol for silent airway obstruction.",
+                    "explanation": "Abdominal thrusts are first-line pre-arrival care for severe conscious choking adults.",
+                    "dda_role": "correct"
+                },
+                {
+                    "text": "Give him water to wash the food down.",
+                    "label": "unsafe",
+                    "hint": "He cannot swallow safely right now.",
+                    "explanation": "Liquid intake during airway obstruction can worsen aspiration risk.",
+                    "dda_role": "close_distractor"
+                }
+            ],
+            "safe_keywords": [
+                "abdominal thrusts",
+                "choking",
+                "heimlich",
+                "ambulance"
+            ],
+            "unsafe_keywords": [
+                "water",
+                "finger sweep",
+                "wrong procedure"
+            ],
+            "complexity": 3
+        },
+        {
+            "id": "cur_med_m02_arterial_bleed_ladder",
+            "category": "medical",
+            "type": "medical",
+            "title": "Ladder fall with arterial leg bleeding",
+            "severity": "high",
+            "recommended_vehicle": "ambulance",
+            "transcript": [
+                {
+                    "speaker": "911",
+                    "text": "What injuries do you see?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "My roommate fell from a ladder at {location}. His leg is bent badly and bright red blood is spurting in pulses."
+                },
+                {
+                    "speaker": "911",
+                    "text": "Is he conscious and breathing?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "Yes, but he is getting weak quickly."
+                }
+            ],
+            "options": [
+                {
+                    "text": "Splint the leg first so the bone does not move.",
+                    "label": "unsafe",
+                    "hint": "Control the immediate life threat first.",
+                    "explanation": "Uncontrolled arterial bleeding can cause death before fracture stabilization matters.",
+                    "dda_role": "obvious_distractor"
+                },
+                {
+                    "text": "Apply hard direct pressure. If bleeding continues, apply a tourniquet high and tight above the wound.",
+                    "label": "safe",
+                    "hint": "Massive bleeding protocol is priority.",
+                    "explanation": "Rapid hemorrhage control with pressure and tourniquet is the highest-priority intervention.",
+                    "dda_role": "correct"
+                },
+                {
+                    "text": "Elevate the injured leg above heart level.",
+                    "label": "unsafe",
+                    "hint": "Avoid moving severely injured limbs.",
+                    "explanation": "Manipulating a deformed limb can worsen tissue damage and does not replace direct pressure.",
+                    "dda_role": "plausible_distractor"
+                },
+                {
+                    "text": "Rinse the wound with water to prevent infection.",
+                    "label": "unsafe",
+                    "hint": "Infection control comes after life-saving care.",
+                    "explanation": "Wound washing delays critical hemorrhage control in a life-threatening bleed.",
+                    "dda_role": "close_distractor"
+                }
+            ],
+            "safe_keywords": [
+                "direct pressure",
+                "tourniquet",
+                "bleeding",
+                "ambulance"
+            ],
+            "unsafe_keywords": [
+                "wash wound",
+                "elevate deformity",
+                "splint first"
+            ],
+            "complexity": 3
+        },
+        {
+            "id": "cur_med_m03_seizure_room",
+            "category": "medical",
+            "type": "medical",
+            "title": "Teen having active seizure in bedroom",
+            "severity": "medium",
+            "recommended_vehicle": "ambulance",
+            "transcript": [
+                {
+                    "speaker": "911",
+                    "text": "Describe what he is doing right now."
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "My brother at {location} is shaking violently, eyes rolled back, and knocking things off his desk."
+                },
+                {
+                    "speaker": "911",
+                    "text": "Do not panic. Is anyone trying to hold him down?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "Not yet, we were about to."
+                }
+            ],
+            "options": [
+                {
+                    "text": "Hold him down so he cannot move.",
+                    "label": "unsafe",
+                    "hint": "Restraint can injure the patient.",
+                    "explanation": "Forceful restraint can cause fractures and soft tissue injury during convulsions.",
+                    "dda_role": "obvious_distractor"
+                },
+                {
+                    "text": "Put an object in his mouth to protect his tongue.",
+                    "label": "unsafe",
+                    "hint": "Do not place anything in the mouth.",
+                    "explanation": "Objects in the mouth can cause choking, dental injury, and aspiration.",
+                    "dda_role": "plausible_distractor"
+                },
+                {
+                    "text": "Clear nearby hazards, do not restrain, time the seizure, and roll him onto his side after convulsions stop.",
+                    "label": "safe",
+                    "hint": "Protect from injury and maintain airway after seizure.",
+                    "explanation": "Scene safety plus post-seizure recovery position are key pre-arrival steps.",
+                    "dda_role": "correct"
+                },
+                {
+                    "text": "Give him water as soon as possible to calm him.",
+                    "label": "unsafe",
+                    "hint": "Airway protection first.",
+                    "explanation": "Giving fluids immediately after seizure may cause aspiration if alertness is impaired.",
+                    "dda_role": "close_distractor"
+                }
+            ],
+            "safe_keywords": [
+                "clear hazards",
+                "time seizure",
+                "recovery position",
+                "ambulance"
+            ],
+            "unsafe_keywords": [
+                "restrain",
+                "object in mouth",
+                "water immediately"
+            ],
+            "complexity": 2
+        },
+        {
+            "id": "cur_med_m04_possible_stroke",
+            "category": "medical",
+            "type": "medical",
+            "title": "Possible stroke with one-sided weakness",
+            "severity": "high",
+            "recommended_vehicle": "ambulance",
+            "transcript": [
+                {
+                    "speaker": "911",
+                    "text": "What changes happened suddenly?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "My aunt at {location} suddenly has a drooping face, slurred speech, and weak right arm."
+                },
+                {
+                    "speaker": "911",
+                    "text": "Do you know when she was last normal?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "About 15 minutes ago."
+                }
+            ],
+            "options": [
+                {
+                    "text": "Give aspirin right away and wait 30 minutes to see if she improves.",
+                    "label": "unsafe",
+                    "hint": "Time-critical transport is essential.",
+                    "explanation": "Delays and unsupervised medication can worsen outcomes, especially in hemorrhagic stroke.",
+                    "dda_role": "obvious_distractor"
+                },
+                {
+                    "text": "Keep her seated safely, note exact symptom onset time, and prepare for immediate ambulance transport.",
+                    "label": "safe",
+                    "hint": "FAST signs require urgent definitive care.",
+                    "explanation": "Recording onset time and rapid transport are critical for stroke treatment eligibility.",
+                    "dda_role": "correct"
+                },
+                {
+                    "text": "Make her walk around to test leg strength.",
+                    "label": "unsafe",
+                    "hint": "Avoid falls and exertion.",
+                    "explanation": "Forcing movement may cause falls and does not improve diagnosis quality.",
+                    "dda_role": "plausible_distractor"
+                },
+                {
+                    "text": "Let her sleep while waiting for family.",
+                    "label": "unsafe",
+                    "hint": "Neurologic emergencies should not be observed at home.",
+                    "explanation": "Stroke symptoms need immediate emergency response, not delayed observation.",
+                    "dda_role": "close_distractor"
+                }
+            ],
+            "safe_keywords": [
+                "stroke",
+                "onset time",
+                "slurred speech",
+                "ambulance"
+            ],
+            "unsafe_keywords": [
+                "wait and see",
+                "force walking",
+                "sleep it off"
+            ],
+            "complexity": 3
+        },
+        {
+            "id": "cur_med_m05_anaphylaxis",
+            "category": "medical",
+            "type": "medical",
+            "title": "Severe allergic reaction after peanut exposure",
+            "severity": "high",
+            "recommended_vehicle": "ambulance",
+            "transcript": [
+                {
+                    "speaker": "911",
+                    "text": "What symptoms are happening now?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "At {location}, my friend ate peanut sauce. Her lips are swelling and she is wheezing."
+                },
+                {
+                    "speaker": "911",
+                    "text": "Does she have an epinephrine auto-injector?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "Yes, she has one in her bag."
+                }
+            ],
+            "options": [
+                {
+                    "text": "Give antihistamine tablets first and wait 20 minutes.",
+                    "label": "unsafe",
+                    "hint": "Airway compromise is time-critical.",
+                    "explanation": "Antihistamines are too slow for severe anaphylaxis and cannot replace epinephrine.",
+                    "dda_role": "obvious_distractor"
+                },
+                {
+                    "text": "Use the epinephrine auto-injector now, keep her lying with legs elevated if tolerated, and monitor breathing.",
+                    "label": "safe",
+                    "hint": "Immediate epinephrine is first-line care.",
+                    "explanation": "Rapid epinephrine administration is the most effective pre-arrival intervention in anaphylaxis.",
+                    "dda_role": "correct"
+                },
+                {
+                    "text": "Give milk to dilute the allergen in the stomach.",
+                    "label": "unsafe",
+                    "hint": "Food or drink can worsen airway risk.",
+                    "explanation": "Oral intake is unsafe in respiratory distress and does not treat anaphylaxis.",
+                    "dda_role": "plausible_distractor"
+                },
+                {
+                    "text": "Make her jog slowly to keep circulation active.",
+                    "label": "unsafe",
+                    "hint": "Exertion can worsen collapse risk.",
+                    "explanation": "Physical exertion may worsen hypotension and respiratory compromise in anaphylaxis.",
+                    "dda_role": "close_distractor"
+                }
+            ],
+            "safe_keywords": [
+                "epinephrine",
+                "anaphylaxis",
+                "monitor breathing",
+                "ambulance"
+            ],
+            "unsafe_keywords": [
+                "wait antihistamine",
+                "give milk",
+                "exercise"
+            ],
+            "complexity": 3
+        },
+        {
+            "id": "cur_pol_p01_silent_intrusion",
+            "category": "criminal",
+            "type": "criminal",
+            "title": "Home intrusion with caller hiding silently",
+            "severity": "high",
+            "recommended_vehicle": "police",
+            "transcript": [
+                {
+                    "speaker": "911",
+                    "text": "911, can you safely whisper your location?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "They broke glass downstairs at {location}. I am hiding in a closet."
+                },
+                {
+                    "speaker": "911",
+                    "text": "Stay calm. Can you remain silent and hidden?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "Yes, I can."
+                }
+            ],
+            "options": [
+                {
+                    "text": "Yell that police are coming to scare intruders away.",
+                    "label": "unsafe",
+                    "hint": "Do not reveal your position.",
+                    "explanation": "Noise can expose the caller location and escalate violence risk.",
+                    "dda_role": "obvious_distractor"
+                },
+                {
+                    "text": "Keep silent, dim your phone, set it to silent mode, and stay hidden on the line.",
+                    "label": "safe",
+                    "hint": "Stealth preserves caller safety until police entry.",
+                    "explanation": "Silent communication and concealment reduce detection risk during active intrusion.",
+                    "dda_role": "correct"
+                },
+                {
+                    "text": "Arm yourself and prepare to confront if they enter.",
+                    "label": "unsafe",
+                    "hint": "Dispatch guidance should prioritize survival.",
+                    "explanation": "Encouraging confrontation increases risk of fatal outcomes.",
+                    "dda_role": "plausible_distractor"
+                },
+                {
+                    "text": "Peek out often to count intruders accurately.",
+                    "label": "unsafe",
+                    "hint": "Observation must not expose caller.",
+                    "explanation": "Frequent movement and visual checks may reveal hiding position.",
+                    "dda_role": "close_distractor"
+                }
+            ],
+            "safe_keywords": [
+                "stay hidden",
+                "silent",
+                "dim phone",
+                "police"
+            ],
+            "unsafe_keywords": [
+                "yell",
+                "confront",
+                "peek out"
+            ],
+            "complexity": 3
+        },
+        {
+            "id": "cur_pol_p02_aggressive_fender",
+            "category": "criminal",
+            "type": "criminal",
+            "title": "Minor collision with aggressive driver",
+            "severity": "medium",
+            "recommended_vehicle": "police",
+            "transcript": [
+                {
+                    "speaker": "911",
+                    "text": "Are there injuries from the collision?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "No injuries at {location}, but the other driver is shouting and acting aggressive from his car."
+                },
+                {
+                    "speaker": "911",
+                    "text": "Are your vehicle doors locked?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "Not yet."
+                }
+            ],
+            "options": [
+                {
+                    "text": "Stay in the travel lane so officers can inspect exact vehicle positions.",
+                    "label": "unsafe",
+                    "hint": "Road safety still matters after crash.",
+                    "explanation": "Leaving vehicles in active lanes risks secondary collisions and injuries.",
+                    "dda_role": "obvious_distractor"
+                },
+                {
+                    "text": "If drivable, move to a safe shoulder area, lock doors, and wait for traffic police.",
+                    "label": "safe",
+                    "hint": "Reduce traffic risk and avoid confrontation.",
+                    "explanation": "A controlled relocation with locked doors lowers both road and violence hazards.",
+                    "dda_role": "correct"
+                },
+                {
+                    "text": "Walk to the aggressive driver and demand insurance now.",
+                    "label": "unsafe",
+                    "hint": "Avoid escalating contact.",
+                    "explanation": "Approaching an aggressive driver can escalate to assault.",
+                    "dda_role": "plausible_distractor"
+                },
+                {
+                    "text": "Do not dispatch because no one is injured.",
+                    "label": "unsafe",
+                    "hint": "Behavioral threat can still require police.",
+                    "explanation": "Aggressive behavior after collisions can require law-enforcement intervention.",
+                    "dda_role": "close_distractor"
+                }
+            ],
+            "safe_keywords": [
+                "move to shoulder",
+                "lock doors",
+                "traffic police",
+                "safe area"
+            ],
+            "unsafe_keywords": [
+                "confront driver",
+                "block traffic",
+                "no dispatch"
+            ],
+            "complexity": 2
+        },
+        {
+            "id": "cur_pol_p03_unattended_bag",
+            "category": "criminal",
+            "type": "criminal",
+            "title": "Unattended duffel bag with ticking sound",
+            "severity": "high",
+            "recommended_vehicle": "police",
+            "transcript": [
+                {
+                    "speaker": "911",
+                    "text": "Where is the suspicious bag located?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "At the mall food court in {location}. It has been unattended for an hour and I hear faint ticking."
+                },
+                {
+                    "speaker": "911",
+                    "text": "Has anyone touched or moved it?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "Not yet."
+                }
+            ],
+            "options": [
+                {
+                    "text": "Open the bag carefully to verify if it is harmless.",
+                    "label": "unsafe",
+                    "hint": "Never inspect suspicious containers directly.",
+                    "explanation": "Opening unknown devices may trigger detonation.",
+                    "dda_role": "obvious_distractor"
+                },
+                {
+                    "text": "Carry the bag outside to reduce indoor danger.",
+                    "label": "unsafe",
+                    "hint": "Do not move suspected explosive items.",
+                    "explanation": "Movement can activate pressure or motion triggers.",
+                    "dda_role": "plausible_distractor"
+                },
+                {
+                    "text": "Do not touch it. Evacuate people at least 300 feet away and avoid radio transmissions near the bag.",
+                    "label": "safe",
+                    "hint": "Distance and non-interference are critical.",
+                    "explanation": "Perimeter control and RF discipline are standard precautions for suspected explosive threats.",
+                    "dda_role": "correct"
+                },
+                {
+                    "text": "Stage fire hoses nearby while waiting.",
+                    "label": "unsafe",
+                    "hint": "Wrong immediate priority.",
+                    "explanation": "Initial response should focus on police explosive protocol and evacuation, not firefighting setup.",
+                    "dda_role": "close_distractor"
+                }
+            ],
+            "safe_keywords": [
+                "do not touch",
+                "evacuate 300 feet",
+                "bomb threat",
+                "police"
+            ],
+            "unsafe_keywords": [
+                "open bag",
+                "move bag",
+                "touch bag"
+            ],
+            "complexity": 3
+        },
+        {
+            "id": "cur_pol_p04_domestic_disturbance",
+            "category": "criminal",
+            "type": "criminal",
+            "title": "Domestic disturbance with possible weapon sounds",
+            "severity": "high",
+            "recommended_vehicle": "police",
+            "transcript": [
+                {
+                    "speaker": "911",
+                    "text": "What can you hear from your neighbor's unit?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "At {location}, there is violent shouting, crashing sounds, and I heard someone say they have a knife."
+                },
+                {
+                    "speaker": "911",
+                    "text": "Are you inside your own unit and secure?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "I am in my apartment but my door is unlocked."
+                }
+            ],
+            "options": [
+                {
+                    "text": "Knock on their door and tell them police are coming.",
+                    "label": "unsafe",
+                    "hint": "Do not insert yourself into active violence.",
+                    "explanation": "Approaching a violent domestic event can put callers in immediate danger.",
+                    "dda_role": "obvious_distractor"
+                },
+                {
+                    "text": "Lock your door, stay away from windows, and keep monitoring from a safe room while officers respond.",
+                    "label": "safe",
+                    "hint": "Caller safety and containment first.",
+                    "explanation": "Securing the caller and preserving safe observation supports police intervention without extra victims.",
+                    "dda_role": "correct"
+                },
+                {
+                    "text": "Record the argument from the hallway for evidence.",
+                    "label": "unsafe",
+                    "hint": "Evidence is never worth exposing yourself.",
+                    "explanation": "Hallway exposure can place the caller directly in the violence zone.",
+                    "dda_role": "plausible_distractor"
+                },
+                {
+                    "text": "Wait until the noise stops before calling police.",
+                    "label": "unsafe",
+                    "hint": "Delay can cost lives.",
+                    "explanation": "Possible weapon threats require immediate dispatch.",
+                    "dda_role": "close_distractor"
+                }
+            ],
+            "safe_keywords": [
+                "lock door",
+                "safe room",
+                "monitor safely",
+                "police"
+            ],
+            "unsafe_keywords": [
+                "knock door",
+                "hallway recording",
+                "delay call"
+            ],
+            "complexity": 3
+        },
+        {
+            "id": "cur_pol_p05_online_luring_minor",
+            "category": "criminal",
+            "type": "criminal",
+            "title": "Possible child luring attempt arranged online",
+            "severity": "medium",
+            "recommended_vehicle": "police",
+            "transcript": [
+                {
+                    "speaker": "911",
+                    "text": "What happened and where are you now?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "At {location}, my 13-year-old says an adult from chat told her to meet at the park tonight and keep it secret."
+                },
+                {
+                    "speaker": "911",
+                    "text": "Is the child with you and safe right now?"
+                },
+                {
+                    "speaker": "Caller",
+                    "text": "Yes, she is with me and scared."
+                }
+            ],
+            "options": [
+                {
+                    "text": "Have the child continue chatting to lure the suspect into revealing more details alone.",
+                    "label": "unsafe",
+                    "hint": "Do not expose minors to continued grooming contact.",
+                    "explanation": "Unsupervised contact can escalate exploitation risk and compromise child safety.",
+                    "dda_role": "obvious_distractor"
+                },
+                {
+                    "text": "Keep the child with a trusted adult, preserve chat evidence/screenshots, and await police instructions.",
+                    "label": "safe",
+                    "hint": "Protect the child and preserve evidence.",
+                    "explanation": "Immediate supervision plus evidence preservation supports lawful intervention and reduces further harm.",
+                    "dda_role": "correct"
+                },
+                {
+                    "text": "Delete all messages immediately to protect privacy.",
+                    "label": "unsafe",
+                    "hint": "Evidence may be needed for investigation.",
+                    "explanation": "Deleting records can remove critical investigative leads.",
+                    "dda_role": "plausible_distractor"
+                },
+                {
+                    "text": "Go to the meeting location early to confront the suspect.",
+                    "label": "unsafe",
+                    "hint": "Avoid direct confrontation.",
+                    "explanation": "Civilian confrontation can create unpredictable violence and evidentiary problems.",
+                    "dda_role": "close_distractor"
+                }
+            ],
+            "safe_keywords": [
+                "keep child safe",
+                "preserve evidence",
+                "screenshots",
+                "police"
+            ],
+            "unsafe_keywords": [
+                "confront suspect",
+                "delete messages",
+                "continue contact alone"
+            ],
+            "complexity": 2
+        }
+    ]
+}

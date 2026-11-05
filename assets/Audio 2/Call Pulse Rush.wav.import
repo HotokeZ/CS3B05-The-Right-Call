@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dnvetd727n1e1"
+path="res://.godot/imported/Call Pulse Rush.wav-b64bd9570cf36b4a8ebfdcbe876c454b.sample"
+
+[deps]
+
+source_file="res://assets/Audio 2/Call Pulse Rush.wav"
+dest_files=["res://.godot/imported/Call Pulse Rush.wav-b64bd9570cf36b4a8ebfdcbe876c454b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

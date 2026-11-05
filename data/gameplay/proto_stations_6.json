@@ -1,0 +1,40 @@
+{
+  "stations": [
+    {
+      "type": "fire_truck",
+      "name": "BFP",
+      "x": 0.5853658536585366,
+      "y": 0.7804878048780488,
+      "spawn_x": 0.524390243902439,
+      "spawn_y": 0.7682926829268293,
+      "building_px": 4608,
+      "building_py": 6144,
+      "spawn_pixel_x": 4128,
+      "spawn_pixel_y": 6048
+    },
+    {
+      "type": "police",
+      "name": "Police",
+      "x": 0.4146341463414634,
+      "y": 0.2926829268292683,
+      "spawn_x": 0.35365853658536583,
+      "spawn_y": 0.2804878048780488,
+      "building_px": 3264,
+      "building_py": 2304,
+      "spawn_pixel_x": 2784,
+      "spawn_pixel_y": 2208
+    },
+    {
+      "type": "ambulance",
+      "name": "Hospital",
+      "x": 0.7804878048780488,
+      "y": 0.3902439024390244,
+      "spawn_x": 0.7195121951219512,
+      "spawn_y": 0.3780487804878049,
+      "building_px": 6144,
+      "building_py": 3072,
+      "spawn_pixel_x": 5664,
+      "spawn_pixel_y": 2976
+    }
+  ]
+}

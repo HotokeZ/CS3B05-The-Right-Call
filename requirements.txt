@@ -1,0 +1,12 @@
+# Project dependencies for optional map extraction and NLP tools
+# Core prototype requires no extra packages. To enable OSM extraction and
+# road/barangay exports, install the following:
+osmnx
+geopandas
+shapely
+fiona
+rtree
+
+# Optional NLP libs you can pip install later:
+# spacy
+# nltk

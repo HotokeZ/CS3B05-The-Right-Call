@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://kt1k1axw6ky8"]
+
+[ext_resource type="Script" uid="uid://bpwaxqyf8luqc" path="res://scripts/maps/route_scene.gd" id="1"]
+[ext_resource type="Script" uid="uid://b5eef8h3qnx36" path="res://scripts/maps/route_player.gd" id="2"]
+[ext_resource type="Texture2D" path="res://assets/maps/Proto Map 6.png" id="3_7h8ka"]
+[ext_resource type="Texture2D" path="res://assets/ui/icons/settings.svg" id="4_sttng"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hud"]
+bg_color = Color(1, 0.956863, 0.898039, 0.98)
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 0.627451, 0.337255, 1)
+shadow_color = Color(0, 0, 0, 0.08)
+shadow_size = 6
+
+[node name="RouteScene" type="Node2D" unique_id=1490142737]
+script = ExtResource("1")
+map_texture_path = "res://assets/maps/Proto Map 6.png"
+route_json_res_path = "res://data/routes/proto_route_6.json"
+station_json_res_path = "res://data/gameplay/proto_stations_6.json"
+building_json_res_path = "res://data/gameplay/proto_buildings_6.json"
+
+[node name="World" type="Node2D" parent="." unique_id=79140062]
+script = ExtResource("2")
+spawn_pin = false
+
+[node name="Map" type="Sprite2D" parent="." unique_id=358812360]
+z_index = -1
+z_as_relative = false
+texture = ExtResource("3_7h8ka")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HUDPanel" type="PanelContainer" parent="CanvasLayer"]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 376.0
+offset_bottom = 180.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_hud")
+
+[node name="HUDMargin" type="MarginContainer" parent="CanvasLayer/HUDPanel"]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 344.0
+offset_bottom = 148.0
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 14
+
+[node name="HUDContent" type="VBoxContainer" parent="CanvasLayer/HUDPanel/HUDMargin"]
+theme_override_constants/separation = 8
+
+[node name="ModeLabel" type="Label" parent="CanvasLayer/HUDPanel/HUDMargin/HUDContent"]
+theme_override_colors/font_color = Color(0.172549, 0.211765, 0.282353, 1)
+text = "Mode: Patrol Prototype"
+theme_override_font_sizes/font_size = 20
+
+[node name="HintLabel" type="Label" parent="CanvasLayer/HUDPanel/HUDMargin/HUDContent"]
+theme_override_colors/font_color = Color(0.282353, 0.321569, 0.384314, 1)
+autowrap_mode = 3
+text = "Dispatch mode hint"
+
+[node name="SettingsButton" type="Button" parent="CanvasLayer"]
+modulate = Color(0.15, 0.15, 0.15, 1)
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -64.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = 64.0
+grow_horizontal = 0
+icon = ExtResource("4_sttng")
+icon_alignment = 1
+expand_icon = true
+flat = true
